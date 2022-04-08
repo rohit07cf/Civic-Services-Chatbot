@@ -1,0 +1,2 @@
+model_checkpoint_path: "d:\\PROJECTS\\PROJECT_RnD\\CITIZEN_ENGAGEMENT_PROGRAM\\CHAT_BOT\\rasa_nlu\\models\\freeText\\model_20190807-141500\\intent_classifier_tensorflow_embedding.ckpt"
+all_model_checkpoint_paths: "d:\\PROJECTS\\PROJECT_RnD\\CITIZEN_ENGAGEMENT_PROGRAM\\CHAT_BOT\\rasa_nlu\\models\\freeText\\model_20190807-141500\\intent_classifier_tensorflow_embedding.ckpt"

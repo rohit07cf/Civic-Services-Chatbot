@@ -1,0 +1,18 @@
+<ng-container *ngIf=" newMessage.buttons">
+        <div class="quick_reply_div">
+                <ng-container *ngFor="let reply of newMessage.buttons">
+                    <button class="btn-style zoomIn"
+                     [class.autoMargin]="newMessage.buttons.length == 1"
+                     *ngIf="reply.title"
+                     (click)=quickReply(reply)>
+                        <span style="font-size: large">{{reply.title}}</span>
+                    </button>
+                </ng-container>
+        </div>
+</ng-container>
+
+
+<div>
+        <input type="file" #fileInput style="display: none" />
+          <!-- <button>Open File Dialog</button> -->
+</div>

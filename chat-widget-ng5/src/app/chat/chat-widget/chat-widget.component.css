@@ -1,0 +1,369 @@
+  * {
+  box-sizing: border-box;
+  position: relative;
+  /*font-family: "Open Sans", "Helvetica Neue", sans-serif;*/
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  /*height: 100vh;*/
+  width: 100vw;
+}
+
+.chat-button {
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16);
+  background: #1976d2;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 32px;
+}
+.chat-button-header {
+  z-index: 1;
+  font-weight: bold;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: inherit;
+  padding: 5px 9px;
+  margin-left: 5px;
+}
+
+.chat-button:focus {
+  border: 2px solid white;
+}
+
+.chat-box {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16);
+  background: #1976d2;
+}
+.chat-box-hidden {
+  display: none;
+}
+.chat-box-header {
+  padding: 3px;
+  color: #fff;
+}
+
+.chat-box-main {
+  flex: 1;
+  width: 100%;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: auto;
+  min-height: 100%;
+}
+
+.chat-container{
+  overflow-y: auto;
+  height: 100%;
+}
+
+.chat-box-footer {
+  color: #fff;
+  /*height: 50px;*/
+}
+
+.operator-name {
+  margin: 0;
+  padding: 1px;
+}
+
+.operator-status {
+  float: right;
+  padding-right: 15px;
+}
+.operator-status span {
+  margin-left: 4px;
+}
+.operator-status-online {
+  color: lawngreen;
+}
+.operator-status-offline {
+  color: red;
+}
+.operator-status-reconnecting {
+  color: orange;
+}
+
+.operator-avatar {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+
+.chat-message {
+  display: block;
+  width: auto;
+  margin: 5px;
+  padding: 5px;
+  align-self: flex-start;
+  flex-direction: row;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.chat-message-date,.chat-message-date-top {
+  font-size: 11px;
+  color: #8D898D;
+  padding: 5px;
+}
+
+.chat-message-from-avatar {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.chat-message-text {
+  margin-left: 10px;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+/**
+Received message style
+ */
+.chat-message-received {
+  margin-right: 50px;
+}
+
+.chat-message-received .chat-message-text {
+  background: #B9D6F2;
+  margin-left: 50px;
+  border-bottom-left-radius: 0;
+}
+
+.chat-message-received .chat-message-text:before {
+  position: absolute;
+  content: " ";
+  left: -10px;
+  bottom: 0;
+  border-right: solid 10px #B9D6F2;
+  border-top: solid 10px transparent;
+  z-index: 0;
+}
+
+.chat-message-received .chat-message-date ,.chat-message-received .chat-message-date-top{
+  margin-left: 50px;
+}
+
+.chat-message-received .chat-message-from-avatar {
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+}
+
+/**
+Sent message style
+ */
+.chat-message-sent {
+  align-self: flex-end;
+}
+
+.chat-message-sent .chat-message-from {
+  float: right;
+}
+
+.chat-message-sent .chat-message-text {
+  background: #84DCCF;
+  margin-right: 50px;
+  border-bottom-right-radius: 0;
+}
+
+.chat-message-sent .chat-message-text:after {
+  position: absolute;
+  content: " ";
+  right: -10px;
+  bottom: 0;
+  border-left: solid 10px #84DCCF;
+  border-top: solid 10px transparent;
+  z-index: 0;
+}
+
+.chat-message-sent .chat-message-date ,.chat-message-sent .chat-message-date-top {
+  text-align: right;
+  padding-right: 50px;
+}
+
+.chat-message-sent .chat-message-from-avatar {
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+}
+
+
+.blue .chat-button {
+  background: #1976d2;
+}
+.blue .chat-box {
+  background: #1976d2;
+}
+
+.grey .chat-button {
+  background: #454549;
+}
+.grey .chat-box {
+  background: #454549;
+}
+
+.red .chat-button {
+  background: #DD0031;
+}
+.red .chat-box {
+  background: #DD0031;
+}
+
+.chat-box-header {
+  padding-top: 14px;
+}
+
+/* Small devices (tablets, 800px and up)*/
+@media (min-width: 1080px) {
+  .wrapper {
+    top: auto;
+    right: 0;
+    width: 300px;
+  }
+  .chat-button {
+    display: block;
+  }
+  .chat-button-header {
+    display: none;
+  }
+
+  .chat-box {
+    top: auto;
+    left: auto;
+    bottom: 100px;
+    right: 40px;
+    height: 60vh;
+    width: 300px;
+    border-radius: 10px;
+  }
+
+  /* .chat-box {
+    height: 70vh;
+  } */
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 1081px) {
+  .chat-box {
+    height: 80vh;
+  }
+}
+
+/* Large devices (desktops, 992px and up)*/
+/* @media (min-width: 992px) {
+  .chat-box {
+    height: 80vh;
+  }
+} */
+
+/* Extra large devices (large desktops, 1200px and up)*/
+/* @media (min-width: 1200px) {
+  .chat-box {
+    height: 80vh;
+  }
+} */
+
+/* Typing Indicator Start */
+
+.typing-indicator span {
+    height: 5px;
+    width: 5px;
+    float: left;
+    margin: 0 1px;
+    background-color: #333;
+    display: block;
+    border-radius: 50%;
+    opacity: 0.4;
+}
+
+  .typing-indicator span:nth-of-type(1) {
+     animation: 1s blink infinite 0.3333s;
+ }
+
+ .typing-indicator span:nth-of-type(2) {
+     animation: 1s blink infinite 0.6666s;
+ }
+
+ .typing-indicator span:nth-of-type(3) {
+     animation: 1s blink infinite 0.9999s;
+ }
+
+@keyframes blink {
+    50% {
+        opacity: 1;
+    }
+}
+
+.typing-indicator {
+    padding: 0 0 0.2em 0.4em;
+}
+
+/* Typing Indicator End */
+
+.chat-button-header {
+  border: 0px;
+}
+
+/* Added by Rajasekhar : Sep 19 2018 */
+/* .chat-message-text > p, p {
+  margin-bottom: 0;
+  margin-top: 0;
+} */
+
+
+
+
+  /* .message.left  .msg-content {
+    background-color: #ffffff;
+    float: left;
+  }
+  .message.left .msg-detail {
+    padding-left: 60px;
+  }
+  .message.left .user-img {
+    left: 0;
+  }
+  .message.left .msg-content {
+    color: #343434;
+}
+.message.left .msg-content span.triangle {
+  border-top-width: 0;
+  border-right-width: 0;
+  left: -5px;
+} */
+
+/* p{
+  margin: 0px;
+} */
+/* :host::ng-deep p{
+  margin: 0px;
+} */
+.line-height{
+  line-height: 16px;
+}
+

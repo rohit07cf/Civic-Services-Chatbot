@@ -1,0 +1,4 @@
+#!/bin/bash
+source ../bot_environments/cairo_bot_environment/bin/activate 
+nohup python3 -m rasa_core.run -d models/current/dialogue -u freeText/ -c rest --endpoints endpoints.yml --enable_api --debug --port 6005 -o rasa_core.log  >> /var/logs/chatbotlogs/rasacore/ciro_demo_core.log &
+#python3 -m rasa_core.run -d models/current/dialogue -u freeText/ -c rest --endpoints endpoints.yml --enable_api --debug --port 6007 -o /var/logs/chatbotlogs/rasacore/rasa_core.log   

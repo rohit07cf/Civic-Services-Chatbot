@@ -1,0 +1,121 @@
+/* You can add global styles to this file, and also import other style files */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+html, body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+.custom-shadow {
+  box-shadow: 0 5px 4px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19) !important;
+}
+
+/* Start Status */
+.badge {
+  display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #777;
+    border-radius: 10px;
+}
+
+.merged-span {
+    background: transparent !important;
+    color: palevioletred !important;
+    border: 1px solid palevioletred !important;
+    min-width: 65px !important;
+}
+
+.created-span {
+    border: 1px solid green;
+    color: green !important;
+    background: transparent !important;
+    min-width: 65px !important;
+}
+
+.dispatched-span {
+    color: darkcyan!important;
+    border :1px solid darkcyan;
+    background: transparent!important;
+    min-width: 65px!important;
+}
+
+.enquire-span {
+    border: 1px solid cornflowerblue;
+    color: cornflowerblue !important;
+    background: transparent !important;
+    min-width: 65px !important;
+}
+
+.new-span {
+    /* background: green !important; */
+    border: 1px solid red;
+    /* background: tan; */
+    color: red !important;
+    background: transparent !important;
+    min-width: 65px !important;
+}
+
+.closed-span {
+    background: transparent !important;
+    color: #85b350 !important;
+    border: 1px solid #85b350 !important;
+    min-width: 65px !important;
+}
+
+.pending-span {
+    background: transparent !important;
+    color: rgb(230, 192, 24) !important;
+    border: 1px solid rgb(230, 192, 24) !important;
+    min-width: 65px !important;
+}
+
+.inprogress-span {
+    background: transparent !important;
+    color: #00ffd5 !important;
+    border: 1px solid #00ffd5 !important;
+    min-width: 65px !important;
+}
+
+.completed-span {
+    background: transparent !important;
+    color: blue !important;
+    border: 1px solid blue !important;
+    min-width: 65px !important;
+}
+
+.default-span {
+    background: transparent !important;
+    color: grey !important;
+    border: 1px solid grey !important;
+    min-width: 65px !important;
+}
+/* End Status */
+
+.disp-flex {
+  display: flex
+}
+
+.space-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.font-small {
+    font-size: small
+  }

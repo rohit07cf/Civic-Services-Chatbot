@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "chat-widget-ng5"
+		},
+		{
+			"path": "rasa_core_api"
+		},
+		{
+			"path": "rasa_nlu"
+		},
+		{
+			"path": "rasa_sdk"
+		},
+		{
+			"path": "rasa-ui"
+		}
+	],
+	"settings": {
+	
+		"python.pythonPath": "D:/PROJECTS/PROJECT_RnD/CITIZEN_ENGAGEMENT_PROGRAM/CHAT_BOT/botenvironment/Scripts/python.exe"
+	}
+}

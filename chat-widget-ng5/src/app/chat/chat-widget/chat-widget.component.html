@@ -1,0 +1,1278 @@
+<div class="wrapper message_window {{theme}}">
+  <div class="chat-box" *ngIf="visible">
+    <!-- Header Start -->
+    <div class="chat-box-header">
+      <div>
+        <div class="operator-status">
+          {{operator.status}}
+          <span class="operator-status-{{operator.status}}">●</span>
+        </div>
+        <span style="float: left;" class="mobile-button chat-button-header" (click)="chatbotapi.onNavigateBack()">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" d="M 0 0 h 24 v 24 H 0 Z" />
+            <path class="matIcon"
+              d="M 20 11 H 7.83 l 5.59 -5.59 L 12 4 l -8 8 l 8 8 l 1.41 -1.41 L 7.83 13 H 20 v -2 Z" /></svg>
+        </span>
+        <h3 class="operator-name">
+          {{operator.name}}
+        </h3>
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <div class="chat-container" [scrollTop]="scrollMe.scrollHeight - defaultHeight">
+      <div class="chat-box-main" #scrollMe>
+        <div class="chat-message-bottom" #bottom></div>
+<!---->
+
+<!-- <button (click)="open()">arrivalTime</button>
+<input type="time" value="{{selectedTime}}"> -->
+<!---->
+        <!-- Typing Indicator -->
+        <ng-container *ngIf="isTyping">
+          <div>
+            <div class="chat-message typing-indicator">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </ng-container>
+        <!-- Typing Indicator -->
+
+        <!-- Main div -->
+
+
+        <!-- Quick Replies Start -->
+        <div>
+          <chat-quickreplies [newMessage]="newMessage" [conversation]="conversation" [chatbotapi]="chatbotapi"
+            (send)="sendMessage($event)"></chat-quickreplies>
+        </div>
+        <!-- Quick Replies End -->
+
+
+        <!-- Messages Start -->
+        <ng-container *ngFor="let message of messages">
+
+          <!-- Message Start -->
+          <div *ngIf="!message.actionType" class="chat-message"
+            [class.chat-message-received]="message.type === 'received'"
+            [class.chat-message-sent]="message.type === 'sent'"
+            [class.zoomIn] ="message.type === 'received'"
+            [class.fadeInUp] ="message.type === 'sent'">
+            <div>
+
+              <ng-container *ngIf="message.type == 'sent' ; then sent ; else received">
+              </ng-container>
+              <ng-template #sent>
+                <chat-avatar [image]="chatbotapi.profilePicUrl" class="chat-message-from-avatar"></chat-avatar>
+              </ng-template>
+
+              <ng-template #received>
+                <chat-avatar [image]="message.from.avatar" class="chat-message-from-avatar"></chat-avatar>
+              </ng-template>
+
+              <span class="triangle"></span>
+              <div class="chat-message-date-top">
+                {{message.date | date: 'short'}}
+              </div>
+              <div>
+              </div>
+              <div class="chat-message-text">
+                <chat-message [message]="message"></chat-message>
+              </div>
+            </div>
+            <div class="chat-message-date">
+              {{message.date | date: 'short'}}
+            </div>
+          </div>
+          <!-- Message End -->
+
+          <!-- ACTIONS START -->
+          <div>
+            <div [ngSwitch]="message.actionType">
+              <div *ngSwitchCase="ActionType.ELECTRICITY_SUB_SERVICES">
+                <div class="padding-5px" class="zoomIn">
+                  <div class="main-bg">
+                    <div class="padding-10px">
+                      <div class="pad-left-10px disp-flex justify-center border-bottom">
+                        <div class="">
+                          <img [src]="chatbotapi.uploadUrl + 'chatBot/electricity/electricity.png'" width="46px"
+                            height="45px">
+                        </div>
+                        <div class="pad-left-10px font-xl font-bold">
+                          Electricity Services
+                        </div>
+                      </div>
+                      <div class="">
+                        <div class="border-bottom disp-flex padding-5px vertical-midle"
+                          *ngFor="let electricityService of electricityServices"
+                          (click)="actionElectricityService(electricityService.serviceId)">
+                          <div class="font-bold font-large width-80 pad-left-5px">
+                            <span>
+                              {{electricityService.serviceName}}
+                            </span>
+                          </div>
+                          <div>
+                            <img [src]="electricityService.serviceImage" [width]="electricityService.width"
+                              [height]="electricityService.height">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.WATER_SUB_SERVICES">
+                <div class="padding-5px zoomIn">
+                  <div class="main-bg">
+                    <div class="padding-10px">
+                      <div class="pad-left-10px disp-flex justify-center border-bottom">
+                        <div class="pad-left-10px">
+                          <img [src]="chatbotapi.uploadUrl + 'chatBot/water/water.png'" width="50px" height="45px">
+                        </div>
+                        <div class="font-xl font-bold">
+                          Water Services
+                        </div>
+                      </div>
+                      <div class="">
+                        <div class="border-bottom disp-flex padding-5px vertical-midle"
+                          *ngFor="let waterService of waterServices"
+                          (click)="actionWaterService(waterService.serviceId)">
+                          <div class="font-bold font-large width-80 pad-left-5px">
+                            <span>
+                              {{waterService.serviceName}}
+                            </span>
+                          </div>
+                          <div>
+                            <img [src]="waterService.serviceImage" [width]="waterService.width"
+                              [height]="waterService.height">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.GARBAGE_SUB_SERVICES">
+                <div class="padding-5px"class="zoomIn">
+                  <div class="main-bg">
+                    <div class="padding-10px">
+                      <div class="pad-left-10px disp-flex justify-center border-bottom">
+                        <div class="">
+                          <img [src]="chatbotapi.uploadUrl + 'chatBot/garbage/waste.png'" width="76px" height="40px">
+                        </div>
+                        <div class="pad-left-10px font-xl font-bold">
+                          Garbage Services
+                        </div>
+                      </div>
+                      <div class="padding-5px">
+                        <div class="border-bottom disp-flex padding-5px vertical-midle"
+                          *ngFor="let garbageService of garbageServices"
+                          (click)="actionGarbageService(garbageService.serviceId)">
+                          <div class="font-bold font-large width-80 pad-left-5px">
+                            <span>
+                              {{garbageService.serviceName}}
+                            </span>
+                          </div>
+                          <div>
+                            <img [src]="garbageService.serviceImage" [width]="garbageService.width"
+                              [height]="garbageService.height">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.TWO_WHEELER_PARKINGLIST">
+                <div class="scroll-horizontal zoomIn">
+                  <div class="padding-5px width-80" *ngFor="let parkingItem of message.actions.twoWheelerParkingInfo">
+                    <div class="parking-main">
+                      <div class="disp-flex padding-10px border-bottom vertical-midle">
+                        <div class="parkingname-div padding-5px width-70">
+                          <span class="parking-name">{{parkingItem.parkingName}}</span>
+                        </div>
+                        <div class="width-25 text-right">
+                          <div>
+                            <span style="color: #32d16a; font-weight: bold;
+                                                      letter-spacing: 1px;">
+                              Available&nbsp;{{parkingItem.free_slots}}
+                            </span>
+                          </div>
+                          <div>
+                            <span>
+                              Total&nbsp;{{parkingItem.free_slots+ parkingItem.occupied_slots}}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="disp-flex padding-5px">
+                        <div class="width-80 padding-5px ">
+                          <div class="address-div font-medium">
+                            <span>{{parkingItem.parkingLocation}}</span>
+                          </div>
+                        </div>
+                        <div class="width-30 vertical-midle disp-center">
+                          <div>
+                            <div
+                              (click)="showSelectedParkingLocation(parkingItem, message.actions.fromLat, message.actions.fromLong)">
+                              <img [src]="chatbotapi.uploadUrl+'chatBot/direction.png'" width="40px">
+                            </div>
+                            <div>
+                              <span>{{parkingItem.distance}}</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cost-div disp-around">
+                        <div class="width-65 disp-around">
+                          <div class="vertical-midle">
+                            <img [src]="chatbotapi.uploadUrl+'chatBot/bike.png'" width="80px">
+                          </div>
+                          <div class="cost-info-div text-center vertical-midle font-small"
+                            *ngIf="parkingItem.fare_cost !== 'not_configured'">
+                            <div class="per-cost-div">
+                                <span class="margin-5px">1hr&nbsp;-&nbsp;&#163;{{parkingItem.fare_cost}}</span>
+                              <!-- <span class="margin-5px">&nbsp;-&nbsp;&#8377;{{parkingItem.fare_cost}}</span> -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="vertical-midle padding-5px margin-5px">
+                          <div class="book-div" (click)="showTwoParkingBookingSlots(parkingItem)">
+                            <span class="book-span-div font-smaller">Book</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.PARKINGLIST">
+                <div class="scroll-horizontal zoomIn">
+                  <div class="padding-5px width-80" *ngFor="let parkingItem of message.actions.parkingInfo">
+                    <div class="parking-main">
+                      <div class="disp-flex padding-10px border-bottom vertical-midle">
+                        <div class="parkingname-div padding-5px width-70">
+                          <span class="parking-name">{{parkingItem.parkingName}}</span>
+                        </div>
+                        <div class="width-25 text-right">
+                          <div>
+                            <span style="color: #32d16a; font-weight: bold;
+                                                      letter-spacing: 1px;">
+                              Available&nbsp;{{parkingItem.free_slots}}
+                            </span>
+                          </div>
+                          <div>
+                            <span>
+                              Total&nbsp;{{parkingItem.free_slots+ parkingItem.occupied_slots}}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="disp-flex padding-5px">
+                        <div class="width-80 padding-5px">
+                          <div class="address-div padding-5px">
+                            <span>{{parkingItem.parkingLocation}}</span>
+                          </div>
+                        </div>
+                        <div class="width-30 vertical-midle disp-center">
+                          <div>
+                            <div
+                              (click)="showSelectedParkingLocation(parkingItem, message.actions.fromLat, message.actions.fromLong)">
+                              <img [src]="chatbotapi.uploadUrl+'chatBot/direction.png'" width="50px">
+                            </div>
+                            <div>
+                              <span>{{parkingItem.distance}}</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cost-div disp-around">
+                        <div class="width-65 disp-around">
+                          <div class="vertical-midle">
+                            <img [src]="chatbotapi.uploadUrl+'chatBot/car.png'" width="111px">
+                          </div>
+                          <div class="cost-info-div text-center vertical-midle"
+                            *ngIf="parkingItem.fare_cost !== 'not_configured'">
+                            <div class="per-cost-div">
+                              <span class="margin-5px">1hr&nbsp;-&nbsp;&#163;{{parkingItem.fare_cost}}</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="vertical-midle">
+                          <div class="book-div" (click)="showParkingBookingSlots(parkingItem)">
+                            <span class="book-span-div">Book</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.REPORTEDINCIDENTlIST">
+                <div class="services-outer-div ">
+                  <div class="custom-shadow animated fadeInUpBig zoomIn">
+                    <div class="services-inner-div disp-flex" *ngFor="let incident of message.actions"
+                      [ngClass]="{mobile: chatbotapi.isMobile}" (click)="showIncidentsDetails(incident)">
+
+                      <div class="incidents-div-70 incidents-header"  >
+                        <span class="incidentid-custom">{{incident.grievanceType}}</span>
+                        <span class="time">{{incident.receivedTime | date: 'dd/MM/yyyy hh:mm:ss' }}</span>
+                        <div>
+                          <span>{{incident.name}}</span>
+                        </div>
+                        <div>
+                          <span class="">{{incident.incidentId}}</span>
+                        </div>
+                        <div>
+                          <span class="badge"
+                            [ngClass]="getStatusStyle(incident.incidentStatus)">{{incident.incidentStatus}}</span>
+                        </div>
+                      </div>
+                      <div class="incidents-div-30 vertical-midle space-evenly">
+                        <div class="incidents-img">
+                          <img class="reported-img"
+                            [src]="incident.fileUrl ? incident.fileUrl : chatbotapi.uploadUrl +'/chatBot/imgnotavailable.jpg'" />
+                        </div>
+                      </div>
+                    </div>
+                    <div *ngIf="message.actions.length > 4">
+                      <div (click)="chatbotapi.showIncidentDetails()" class="services-inner-div disp-flex">
+                        <div class="padding-10px">
+                          <span class="font-bold">More..</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.WEATHERINFO">
+                <div class="padding-5px">
+                  <div class="main-bg">
+                    <div>
+                      <!-- Current Info -->
+                      <div class="text-center font-bold">
+                        <div class="padding-10px weather-icon"
+                          [style.background-image]="'url(' + message.actions.WeatherIcon + ')'">
+                          <!-- hfhf -->
+
+                          <div class="padding-5px">
+                            <span class="currrent-weather-font">
+                              {{message.actions.currentWeatherInfo.Temperature.Metric.Value}}&deg;C
+                            </span>
+                          </div>
+                          <div class="disp-center">
+                            <div class="vertical-midle">
+                              <span class="current-weather-text">
+                                {{message.actions.currentWeatherInfo.WeatherText}}
+                              </span>
+                            </div>
+                          </div>
+                          <div>
+                            <span>
+                              {{message.actions.locationName}}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Forecast Info -->
+                      <div class="padding-10px">
+                        <div class="disp-flex forecast-div">
+
+                          <div class="padding-10px text-center"
+                            *ngFor="let forcastInfo of message.actions.forecastweatherInfo">
+                            <div>
+                              <span class="font-bold">{{getMoment(forcastInfo.Date)}}</span>
+                            </div>
+                            <ng-container *ngIf="message.actions.currentWeatherInfo.IsDayTime; else nightIcon">
+                              <div>
+                                <img src="{{chatbotapi.uploadUrl+'chatBot/weather/'+forcastInfo.Day.Icon}}.png">
+                              </div>
+                            </ng-container>
+                            <ng-template #nightIcon>
+                              <div>
+                                <img src="{{chatbotapi.uploadUrl+'chatBot/weather/'+forcastInfo.Night.Icon}}.png">
+                              </div>
+                            </ng-template>
+                            <ng-container *ngIf="message.actions.currentWeatherInfo.IsDayTime;else night">
+                              <div>
+                                <span class="word-wrap-no">{{forcastInfo.Day.IconPhrase}}</span>
+                              </div>
+                            </ng-container>
+                            <ng-template #night>
+                              <div>
+                                <span class="word-wrap-no">{{forcastInfo.Night.IconPhrase}}</span>
+                              </div>
+                            </ng-template>
+                            <div>
+                              <span>{{forcastInfo.Temperature.Minimum.Value}}&nbsp;-&nbsp;{{forcastInfo.Temperature.Maximum.Value}}&deg;C</span>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.BUSSTOPSLIST">
+                <div>
+                  <div class="padding-5px">
+                    <div class="main-bg">
+                      <div class="padding-5px">
+                        <div class="disp-flex busstop-custom-pad">
+                          <div class="width-20">
+                            <img src="{{chatbotapi.uploadUrl+'chatBot/bustop.png'}}" width="65px" height="49px">
+                          </div>
+                          <div>
+                            <span class="busstop-header">Bus Stops</span>
+                          </div>
+
+                        </div>
+                        <div *ngFor="let busstop of message.actions.busStopInfo" class="flipInX">
+                          <hr class="hr-custom">
+                          <div class="vertical-midle padding-5px"
+                            (click)="showPathForBusStop(busstop, message.actions.fromLat, message.actions.fromLong)">
+                            <div class="width-85">
+                              <div>
+                                <div>
+                                  <span class="font-bold font-large">{{busstop.busStopName}}</span>
+                                </div>
+                                <div>
+                                  <span class="color-darkgray">Distance&nbsp;&nbsp;{{(busstop.distance) | number:'1.2-2'}}Km</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="width-15">
+                              <img [src]="chatbotapi.uploadUrl+'chatBot/direction.png'" alt="" width="50px">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.AIRQUALITYINFO">
+                <div class="padding-10px">
+                  <div class="airqty-main">
+                    <div class="airqty-bg"
+                      [style.background-image]="'url(' + chatbotapi.uploadUrl + 'chatBot/pollution.jpg)'">
+                      <div class="text-center font-bold">
+                        <span class="airqty-name">City Air Quality Index</span>
+                      </div>
+                      <div class="airqty-info disp-flex space-evenly">
+                        <div>
+                          <div class="pm-level">
+                            {{message.actions.PM1}}<span class="font-bold" style="font-size: 12px">(µg/m3)</span>
+                          </div>
+                          <span>
+
+                          </span>
+                        </div>
+                        <div class="airqty-index width-50">
+                          <div class="vertical-midle airqty-indexMsg">
+                            <img [src]="chatbotapi.uploadUrl+'chatBot/heart-health.png'">&nbsp;
+                            <span> Moderate</span>
+                          </div>
+                          <div class="vertical-midle airqty-indexMsg">
+                            <img [src]="chatbotapi.uploadUrl+'chatBot/location.png'">&nbsp;
+                            <span> Bangalore</span>
+                          </div>
+                          <div class="vertical-midle airqty-indexMsg">
+                            <img [src]="chatbotapi.uploadUrl+'chatBot/calendar.png'">&nbsp;
+                            <span> {{getDate()}}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="disp-flex pm-message">
+                      <div class="">
+                        <img [src]="chatbotapi.uploadUrl+'chatBot/info.png'" width="50px">
+                      </div>
+                      <div class="padding-5px">
+                        <span>Pollution is moderate. It is recommended to wear a mask.</span>
+                      </div>
+                    </div>
+                    <div class="disp-center table-responsive">
+                      <table class="airqty-table">
+                        <tr>
+                          <th>Pollutants</th>
+                          <th>Safe Level</th>
+                          <th>Current Level</th>
+                        </tr>
+                        <tr>
+                          <td>NO2</td>
+                          <td>0 - 40</td>
+                          <td>{{message.actions.NO2}}</td>
+                        </tr>
+                        <tr>
+                          <td>SO2</td>
+                          <td>0 - 40</td>
+                          <td>{{message.actions.SO2}}</td>
+                        </tr>
+                        <tr>
+                          <td>PM10</td>
+                          <td>0 - 50</td>
+                          <td>{{message.actions.PM10}}</td>
+                        </tr>
+                        <tr>
+                          <td>CO</td>
+                          <td>0 - 1.0</td>
+                          <td>{{message.actions.CO}}</td>
+                        </tr>
+                      </table>
+                      <div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.BUSTRIPPLANNERINFO">
+                <!-- <div class="padding-10px">
+                  <div class="main-bg">
+                    <div class="padding-10px">
+                      <div class="padding-10px border-bottom">
+                        <span class="font-bold-xl ">
+                          Trip Planner
+                        </span>
+                      </div>
+                      <div class="padding-10px">
+                        <div>
+                          <div>
+                            <span class="font-larger font-bold">From</span>
+                            <div class="padding-10px">
+                              <input type="text" class="trip-planner-input" placeholder="Choose starting point"
+                                aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+                              <mat-autocomplete #auto="matAutocomplete">
+                                <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                                  {{option}}
+                                </mat-option>
+                              </mat-autocomplete>
+                            </div>
+                          </div>
+                          <div>
+                            <span class="font-larger font-bold">To</span>
+                            <div class="padding-10px">
+                              <input type="text" class="trip-planner-input" placeholder="Choose destination"
+                                aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+                              <mat-autocomplete #auto="matAutocomplete">
+                                <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                                  {{option}}
+                                </mat-option>
+                              </mat-autocomplete>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="padding-10px text-right">
+                          <button class="trip-search-btn">Search</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+              <div *ngSwitchCase="ActionType.BUS_ROUTE_DETAILS_INFO">
+                <div>
+                  <div class="padding-10px">
+                    <div class="main-bg">
+                      <div class="padding-10px">
+                        <div class="border-bottom">
+
+                          <div class="pad-top-5px vertical-midle">
+                            <img [src]="chatbotapi.uploadUrl + 'chatBot/itms/circle.png'" width="30px" height="30px">&nbsp;&nbsp;
+                            <span class="font-bold">From</span>&nbsp;&nbsp;<span>{{message.actions.from}}</span>
+                          </div>
+                          <div class="pad-top-5px pad-bottom-5px vertical-midle">
+                            <img [src]="chatbotapi.uploadUrl + 'chatBot/itms/destination.png'" width="30px" height="30px">&nbsp;&nbsp;
+                            <span class="font-bold">To</span>&nbsp;&nbsp;<span>{{message.actions.to}}</span>
+                          </div>
+                        </div>
+                        <div class="disp-flex border-bottom" *ngFor="let route of message.actions.routeInfo">
+                          <div class="width-50 color-gray padding-5px text:font-small">
+                            <div class="padding-5px">
+                              <span class="eta-hr">Arriving In&nbsp;{{route.duration}}&nbsp;Minutes</span>
+                            </div>
+                            <div class="disp-flex">
+                              <div class="padding-2px">
+                                <div class="bus-no">
+                                  <span class="margin-5px">Bus Name: &nbsp;&nbsp;{{route.routeName}}</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <!-- via Biyappanahalli -->
+                            </div>
+                          </div>
+                          <div class="width-50 vertical-midle disp-center">
+                              <div class="vertical-midle">
+                                  <div class="pad-left-10px vertical-midle">
+                                    <img [src]="chatbotapi.uploadUrl + 'chatBot/itms/distance.png'" width="50px" height="50px">
+                                    <span class="font-bold font-medium"> &nbsp;&nbsp;{{route.distance}}&nbsp;kms</span>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.BUSDEPOTLIST">
+                <div class="padding-5px zoomIn">
+                  <div class="main-bg">
+                    <div>
+                      <div class="disp-flex justify-center padding-5px border-bottom">
+                        <div>
+                          <img [src]="chatbotapi.uploadUrl + 'chatBot/itms/busdepot.png'" width="45px" height="45px">
+                        </div>
+                        <div class="vertical-midle pad-left-5px">
+                          <span class="busstop-header">Bus Depot</span>
+                        </div>
+
+                      </div>
+                      <div *ngFor="let depot of message.actions.depotInfo" class="border-bottom">
+                        <div class="padding-5px vertical-midle">
+                          <div class="width-85">
+                            <div>
+                              <div class="pad-left-5px">
+                                <span class="font-bold font-large">{{depot.depotName}}&nbsp;Depot</span>
+                              </div>
+                              <div>
+                                <span class="color-darkgray font-smaller">{{depot.depotAddress}}</span>
+                                <!-- <span class="color-darkgray">Distance&nbsp;&nbsp;5.5 kms</span> -->
+                              </div>
+                            </div>
+                          </div>
+                          <div class="width-20 text-center ">
+                            <div
+                              (click)="showPath(depot.depotLat, depot.depotLong, message.actions.fromLat, message.actions.fromLong)">
+                              <img [src]="chatbotapi.uploadUrl+'chatBot/direction.png'" width="50px">
+                            </div>
+                            <div>
+                              <span class="color-darkgray">{{depot.depotDistance}}</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.HELPOPTIONS">
+                <div class="padding-5px ">
+                  <div class="main-bg">
+                    <div class="padding-5px">
+                      <div *ngFor="let option of helpOptions" (click)="runSelectedBotService(option)" class="mobile flipInX">
+                        <div class="disp-flex border-bottom ">
+                          <div class="width-70 padding-5px">
+                            <div class="">
+                              <span class="font-bold font-larger">
+                                {{option.header}}
+                              </span>
+                            </div>
+                            <div class="pad-left-5px color-gray font-smaller">
+                              <div>
+                                <span>{{option.title1}}</span>
+                              </div>
+                              <div>
+                                <span>
+                                  {{option.title2}}
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="width-30 space-evenly vertical-midle">
+                            <img src="{{option.img}}" [width]="option.width" alt="{{option.alt}}" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.NEARBY_BIN_LOC">
+                <div>
+                  <div class="padding-5px zoomIn">
+                    <div class="main-bg">
+                      <div class="padding-5px">
+                        <div>
+                          <div class="vertical-midle padding-5px">
+                            <div>
+                              <div>
+                                <div>
+                                  <div class="border-bottom padding-5px vertical-midle">
+                                    <img [src]="chatbotapi.uploadUrl + 'chatBot/garbage/bin.png'" height="35px"
+                                      width="32px">
+                                    <span
+                                      class="pad-left-10px font-bold font-large">{{message.actions.binLocation}}</span>
+                                  </div>
+                                </div>
+                                <div class="padding-5px ">
+                                  <span class="font-medium font-bold">{{message.actions.wardName}}</span>
+                                </div>
+                                <div class="padding-5px">
+                                  <span class="color-darkgray font-small">{{message.actions.binLocationAddress}}</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="width-20 padding-5px text-center">
+                              <div
+                                (click)="showPath(message.actions.fromLatitude,message.actions.fromLongitude,message.actions.binlatitude,message.actions.binlongitude)">
+                                <img [src]="chatbotapi.uploadUrl+'chatBot/direction.png'" alt="" width="50px">
+                              </div>
+                              <div>
+                                <span class="color-darkgray">{{message.actions.distance}}</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.CONTACT_INFO">
+                <div class="padding-5px">
+                  <div class="main-bg zoomIn">
+                    <div class="padding-5px">
+                      <div class="disp-flex border-bottom" *ngFor="let contact of message.actions.Contacts">
+                        <!-- Contact Header -->
+                        <div class="width-85 padding-5px pad-bottom-5px">
+                          <div class="disp-flex">
+                            <div>
+                              <span class="font-bold-larger font-bold-xl pb-10">{{contact.name}}</span>&nbsp;&nbsp;&nbsp;
+                            </div>
+                            <div class="vertical-midle">
+                              <span class="font-bold font-medium color-darkgray">{{contact.dept_name}}</span>
+                            </div>
+                          </div>
+                          <div class="padding-4px pb-10" >
+                            <span class="font-bold font-large">{{contact.mobileNo}}</span>
+                          </div>
+                          <div class="padding-3px">
+                            <span class="font-bold font-smaller color-darkgray">{{contact.work_address}}</span>
+                          </div>
+                        </div>
+                        <!-- Contact Icon -->
+                        <div class="vertical-midle">
+                          <img (click)="dialPhoneNo(contact.contactno)" [src]="chatbotapi.uploadUrl + 'chatBot/common/call.png'" alt="Avatar" width="35px">
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.BUS_ROUTE_NAME_INFO">
+                <div class="padding-5px">
+                  <div class="main-bg">
+                    <div *ngFor="let routes of message.actions.routeInfo">
+                      <div class="disp-flex justify-center padding-5px border-bottom">
+                        <div>
+                          <img [src]="chatbotapi.uploadUrl + 'chatBot/itms/bus.png'" width="45px" height="40px">
+                        </div>
+                        <div class="vertical-midle">
+                          <span class="font-larger font-bold">{{routes.routeName}}</span>
+                        </div>
+                      </div>
+                      <div class="padding-10px">
+                        <div class="pad-left-10px vertical-midle">
+                          <div>
+                            <div class="vertical-midle">
+                              <div><img [src]="chatbotapi.uploadUrl + 'chatBot/itms/circle.png'" width="30px" height="30px"></div>
+                              <div class="pad-left-10px"><span
+                                  class="font-bold font-larger">{{routes.source}}</span></div>
+                            </div>
+                            <div class="vertical-midle">
+                              <div><img [src]="chatbotapi.uploadUrl + 'chatBot/itms/3dot.png'" width="30px" height="30px"></div>
+                              <div class="pad-left-10px"><span
+                                  class="font-bold font-medium color-darkgray">{{routes.via}}&nbsp;</span>
+                              </div>
+                            </div>
+                            <div class="vertical-midle">
+                              <div><img [src]="chatbotapi.uploadUrl + 'chatBot/itms/destination.png'" width="30px" height="30px"></div>
+                              <div class="pad-left-10px"><span
+                                  class="font-bold font-larger">{{routes.destination}}</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.POLICE_CONTACT_INFO">
+                <div class="padding-5px">
+                  <div class="main-bg">
+                    <div class="padding-5px">
+                      <div class="disp-flex border-bottom" *ngFor="let contact of message.actions">
+                        <!-- Contact Header -->
+                        <div class="width-85 padding-5px pad-bottom-5px">
+                          <div class="disp-flex">
+                            <div>
+                              <span class="font-bold font-bold-xl">{{contact.stationname}}</span>&nbsp;&nbsp;
+                            </div>
+                          </div>
+                          <div class="padding-5px">
+                            <span class="font-bold">{{contact.contactno}}</span>
+                          </div>
+                        </div>
+                        <!-- Contact Icon -->
+                        <div class="vertical-midle">
+                          <img (click)="dialPhoneNo(contact.contactno)" [src]="chatbotapi.uploadUrl + 'chatBot/common/call.png'" alt="Avatar"
+                            width="35px">
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.FIRE_CONTACT_INFO">
+                <div class="padding-5px">
+                  <div class="main-bg">
+                    <div class="padding-5px">
+                      <div class="disp-flex border-bottom" *ngFor="let contact of message.actions">
+                        <!-- Contact Header -->
+                        <div class="width-85 padding-5px pad-bottom-5px">
+                          <div class="disp-flex">
+                            <div>
+                              <span class="font-bold font-bold-xl">{{contact.deptname}}</span>&nbsp;&nbsp;
+                            </div>
+                          </div>
+                          <div class="padding-5px">
+                            <span class="font-bold">{{contact.contactno}}</span>
+                          </div>
+                        </div>
+                        <!-- Contact Icon -->
+                        <div class="vertical-midle">
+                          <img (click)="dialPhoneNo(contact.contactno)" [src]="chatbotapi.uploadUrl + 'chatBot/common/call.png'" alt="Avatar"
+                            width="35px">
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.AMBULANCE_CONTACT_INFO">
+                <div class="padding-5px">
+                  <div class="main-bg flipInX">
+                    <div class="padding-5px">
+                      <div class="disp-flex border-bottom" *ngFor="let contact of message.actions">
+                        <!-- Contact Header -->
+                        <div class="width-85 padding-5px pad-bottom-5px">
+                          <div class="disp-flex">
+                            <div>
+                              <span class="font-bold font-bold-xl">{{contact.hospitalname}}</span>&nbsp;&nbsp;
+                            </div>
+                          </div>
+                          <div class="padding-5px">
+                            <span class="font-bold">{{contact.contactno}}</span>
+                          </div>
+                        </div>
+                        <!-- Contact Icon -->
+                        <div class="vertical-midle">
+                          <img (click)="dialPhoneNo(contact.contactno)" [src]="chatbotapi.uploadUrl + 'chatBot/common/call.png'" alt="Avatar"
+                            width="35px">
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.GREET_SUGGESTION">
+                <!-- <div class="slideInRight"> -->
+                <div class="padding-5px disp-flex scroll-horizontal slideInRight">
+                  <!-- border div -->
+
+                  <div *ngFor="let greetSuggestionService of greetSuggestionServices; let i = index">
+                    <div class="greet-btn-border padding-10px greet-btn " *ngIf="i === 2"
+                      (click)="actionGreetSuggestionService(greetSuggestionService.serviceId)">
+                  
+                      <div class=" disp-flex " >
+                        <!-- icon -->
+                        <div class="vertical-midle">
+                          <img [src]="greetSuggestionService.serviceImage" [width]=greetSuggestionService.width>
+                        </div>&nbsp;&nbsp;
+                        <!-- text -->
+                        <div class="vertical-midle">
+                          <span class="font-bold font-large">{{greetSuggestionService.serviceName}}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                 
+                </div>
+                <!-- </div> -->
+              </div>
+              <div *ngSwitchCase="ActionType.TRANSPORT_SUB_SERVICES">
+                <div class="padding-5px">
+                  <div class="main-bg">
+                    <div class="padding-10px zoomIn">
+                      <div class="pad-left-10px disp-flex justify-center border-bottom">
+                        <div class="pad-left-10px">
+                          <img [src]="chatbotapi.uploadUrl + 'chatBot/itms/itms.png'" width="50px"
+                            height="45px">&nbsp;&nbsp;
+                        </div>
+                        <div class="font-xl font-bold">
+                          Transport Services
+                        </div>
+                      </div>
+                      <div class="">
+                        <div class="border-bottom disp-flex padding-5px vertical-midle"
+                          *ngFor="let transportService of transportServices"
+                          (click)="actionTransportService(transportService.serviceId)">
+                          <div class="font-bold font-large width-80 pad-left-5px">
+                            <span>
+                              {{transportService.serviceName}}
+                            </span>
+                          </div>
+                          <div>
+                            <img [src]="transportService.serviceImage" [width]="transportService.width"
+                              [height]="transportService.height">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.BUS_CONTACT_INFO">
+                <div class="padding-5px">
+                  <div class="main-bg">
+                    <div class="padding-5px">
+                      <div class="disp-flex border-bottom flipInX" *ngFor="let contact of message.actions">
+                        <!-- Contact Header -->
+                        <div class="width-85 padding-5px pad-bottom-5px">
+                          <div class="disp-flex">
+                            <div>
+                              <span class="font-bold font-bold-larger">{{contact.deptname}}</span>&nbsp;&nbsp;
+                            </div>
+                          </div>
+                          <div class="padding-5px">
+                            <span class="font-bold">{{contact.contactno}}</span>
+                          </div>
+                        </div>
+                        <!-- Contact Icon -->
+                        <div class="vertical-midle">
+                          <img (click)="dialPhoneNo(contact.contactno)" [src]="chatbotapi.uploadUrl + 'chatBot/common/call.png'" alt="Avatar"
+                            width="35px">
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.POLICE_STATION_INFO">
+                <div class="padding-5px">
+                  <div class="main-bg">
+                    <div>
+                      <div class="disp-flex justify-center padding-5px border-bottom ">
+                        <div>
+                          <img [src]="chatbotapi.uploadUrl + 'chatBot/emergency_services/police_station.png'" width="45px" height="45px">
+                        </div>
+                        <div class="vertical-midle pad-left-5px">
+                          <span class="busstop-header">Police Station</span>
+                        </div>
+
+                      </div>
+                      <div *ngFor="let policeStation of message.actions.stationInfo" class="border-bottom">
+                        <div class="padding-5px vertical-midle">
+                          <div class="width-85">
+                            <div>
+                              <div class="pad-left-5px">
+                                <span class="font-bold font-large">{{policeStation.policeStationName}}&nbsp;</span>
+                              </div>
+                              <div>
+                                <span class="color-darkgray font-smaller">&nbsp;&nbsp;{{policeStation.address}}</span>
+                                <!-- <span class="color-darkgray">Distance&nbsp;&nbsp;5.5 kms</span> -->
+                              </div>
+                            </div>
+                          </div>
+                          <div class="width-20 text-center ">
+                            <div
+                                (click)="showPath(policeStation.policeLat, policeStation.policeLong, message.actions.fromLat, message.actions.fromLong)">
+                              <img [src]="chatbotapi.uploadUrl+'chatBot/direction.png'" width="50px">
+                            </div>
+                            <div>
+                              <span class="color-darkgray">{{policeStation.distance}}</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.FIRE_STATION_INFO">
+                <div class="padding-5px">
+                  <div class="main-bg">
+                    <div>
+                      <div class="disp-flex justify-center padding-5px border-bottom">
+                        <div>
+                          <img [src]="chatbotapi.uploadUrl + 'chatBot/emergency_services/firestation.png'" width="45px" height="45px">
+                          <!-- <img src="assets/img/emergency_services/firestation.png" width="45px" height="45px"> -->
+                        </div>
+                        <div class="vertical-midle pad-left-5px">
+                          <span class="busstop-header">Fire Station</span>
+                        </div>
+                      </div>
+                      <div *ngFor="let fireStation of message.actions.stationInfo" class="border-bottom">
+                        <div class="padding-5px vertical-midle">
+                          <div class="width-85">
+                            <div>
+                              <div class="pad-left-5px">
+                                <span class="font-bold font-large">{{fireStation.fireStationName}}&nbsp;</span>
+                              </div>
+                              <div>
+                                <span class="color-darkgray font-smaller">&nbsp;&nbsp;{{fireStation.address}}</span>
+                                <!-- <span class="color-darkgray">Distance&nbsp;&nbsp;5.5 kms</span> -->
+                              </div>
+                            </div>
+                          </div>
+                          <div class="width-20 text-center ">
+                            <div
+                            (click)="showPath(fireStation.fireLat, fireStation.fireLong, message.actions.fromLat, message.actions.fromLong)">
+                              <img [src]="chatbotapi.uploadUrl+'chatBot/direction.png'" width="50px">
+                            </div>
+                            <div>
+                              <span class="color-darkgray">{{fireStation.distance | number:'1.2-2'}}</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.NEAREST_HOSPITALS">
+                <div class="padding-5px">
+                  <div class="main-bg">
+                    <div>
+                      <div class="disp-flex justify-center padding-5px border-bottom">
+                        <div>
+
+                          <img [src]="chatbotapi.uploadUrl + 'chatBot/emergency_services/hospital.png'" width="45px" height="45px">
+                        </div>
+                        <div class="vertical-midle pad-left-5px">
+                          <span class="busstop-header">Hospitals</span>
+                        </div>
+
+                      </div>
+                      <div *ngFor="let hospital of message.actions.hospitalInfo" class="border-bottom">
+                        <div class="padding-5px vertical-midle">
+                          <div class="width-85">
+                            <div>
+                              <div class="pad-left-5px">
+                                <span class="font-bold font-large">{{hospital.hospitalName}}&nbsp;</span>
+                              </div>
+                              <div>
+                                <span class="color-darkgray font-smaller">&nbsp;&nbsp;{{hospital.address}}</span>
+                                <!-- <span class="color-darkgray">Distance&nbsp;&nbsp;5.5 kms</span> -->
+                              </div>
+                            </div>
+                          </div>
+                          <div class="width-20 text-center ">
+                            <div
+                                (click)="showPath(hospital.hospitalLat, hospital.hospitalLong, message.actions.fromLat, message.actions.fromLong)">
+                              <img [src]="chatbotapi.uploadUrl+'chatBot/direction.png'" width="50px">
+                            </div>
+                            <div>
+                              <span class="color-darkgray">{{hospital.distance}}</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.GARBAGE_CONTACT_INFO">
+                <div class="padding-5px">
+                  <div class="main-bg zoomIn">
+                    <div class="padding-5px">
+                      <div class="disp-flex border-bottom" *ngFor="let contact of message.actions.Contacts">
+                        <!-- Contact Header -->
+                        <div class="width-85 padding-5px pad-bottom-5px">
+                          <div class="disp-flex">
+                            <div>
+                              <span class="font-bold-larger font-bold-xl pb-10">{{contact.name}}</span>&nbsp;&nbsp;&nbsp;
+                            </div>
+                            <div class="vertical-midle">
+                              <span class="font-bold font-medium color-darkgray">{{contact.dept_name}}</span>
+                            </div>
+                          </div>
+                          <div class="padding-4px pb-10" >
+                            <span class="font-bold font-large">{{contact.mobileNo}}</span>
+                          </div>
+                          <div class="padding-3px">
+                            <span class="font-bold font-smaller color-darkgray">{{contact.work_address}}</span>
+                          </div>
+                        </div>
+                        <!-- Contact Icon -->
+                        <div class="vertical-midle">
+                          <img (click)="dialPhoneNo(contact.contactno)" [src]="chatbotapi.uploadUrl + 'chatBot/common/call.png'" alt="Avatar" width="35px">
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.DOC_ATTACHMENT">
+                <div class="float-right">
+                  <div class="padding-10px main-bg">
+                      <a [href]="message.actions">View attached document</a>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.AUDIO_ATTACHMENT">
+                <div class="float-right">
+                  <div class="padding-5px">
+                      <audio controls controlsList="nodownload">
+                          <source [src]="message.actions">
+                      </audio>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.VIDEO_ATTACHMENT">
+                  <div class="float-right">
+                      <div class="padding-5px">
+                          <video [src]="message.actions" width="300px" height="300px" controls controlsList="nodownload"></video>
+                      </div>
+                  </div>
+              </div>
+              <div *ngSwitchCase="ActionType.IMAGE_ATTACHMENT">
+                  <div class="float-right">
+                    <div>
+                       <img [src]="message.actions" width="200px" height="300px"/>
+                      </div>
+                </div>
+            </div>
+              <div *ngSwitchCase="ActionType.CHAT_BOT_ICON">
+                  <div class="pad-left-25px">
+                      <img class="border-rad-50" [src]= " chatbotapi.uploadUrl + 'chatBot/bot.gif'" width="140px" >
+                    </div>
+              </div>
+              <div *ngSwitchCase="ActionType.NEAREST_TOURIST_PLACE">
+                <div class="padding-5px">
+                  <div class="main-bg">
+                    <div>
+                      <div class="disp-flex justify-center padding-5px border-bottom">
+                        <div>
+                          <img src="assets/img/tour.png" width="45px" height="45px">
+                          <!-- <img [src]="chatbotapi.uploadUrl + 'chatBot/emergency_services/hospital.png'" width="45px" height="45px"> -->
+                        </div>
+                        <div class="vertical-midle pad-left-5px">
+                          <span class="busstop-header">Tourist Places</span>
+                        </div>
+
+                      </div>
+                      <div *ngFor="let touristplace of message.actions.TouristPlaceInfo" class="border-bottom">
+                        <div class="padding-5px vertical-midle">
+                          <div class="width-85">
+                            <div>
+                              <div class="pad-left-5px pb-10">
+                                <span class="font-bold font-large"><a style="text-decoration:none" [attr.href]="touristplace.TouristPlaceUrl" target="_blank">{{touristplace.TouristPlaceName}}&nbsp;</a></span>
+                              </div>
+                              <div class="pad-left-5px line-height">
+                                <span class="color-darkgray font-smaller ">{{touristplace.attraction}}</span>
+                                <!-- <span class="color-darkgray">Distance&nbsp;&nbsp;5.5 kms</span> -->
+                              </div>
+                            </div>
+                          </div>
+                          <div class="width-20 text-center ">
+                            <div
+                                (click)="showPath(touristplace.placeLat, touristplace.placeLong, message.actions.fromLat, message.actions.fromLong)">
+                              <img [src]="chatbotapi.uploadUrl+'chatBot/direction.png'" width="50px">
+                            </div>
+                            <div>
+                              <span class="color-darkgray">{{touristplace.distance}}</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngSwitchCase="ActionType.POLICE_VEHICLE_LOCATION">
+                <div class="padding-5px">
+                  <div class="main-bg">
+                    <div>
+                      <div class="disp-flex justify-center padding-5px border-bottom ">
+                        <div>
+                          <img [src]="chatbotapi.uploadUrl + 'chatBot/emergency_services/police_station.png'" width="45px" height="45px">
+                        </div>
+                        <div class="vertical-midle pad-left-5px">
+                          <span class="busstop-header">Incident List</span>
+                        </div>
+
+                      </div>
+                      <div *ngFor="let incidentList of message.actions.incidentList" class="border-bottom">
+                        <div class="padding-5px vertical-midle">
+                          <div class="width-85">
+                            <div>
+                              <div class="pad-left-5px">
+                                <span class="font-bold font-large">{{incidentList.eventId}}&nbsp;</span>
+                              </div>
+                              <div>
+                                <span class="color-darkgray font-smaller">&nbsp;&nbsp;{{incidentList.callerAddress}}</span>
+                                <!-- <span class="color-darkgray">Distance&nbsp;&nbsp;5.5 kms</span> -->
+                              </div>
+                            </div>
+                          </div>
+                          <div class="width-20 text-center ">
+                            <div
+                                (click)="showNgCadDetails(incidentList)">
+                              <img [src]="chatbotapi.uploadUrl+'chatBot/direction.png'" width="50px">
+                            </div>
+                            <div>
+                              <!-- <span class="color-darkgray">{{policeStation.distance}}</span> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ACTIONS END -->
+
+        </ng-container>
+        <!-- Messages END -->
+
+
+      </div>
+    </div>
+
+    <div class="chat-box-footer ">
+      <chat-input
+        [newMessage]="newMessage"
+        [chatbotapi]="chatbotapi"
+        (send)="sendMessage($event)"
+        (dismiss)="toggleChat()"
+        [focus]="focus"
+        (restart)="restartConversation($event)">
+      </chat-input>
+    </div>
+
+  </div>
+
+  <button class="chat-button" (click)="toggleChat()">
+    <span *ngIf="visible">✕</span><!-- [@fadeIn]-->
+    <span *ngIf="!visible">?</span>
+    <!--[@fadeIn]-->
+  </button>
+</div>

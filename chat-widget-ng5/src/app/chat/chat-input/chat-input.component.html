@@ -1,0 +1,40 @@
+<div class="root" [ngClass]="{isMobile: chatbotapi.isMobile}">
+    <!-- RESTART CONVERSATION -->
+    <div>
+        <button i18n-title type="submit" class="chat-input-submit" (click)="restartConv()" title="Restart Conversation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path class="matIcon"
+                d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z" />
+              <path d="M0 0h24v24H0z" fill="none" />
+            </svg>
+          </button>
+    </div>
+
+    <ng-container *ngIf="inputType === InputTypes.EDITOR; then thenTemplate; else elseTemplate"></ng-container>
+    <ng-template #elseTemplate>
+      <input type="text" class="chat-input-text" class="editor-bg-color"
+        [attr.placeholder]=inputPlaceholder
+        aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+          {{option}}
+        </mat-option>
+      </mat-autocomplete>
+    </ng-template>
+    <ng-template #thenTemplate>
+      <div #message contenteditable="true" onkeypress="return (this.innerText.length <= 300)" class="chat-input-text" [attr.placeholder]="inputPlaceholder || 'Type a message' "
+        (keydown.enter)="onSubmit()" (keyup.enter)="clearText()" (keyup.escape)="dismiss.emit()" >
+      </div>
+    </ng-template>
+
+    <!-- SEND BUTTON -->
+    <div>
+        <button type="submit" class="chat-input-submit" (click)="onSubmit();clearText()" i18n-title title="Reply">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="none" d="M0 0h24v24H0V0z" />
+              <path class="matIcon"
+                d="M3.4 20.4l17.45-7.48c.81-.35.81-1.49 0-1.84L3.4 3.6c-.66-.29-1.39.2-1.39.91L2 9.12c0 .5.37.93.87.99L17 12 2.87 13.88c-.5.07-.87.5-.87 1l.01 4.61c0 .71.73 1.2 1.39.91z" />
+            </svg>
+          </button>
+    </div>
+    </div>

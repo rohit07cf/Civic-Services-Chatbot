@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/chatbot/chatbot_cairo_demo/rasa_nlu/models/freeText/model_20190418-070041/intent_classifier_tensorflow_embedding.ckpt"
+all_model_checkpoint_paths: "/home/chatbot/chatbot_cairo_demo/rasa_nlu/models/freeText/model_20190418-070041/intent_classifier_tensorflow_embedding.ckpt"

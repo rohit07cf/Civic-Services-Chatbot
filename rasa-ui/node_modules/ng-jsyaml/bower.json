@@ -1,0 +1,29 @@
+{
+  "name": "ng-jsyaml",
+  "description": "AngularJS wrapper for js-yaml package",
+  "main": "angular-jsyaml.js",
+  "authors": [
+    "Gonzalo Manrique <gonzalo@newtrino.uy> (https://newtrino.uy/)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "yaml",
+    "yml",
+    "ng-yaml",
+    "angularjs-yaml",
+    "parse",
+    "yaml"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "yarn.lock"
+  ],
+  "dependencies": {
+    "js-yaml": "^3.10.0"
+  }
+}

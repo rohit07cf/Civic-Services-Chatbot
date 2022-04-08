@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+source ../bot_environments/cairo_bot_environment/bin/activate 
+nohup python3 -m rasa_nlu.server -c nlu_model_config.yml --path models -P 6001  --response_log logs --pre_load all --debug  >> nlg.log &
+#python3 -m rasa_nlu.server -c nlu_model_config.yml --path models -P 6003  --response_log logs --pre_load all --debug

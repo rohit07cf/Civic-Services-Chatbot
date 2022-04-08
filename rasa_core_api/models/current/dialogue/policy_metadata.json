@@ -1,0 +1,256 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "electricityaccno",
+        "phoneNo",
+        "transit_from",
+        "name",
+        "address",
+        "tenentId",
+        "user_remarks",
+        "bus_number",
+        "cepServerUrl",
+        "civic_service",
+        "latitude",
+        "transit_to",
+        "attachments",
+        "parking_vehicle_type",
+        "complainId",
+        "longitude"
+      ]
+    },
+    "action_set_civic_type": {
+      "slots": [
+        "civic_service"
+      ]
+    },
+    "action_raiseCivicComplaint": {
+      "slots": []
+    },
+    "utter_user_disliked": {
+      "slots": []
+    },
+    "utter_appraisalwelcome": {
+      "slots": []
+    },
+    "utter_req_cancel": {
+      "slots": []
+    },
+    "utter_userangry": {
+      "slots": []
+    },
+    "utter_agentoccupation": {
+      "slots": []
+    },
+    "utter_water_saving_moto": {
+      "slots": []
+    },
+    "utter_agentBgf": {
+      "slots": []
+    },
+    "utter_agentready": {
+      "slots": []
+    },
+    "action_nearestTouristPlace": {
+      "slots": []
+    },
+    "utter_appraisalnoproblem": {
+      "slots": []
+    },
+    "action_nearestHospitals": {
+      "slots": []
+    },
+    "utter_agentGender": {
+      "slots": []
+    },
+    "utter_req_cancel_tamil": {
+      "slots": []
+    },
+    "utter_agenttalktome": {
+      "slots": []
+    },
+    "utter_agentfire": {
+      "slots": []
+    },
+    "action_police_contact_details": {
+      "slots": []
+    },
+    "utter_agentcrazy": {
+      "slots": []
+    },
+    "action_cityweather_info": {
+      "slots": []
+    },
+    "utter_agentEmergency": {
+      "slots": []
+    },
+    "utter_service_feedback": {
+      "slots": []
+    },
+    "utter_usercannotsleep": {
+      "slots": []
+    },
+    "action_bot_service": {
+      "slots": []
+    },
+    "action_ambulance_contact_details": {
+      "slots": []
+    },
+    "utter_agentorigin": {
+      "slots": []
+    },
+    "utter_greetingsnicetoseeyou": {
+      "slots": []
+    },
+    "action_nearest_bus_depot": {
+      "slots": []
+    },
+    "action_bus_contact_details": {
+      "slots": []
+    },
+    "utter_socialIncident_Event": {
+      "slots": []
+    },
+    "utter_greetingshowareyou": {
+      "slots": []
+    },
+    "utter_userneedsadvice": {
+      "slots": []
+    },
+    "utter_dialogholdon": {
+      "slots": []
+    },
+    "utter_appraisalwelldone": {
+      "slots": []
+    },
+    "utter_appraisalgood": {
+      "slots": []
+    },
+    "utter_ask_helpful_info": {
+      "slots": []
+    },
+    "action_electricity_balance_info": {
+      "slots": [
+        "balance_available"
+      ]
+    },
+    "utter_ask_service_issue_type": {
+      "slots": []
+    },
+    "utter_water_moto": {
+      "slots": []
+    },
+    "utter_regard_what": {
+      "slots": []
+    },
+    "utter_agentgood": {
+      "slots": []
+    },
+    "utter_agentacquaintance": {
+      "slots": []
+    },
+    "utter_agentage": {
+      "slots": []
+    },
+    "utter_appraisalthankyou": {
+      "slots": []
+    },
+    "action_electricity_services": {
+      "slots": []
+    },
+    "action_raiseCivicComplaint_tamil": {
+      "slots": []
+    },
+    "utter_agentbeautiful": {
+      "slots": []
+    },
+    "utter_userlovesagent": {
+      "slots": []
+    },
+    "utter_userbored": {
+      "slots": []
+    },
+    "utter_agentbad": {
+      "slots": []
+    },
+    "utter_ask_service_issue_type_tamil": {
+      "slots": []
+    },
+    "utter_chat_thankyou": {
+      "slots": []
+    },
+    "utter_agentreal": {
+      "slots": []
+    },
+    "utter_agentbusy": {
+      "slots": []
+    },
+    "utter_userlikeagent": {
+      "slots": []
+    },
+    "utter_dialogidontcare": {
+      "slots": []
+    },
+    "utter_usertesting": {
+      "slots": []
+    },
+    "action_nearestBustop": {
+      "slots": []
+    },
+    "utter_agentmarryuser": {
+      "slots": []
+    },
+    "utter_garbage_moto": {
+      "slots": []
+    },
+    "utter_agentclever": {
+      "slots": []
+    },
+    "utter_agentbeclever": {
+      "slots": []
+    },
+    "utter_agenthobby": {
+      "slots": []
+    },
+    "utter_agentMarried": {
+      "slots": []
+    },
+    "action_transport_services": {
+      "slots": []
+    },
+    "utter_agentannoying": {
+      "slots": []
+    },
+    "utter_agentboss": {
+      "slots": []
+    },
+    "utter_agentchatbot": {
+      "slots": []
+    },
+    "utter_greetingsnicetomeetyou": {
+      "slots": []
+    },
+    "action_greet_suggestion": {
+      "slots": []
+    }
+  },
+  "python": "3.6.3",
+  "max_histories": [
+    5,
+    null,
+    1,
+    2
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.keras_policy.KerasPolicy",
+    "rasa_core.policies.fallback.FallbackPolicy",
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.form_policy.FormPolicy"
+  ],
+  "trained_at": "20200305-125906",
+  "rasa_core": "0.13.3",
+  "tensorflow": "1.12.3",
+  "sklearn": "0.20.4"
+}

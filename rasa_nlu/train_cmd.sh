@@ -1,0 +1,1 @@
+python3 -m rasa_nlu.train -d data/training_nlu.json -c nlu_model_config.yml -o models  --fixed_model_name current --verbose

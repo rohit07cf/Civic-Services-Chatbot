@@ -1,0 +1,987 @@
+.mobile .chat-message-received .chat-message-text:before {
+  border-right: solid 10px #ffffff;
+  display: none;
+}
+.mobile .chat-message-sent .chat-message-text:after  {
+  border-right: solid 10px #3a7ef3;
+  display: none;
+
+}
+.mobile .chat-button {
+  background: #000619;
+}
+.mobile .chat-box {
+  background: #000619;
+}
+.mobile .chat-box-main {
+  background: whitesmoke;
+}
+.mobile .chat-box-footer {
+  background: #FFFFFF;
+  box-shadow: 0px -1px 3px #A7A3A7;
+}
+.mobile .chat-message-received .chat-message-text {
+  background: #ffffff;
+  border: solid 1px #ddd;
+  border-bottom-left-radius: 10px;
+}
+.mobile .chat-message-sent .chat-message-text {
+  background: #3a7ef3;
+  border: solid 1px steelblue;
+  color: #FFFFFF;
+  border-bottom-right-radius: 10px;
+}
+
+.chat-box-header .mobile .material-icons{
+  color: rgba(0, 0, 0, 0.16)
+}
+
+.mobile .chat-message-received span.triangle{
+  left: 45px;
+  background-color: #ffffff;
+  border-top-width: 0px;
+  border-right-width: 0px;
+}
+.mobile .chat-message-sent span.triangle{
+  right: 46px;
+  background-color: #3a7ef3;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-color: steelblue;
+}
+.mobile span.triangle {
+
+  border-radius: 2px;
+  height: 8px;
+  width: 8px;
+  top: 30px;
+  display: block;
+  border-style: solid;
+  border-color: #ddd;
+  border-width: 1px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: 1;
+  position: absolute;
+}
+
+.mobile .chat-message-received .chat-message-from-avatar,
+.mobile .chat-message-sent .chat-message-from-avatar {
+  bottom: unset;
+  top: 25px;
+}
+.mobile .chat-message-received .chat-message-date ,
+.mobile .chat-message-sent .chat-message-date {
+  visibility: hidden;
+  display: none;
+}
+.mobile .chat-message-received .chat-message-date-top ,
+.mobile .chat-message-sent .chat-message-date-top {
+  visibility: visible;
+  display: block;
+}
+.chat-message-received .chat-message-date-top,
+.chat-message-sent .chat-message-date-top {
+  visibility: hidden;
+  display: none;
+}
+
+.mobile .chat-message-date-top{
+  padding: unset;
+}
+
+.mobile .chat-message-text{
+  margin-bottom: 5px;
+}
+.mobile .chat-input-text{
+  color: #111111;
+}
+.mobile .chat-button-header .matIcon{
+ fill: #404241;
+}
+
+//==============Help Options============================================================================
+
+.mobile .services-outer-div {
+  padding: 5px;
+}
+
+.mobile .services-inner-div {
+  color: black;
+  width: 100%;
+  background: white;
+  border-bottom: solid 1px silver;
+  overflow: auto;
+}
+
+.mobile .services-div-70{
+  width: 70%;
+  padding: 0px 0px 15px 15px;
+}
+
+.mobile .services-div-75{
+  width: 75%;
+  padding: 5px 0px 5px 10px;
+}
+
+.mobile .services-div-30{
+  width: 30%;
+}
+
+.mobile .services-div-25{
+  width: 25%;
+  padding: 10px;
+}
+
+.mobile .services-line-height{
+  line-height:1.0;
+  font-size: 1.5em;
+}
+
+.vertical-midle {
+  display: flex;
+  align-items: center;
+}
+
+// ==========================================================================
+
+/* START For List Of Incidents */
+
+.mobile {
+
+  .incidentid-custom {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .incidents-div-70 {
+    width: 70%;
+    padding: 15px 0px 15px 15px;
+  }
+
+  .incidents-div-30 {
+    width: 30%;
+  }
+
+  .incidents-header {
+    // font-size: smaller;
+    display: grid;
+  }
+
+  .time {
+      color: darkgray;
+      font-size: small;
+  }
+
+  .reported-img {
+    width: 20vh;
+    object-fit: cover;
+    height: 10vh;
+  }
+
+}
+
+/* END For List Of Incidents*/
+
+
+/* ************************ Common Css Start  **************************************/
+
+
+.custom-shadow {
+  box-shadow: 0 5px 4px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19) !important;
+}
+
+/* Start Status */
+.badge {
+  display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #777;
+    border-radius: 10px;
+}
+
+.merged-span {
+    background: transparent !important;
+    color: palevioletred !important;
+    border: 1px solid palevioletred !important;
+    min-width: 65px !important;
+}
+
+.created-span {
+    border: 1px solid green;
+    color: green !important;
+    background: transparent !important;
+    min-width: 65px !important;
+}
+
+.dispatched-span {
+    color: darkcyan!important;
+    border :1px solid darkcyan;
+    background: transparent!important;
+    min-width: 65px!important;
+}
+
+.enquire-span {
+    border: 1px solid cornflowerblue;
+    color: cornflowerblue !important;
+    background: transparent !important;
+    min-width: 65px !important;
+}
+
+.new-span {
+    /* background: green !important; */
+    border: 1px solid red;
+    /* background: tan; */
+    color: red !important;
+    background: transparent !important;
+    min-width: 65px !important;
+}
+
+.closed-span {
+    background: transparent !important;
+    color: #85b350 !important;
+    border: 1px solid #85b350 !important;
+    min-width: 65px !important;
+}
+
+.pending-span {
+    background: transparent !important;
+    color: rgb(230, 192, 24) !important;
+    border: 1px solid rgb(230, 192, 24) !important;
+    min-width: 65px !important;
+}
+
+.inprogress-span {
+    background: transparent !important;
+    color: #00ffd5 !important;
+    border: 1px solid #00ffd5 !important;
+    min-width: 65px !important;
+}
+
+.completed-span {
+    background: transparent !important;
+    color: blue !important;
+    border: 1px solid blue !important;
+    min-width: 65px !important;
+}
+
+.default-span {
+    background: transparent !important;
+    color: grey !important;
+    border: 1px solid grey !important;
+    min-width: 65px !important;
+}
+/* End Status */
+
+.disp-flex {
+  display: flex
+}
+.justify-center {
+  justify-content: center;
+}
+.space-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.font-small {
+    font-size: small;
+  }
+.font-xl {
+  font-size: x-large;
+}
+.margin-10px{
+  margin:10px;
+}
+.font-bold {
+  font-weight: bold;
+}
+.font-smaller {
+  font-size: smaller;
+}
+.font-medium {
+  font-size: medium;
+}
+.font-larger {
+  font-size: larger;
+}
+.font-large {
+  font-size: large;
+}
+.margin-inherit{
+  margin: inherit;
+}
+.text-center {
+  text-align: center;
+}
+
+.disp-center {
+  display: flex;
+  justify-content: center;
+}
+
+.disp-even {
+  display: flex;
+  justify-content: space-between;
+}
+
+.disp-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.disp-table{
+  display: table;
+}
+
+.main-bg {
+  background: #FFFFFF;
+  box-shadow: 0px -1px 3px #A7A3A7;
+  border-radius: 5px;
+  color: black
+}
+.word-wrap-no {
+  white-space: nowrap;
+}
+.color-darkgray {
+  color: darkgray;
+}
+.color-gray {
+  color: gray;
+}
+.color-dimgrey {
+  color:dimgray;
+}
+.font-bold-xl {
+  font-weight: bold;
+  font-size: x-large;
+}
+.width-100 {
+  width: 100%;
+}
+.width-90 {
+  width: 90%;
+}
+.width-80 {
+  width: 80%;
+}
+.width-70 {
+  width: 70%;
+}
+.width-50 {
+  width: 50%;
+}
+.width-40 {
+  width: 40%;
+}
+.width-30 {
+  width: 30%;
+}
+.width-20 {
+  width: 20%
+}
+.width-25 {
+  width:25%;
+}
+.width-15 {
+  width: 15%;
+}
+.width-75 {
+  width: 75%
+}
+.width-85 {
+  width: 85%;
+}
+.width-60 {
+  width:60%;
+}
+.width-65 {
+  width: 65%;
+}
+.padding-2px {
+  padding: 2px;
+}
+.padding-5px {
+  padding: 5px;
+}
+.padding-10px {
+    padding: 10px
+}
+.padding-20px {
+  padding: 20px
+}
+.pad-left-5px {
+  padding-left: 5px;
+}
+.pad-bottom-5px {
+  padding-bottom: 5px;
+}
+.pad-top-5px {
+  padding-top: 5px;
+}
+.pad-left-10px {
+  padding-left: 10px
+}
+
+.pad-left-25px{
+  padding-left : 25px;
+}
+.pad-right-10px {
+  padding-right: 10px
+}
+.border {
+  border: 1px solid gray;
+}
+.border-bottom {
+  border-bottom: 1px solid gray;
+}
+.border-bottom-gains {
+  border-bottom: 2px solid gainsboro;
+}
+.border-top {
+  border-top: 1px solid gray;
+}
+.border-top-gains {
+  border-top: 1px solid gainsboro;
+}
+.text-right {
+  text-align: -webkit-right;
+}
+.margin-5px {
+  margin: 5px;
+}
+.scroll-horizontal {
+    overflow-x: auto;
+    display: -webkit-box;
+}
+
+.float-right {
+  float: right;
+}
+.border-rad-50 {
+  border-radius: 50%;
+}
+.pad-left-25px
+{
+  padding-left : 25px;
+}
+/***************************************** Common css End ********************************/
+
+/* Start for Parking */
+
+.mobile {
+
+  .parking-main {
+    color: black;
+    background: #FFFFFF;
+    box-shadow: 0px -1px 3px #A7A3A7;
+    border-radius: 5px;
+  }
+  .parking-info {
+      padding-top: 10px;
+      padding-right: 5px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+  }
+  .parking-name {
+    font-weight: bold;
+    font-size: x-large;
+    white-space: nowrap;
+  }
+  .address-div {
+    color: darkgrey;
+
+    max-height: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    min-height: 70px;
+  }
+
+  .cost-info-div {
+    // display: inline-grid;
+    font-size: medium;
+    font-weight: bold;
+  }
+
+  .per-cost-div {
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 5px;
+  }
+
+  .book-div {
+    border: 1px solid #03A9F4;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .book-span-div {
+    color: deepskyblue;
+    margin: 15px;
+    font-weight: bold;
+    font-size: medium;
+  }
+
+  .parkingname-div {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+
+/* End for Parking */
+
+/* Start for Air Quality */
+.mobile{
+  .airqty-main {
+    background: #FFFFFF;
+    box-shadow: 0px -1px 3px #A7A3A7;
+    border-radius: 5px;
+    color: black
+  }
+  .airqty-info {
+    padding: 10px;
+    justify-content: space-around;
+  }
+  .airqtyname-div{
+    font-weight: bold;
+  }
+  .airqty-name {
+    font-size: xx-large;
+  }
+  .airqty-bg{
+    // background-image: url('assets/img/pollution.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .airqty-indexMsg{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 1px;
+    margin-bottom: 2px;
+    color: whitesmoke;
+  }
+  .pm-info{
+    display: inline;
+  }
+  .pm-level{
+    font-size: 90px;
+  }
+  .pm-message{
+    border: 1px solid #827c7c;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+  }
+  table {
+    width: 100%;
+    text-align: center;
+  }
+  .airqty-index{
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+  }
+  .airqty-index img{
+    width: 30px;
+  }
+  .airqty-table th{
+    padding: 5px;
+    font-size: larger;
+  }
+}
+/* End for Air Quality */
+
+/* Start For Weather */
+
+.mobile {
+
+  .currrent-weather-font {
+    font-size: -webkit-xxx-large;
+  }
+  .current-weather-text {
+    font-size: x-large;
+  }
+  .forecast-div {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .weather-icon {
+    // background-image: url('assets/img/weather/2.png');
+    background-repeat: no-repeat;
+    background-size: 40vh;
+    background-position: center;
+  }
+}
+
+
+/* End For Weather */
+/* Start For BusStop */
+
+.mobile {
+  .busstop-header {
+    font-size: xx-large;
+  }
+
+  .hr-custom {
+    font-size: x-small;
+    border-color: whitesmoke;
+    width: 95%;
+  }
+
+  .busstop-custom-pad {
+    padding: 10px 10px 5px 10px;
+  }
+
+}
+
+/* End For BusStop */
+
+/* Start Trip Planner */
+
+.mobile {
+  .trip-planner-input {
+    font-size: larger;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gainsboro;
+    padding: 5px;
+    font-variant: all-petite-caps;
+    width: -webkit-fill-available;
+  }
+
+  .trip-search-btn {
+    font-weight: bold;
+    font-size: large;
+    border: none;
+    border-radius: 9px;
+    width: 12vh;
+    height: 6vh;
+    background: gainsboro;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1), 0 7px 20px 0 rgba(0, 0, 0, 0.1) !important;
+    background: mediumturquoise;
+    outline: none;
+  }
+
+  .eta-hr {
+    font-weight: bold;
+    color: cornflowerblue;
+    font-size: small;
+  }
+
+  .bus-no {
+      padding: 3px;
+      background: silver;
+      color: black;
+      border-radius: 6px;
+  }
+
+}
+
+/* End Trip Planner */
+
+/* Start Greeting */
+.mobile {
+  .greet-btn{
+    width: fit-content;
+    border-radius: 50px;
+    color: black;
+    background: white;
+    margin:0px 5px;
+  }
+
+  .greet-btn-border{
+    border: 2px solid blue
+  }
+
+}
+/* End Greeting */
+
+/*Starting animation effect*/
+.mobile {
+.bounceInLeft {
+  -webkit-animation-duration: 0.75s;
+   animation-duration: 0.75s;
+  -webkit-animation-name: bounceInLeft;
+   animation-name: bounceInLeft;
+  }
+}
+.mobile {
+  .fadeInUp {
+    -webkit-animation-duration: 0.35s;
+     animation-duration: 0.35s;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+
+  }
+}
+.mobile {
+.flipInX {
+  -webkit-animation-duration: 0.75s;
+   animation-duration: 0.75s;
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+}
+}
+.mobile {
+.flipInY {
+  -webkit-animation-duration: 0.75s;
+   animation-duration: 0.75s;
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInY;
+  animation-name: flipInY;
+}
+}
+.mobile {
+.slideInRight {
+  -webkit-animation-duration: 0.75s;
+   animation-duration: 0.75s;
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+}
+.mobile {
+.zoomIn {
+  -webkit-animation-duration: 0.75s;
+   animation-duration: 0.75s;
+  -webkit-animation-name: zoomIn;
+   animation-name: zoomIn;
+}
+}
+/*Ending animation effect */
+
+/*Starting animation Definition*/
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+/*Ending animation Definition */
+
+/*Starting animation Definition*/
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/*Ending animation Definition */
+
+
+
+
+/*Starting animation Definition*/
+@keyframes bounceInLeft {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/*Ending animation Definition */
+
+
+/*Starting animation Definition*/
+@-webkit-keyframes flipInY {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+/*Ending animation Definition */
+
+/*Starting animation Definition*/
+@keyframes flipInY {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+/*Ending animation Definition */
+
+/*Starting animation Definition*/
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+/*Ending animation Definition */
+
+/*Starting animation Definition*/
+-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/*Ending animation Definition */

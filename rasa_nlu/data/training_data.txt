@@ -1,0 +1,61 @@
+
+%[greet]
+    Hi
+    Hello
+    need help
+
+%[affirm]
+    yes
+    yup
+    agree
+    done
+    super
+
+%[deny]
+    no
+    nope
+    not
+
+%[inform_concern]
+    i need @[concern] support
+    i need @[concern] related support
+
+%[inform_serviceType]
+    my issue is regarding @[serviceRequired]
+    i need @[serviceRequired] help
+
+%[inform_landmark]
+    I am near @[landmark]
+
+%[inform_incidentType]
+    i am reporting @[incidentType] issue
+
+@[concern]
+    emergency
+    waste collection management
+    electricity
+    water
+    government service
+    nearby services
+
+@[serviceRequired]
+    police
+    fire
+    ambulance
+
+@[incidentType]
+    quarrel
+    torture
+    kidnap
+    murder
+    crime against women
+
+@[landmark]
+    Indian Express
+    The Hindu
+    ~[Eden park]
+    shivajinagara
+
+~[Eden park]
+    Eden Park
+    Eden Park Restaurant

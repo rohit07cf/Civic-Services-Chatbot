@@ -1,0 +1,140 @@
+.quick_replies {
+    display: inline-flex;
+    white-space: nowrap;
+}
+
+.quick_reply_container {
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.quick-reply-btn {
+    background: #3a7ef3;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 15px 10x 1px 15px;
+    zoom: 1.4;
+    border-radius: 15px 15px 15px 15px;
+    margin: auto;
+}
+
+.mobile .quick-reply-btn {
+    padding: 10px;
+}
+
+.overflow-scroll {
+    overflow: auto;
+}
+
+.quick_reply_div {
+    display: flex;
+    overflow-x: scroll;
+    /* display: flex;
+    justify-content: center;
+    overflow: auto;
+    margin: 0px 0px 10px 0px; */
+}
+
+.mobile .quick_reply_div {
+    padding: 10px;
+}
+
+.quick_reply_div span {
+    text-align: center
+}
+
+.fileList {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 80%;
+    flex: 1;
+    margin: 9px auto;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 1px;
+    padding: 2px 3px;
+    border-radius: 3px;
+}
+
+.fileList>div {
+    text-overflow: ellipsis;
+    display: flex;
+}
+
+.fileList span {
+    text-overflow: ellipsis;
+    width: 77%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.uploadButtonsDiv {
+    display: flex;
+    justify-content: safe center;
+}
+
+.uploadButtonsDiv>button {
+    margin: 5px;
+}
+
+li.services {
+    display: list-item;
+    list-style: none;
+    background-color: #cecece;
+    border-radius: 1px;
+    box-shadow: 0px 0px 2px black;
+    margin: 3px 0px 3px 0px;
+}
+
+.quick-reply-btn:first-child {
+    margin: 0 5px 0 auto;
+}
+
+.quick-reply-btn:last-child {
+    margin: 0 auto 0 5px;
+}
+
+.autoMargin {
+    margin: auto !important;
+}
+
+/* Button styles added by pramod */
+
+.btn-style {
+    border: 2px solid blue;
+    background: transparent;
+    border-radius: 18px;
+    padding: 8px;
+    white-space: nowrap;
+    margin: 2px;
+}
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-duration: 0.75s;
+   animation-duration: 0.75s;
+  -webkit-animation-name: zoomIn;
+   animation-name: zoomIn;
+}

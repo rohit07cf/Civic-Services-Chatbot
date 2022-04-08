@@ -1,0 +1,2 @@
+model_checkpoint_path: "G:\\FreeText\\FreeTextV1\\rasa_nlu\\models\\freeText\\model_20200207-120830\\intent_classifier_tensorflow_embedding.ckpt"
+all_model_checkpoint_paths: "G:\\FreeText\\FreeTextV1\\rasa_nlu\\models\\freeText\\model_20200207-120830\\intent_classifier_tensorflow_embedding.ckpt"

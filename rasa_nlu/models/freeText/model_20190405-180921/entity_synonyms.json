@@ -1,0 +1,10 @@
+{
+  "near by bustops": "nearest_bustop",
+  "nearest busstop": "nearest_bustop",
+  "btm": "btm layout",
+  "btm main road": "btm layout",
+  "mico layout": "btm layout",
+  "garbage collection": "solid waste management",
+  "garbage": "solid waste management",
+  "water management": "water management"
+}

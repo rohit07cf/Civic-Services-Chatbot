@@ -1,0 +1,12 @@
+export enum BotServiceEnum {
+    REPORTINCIDENT = 1,
+    RECENTHISTORY = 2,
+    PARKING = 3,
+    ENVIRONMENT = 4,
+    OPERATORCHAT = 5,
+    WASTEMANAGEMENT = 6,
+    WATER = 7,
+    ELECTRICITY = 8,
+    WEATHER = 9,
+    TRANSPORT_SERVICE = 10
+}

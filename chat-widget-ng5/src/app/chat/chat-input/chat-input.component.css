@@ -1,0 +1,96 @@
+.chat-input-text {
+  max-height: 70px;
+  border: 0;
+  resize: none;
+  border: none;
+  overflow: auto;
+  outline: none;
+  box-shadow: none;
+  font-size: 15px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  flex : 1;
+}
+.mobile .chat-input-text {
+  color: #111111;
+  caret-color: #6495ed;
+}
+
+.chat-input-text::-webkit-input-placeholder {
+  color: inherit;
+}
+.chat-input-text::-moz-placeholder {
+  color: inherit;
+}
+.chat-input-text::-ms-input-placeholder {
+  color: inherit;
+}
+
+.chat-input-submit {
+  background-color: inherit;
+  color: inherit;
+  font-size: 24px;
+  border: 0;
+  outline: none;
+}
+
+div[contenteditable=true]:empty:before{
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+  color: #FFFFFF;
+}
+
+.mobile div[contenteditable=true]:empty:before{
+  color: #adadad;
+}
+.mobile .material-icons { color: rgba(0, 0, 0, 0.54); }
+.mobile .matIcon{
+  fill: black;
+}
+.matIcon{
+  fill: white;
+}
+
+:host-context {
+  width: 100%;
+  display: flex;
+}
+
+.root {
+  padding: 10px 5px 10px 5px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.agent-button{
+  margin: auto;
+  margin-bottom: 7px;
+  background: none;
+}
+
+.agent-img-size{
+  width: 15%;
+}
+
+.test11 {
+ width: -webkit-fill-available;
+ width: -moz-available
+}
+
+.editor-bg-color{
+  background-color: transparent
+}
+
+
+

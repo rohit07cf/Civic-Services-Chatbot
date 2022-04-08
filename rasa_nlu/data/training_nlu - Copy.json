@@ -1,0 +1,163 @@
+﻿{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "Hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "need help",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "I am in Emergency",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "ReportIncident",
+        "intent": "inform_issuetype",
+        "entities": [
+          {
+            "start": 0,
+            "end": 14,
+            "value": "ReportIncident",
+            "entity": "issueType"
+          }
+        ]
+      },
+      {
+        "text": "AboutComplaints",
+        "intent": "inform_issuetype",
+        "entities": [
+          {
+            "start": 0,
+            "end": 15,
+            "value": "AboutComplaints",
+            "entity": "issueType"
+          }
+        ]
+      },
+      {
+        "text": "Chat With Operator",
+        "intent": "inform_issuetype",
+        "entities": [
+          {
+            "start": 0,
+            "end": 18,
+            "value": "Chat With Operator",
+            "entity": "issueType"
+          }
+        ]
+      },
+      {
+        "text": "Water Leakage",
+        "intent": "inform_serviceType",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Water",
+            "entity": "incidentType"
+          }
+        ]
+      },
+      {
+        "text": "Fire incident",
+        "intent": "inform_serviceType",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Fire",
+            "entity": "incidentType"
+          }
+        ]
+      },
+      {
+        "text": "Police Help",
+        "intent": "inform_serviceType",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Police",
+            "entity": "incidentType"
+          }
+        ]
+      },
+      {
+        "text": "Traffic jam",
+        "intent": "inform_serviceType",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Traffic",
+            "entity": "incidentType"
+          }
+        ]
+      },
+      {
+        "text": "Electricity EB",
+        "intent": "inform_serviceType",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "Electricity",
+            "entity": "incidentType"
+          }
+        ]
+      },
+      {
+        "text": "BBMP related",
+        "intent": "inform_serviceType",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "BBMP",
+            "entity": "incidentType"
+          }
+        ]
+      },
+      {
+        "text": "I am near Indian Express",
+        "intent": "inform_landmark",
+        "entities": [
+          {
+            "start": 10,
+            "end": 24,
+            "value": "Indian Express",
+            "entity": "landmark"
+          }
+        ]
+      },
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "i can see Indra Darshini Hotel",
+        "intent": "inform_landmark",
+        "entities": [
+          {
+            "start": 10,
+            "end": 30,
+            "value": "Indra Darshini Hotel",
+            "entity": "landmark"
+          }
+        ]
+      }
+    ]
+  }
+}

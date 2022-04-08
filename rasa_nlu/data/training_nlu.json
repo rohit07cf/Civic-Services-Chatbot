@@ -1,0 +1,276 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [],
+    "entity_synonyms": [
+      {"value": "Eden park", "synonyms": ["Eden Park", "Eden Park Restaurant"]}
+    ],
+    "common_examples": [
+      {"text": "Hi", "intent": "greet", "entities": []},
+      {"text": "Hello", "intent": "greet", "entities": []},
+      {"text": "need help", "intent": "greet", "entities": []},
+      {"text": "yes", "intent": "affirm", "entities": []},
+      {"text": "no", "intent": "deny", "entities": []},
+      {
+        "text": "i need emergency support",
+        "intent": "inform_concern",
+        "entities": [
+          {"start": 7, "end": 16, "value": "emergency", "entity": "concern"}
+        ]
+      },
+      {
+        "text": "i need waste collection management support",
+        "intent": "inform_concern",
+        "entities": [
+          {
+            "start": 7,
+            "end": 34,
+            "value": "waste collection management",
+            "entity": "concern"
+          }
+        ]
+      },
+      {
+        "text": "i need electricity support",
+        "intent": "inform_concern",
+        "entities": [
+          {"start": 7, "end": 18, "value": "electricity", "entity": "concern"}
+        ]
+      },
+      {
+        "text": "i need water support",
+        "intent": "inform_concern",
+        "entities": [
+          {"start": 7, "end": 12, "value": "water", "entity": "concern"}
+        ]
+      },
+      {
+        "text": "i need government service support",
+        "intent": "inform_concern",
+        "entities": [
+          {
+            "start": 7,
+            "end": 25,
+            "value": "government service",
+            "entity": "concern"
+          }
+        ]
+      },
+      {
+        "text": "i need nearby services support",
+        "intent": "inform_concern",
+        "entities": [
+          {
+            "start": 7,
+            "end": 22,
+            "value": "nearby services",
+            "entity": "concern"
+          }
+        ]
+      },
+      {
+        "text": "i need emergency related support",
+        "intent": "inform_concern",
+        "entities": [
+          {"start": 7, "end": 16, "value": "emergency", "entity": "concern"}
+        ]
+      },
+      {
+        "text": "i need waste collection management related support",
+        "intent": "inform_concern",
+        "entities": [
+          {
+            "start": 7,
+            "end": 34,
+            "value": "waste collection management",
+            "entity": "concern"
+          }
+        ]
+      },
+      {
+        "text": "i need electricity related support",
+        "intent": "inform_concern",
+        "entities": [
+          {"start": 7, "end": 18, "value": "electricity", "entity": "concern"}
+        ]
+      },
+      {
+        "text": "i need water related support",
+        "intent": "inform_concern",
+        "entities": [
+          {"start": 7, "end": 12, "value": "water", "entity": "concern"}
+        ]
+      },
+      {
+        "text": "i need government service related support",
+        "intent": "inform_concern",
+        "entities": [
+          {
+            "start": 7,
+            "end": 25,
+            "value": "government service",
+            "entity": "concern"
+          }
+        ]
+      },
+      {
+        "text": "i need nearby services related support",
+        "intent": "inform_concern",
+        "entities": [
+          {
+            "start": 7,
+            "end": 22,
+            "value": "nearby services",
+            "entity": "concern"
+          }
+        ]
+      },
+      {
+        "text": "my issue is regarding police",
+        "intent": "inform_serviceType",
+        "entities": [
+          {
+            "start": 22,
+            "end": 28,
+            "value": "police",
+            "entity": "serviceRequired"
+          }
+        ]
+      },
+      {
+        "text": "my issue is regarding fire",
+        "intent": "inform_serviceType",
+        "entities": [
+          {"start": 22, "end": 26, "value": "fire", "entity": "serviceRequired"}
+        ]
+      },
+      {
+        "text": "my issue is regarding ambulance",
+        "intent": "inform_serviceType",
+        "entities": [
+          {
+            "start": 22,
+            "end": 31,
+            "value": "ambulance",
+            "entity": "serviceRequired"
+          }
+        ]
+      },
+      {
+        "text": "i need police help",
+        "intent": "inform_serviceType",
+        "entities": [
+          {
+            "start": 7,
+            "end": 13,
+            "value": "police",
+            "entity": "serviceRequired"
+          }
+        ]
+      },
+      {
+        "text": "i need fire help",
+        "intent": "inform_serviceType",
+        "entities": [
+          {"start": 7, "end": 11, "value": "fire", "entity": "serviceRequired"}
+        ]
+      },
+      {
+        "text": "i need ambulance help",
+        "intent": "inform_serviceType",
+        "entities": [
+          {
+            "start": 7,
+            "end": 16,
+            "value": "ambulance",
+            "entity": "serviceRequired"
+          }
+        ]
+      },
+      {
+        "text": "I am near Indian Express",
+        "intent": "inform_landmark",
+        "entities": [
+          {
+            "start": 10,
+            "end": 24,
+            "value": "Indian Express",
+            "entity": "landmark"
+          }
+        ]
+      },
+      {
+        "text": "I am near The Hindu",
+        "intent": "inform_landmark",
+        "entities": [
+          {"start": 10, "end": 19, "value": "The Hindu", "entity": "landmark"}
+        ]
+      },
+      {
+        "text": "I am near Eden Park",
+        "intent": "inform_landmark",
+        "entities": [
+          {"start": 10, "end": 19, "value": "Eden park", "entity": "landmark"}
+        ]
+      },
+      {
+        "text": "I am near Eden Park Restaurant",
+        "intent": "inform_landmark",
+        "entities": [
+          {"start": 10, "end": 30, "value": "Eden park", "entity": "landmark"}
+        ]
+      },
+      {
+        "text": "I am near shivajinagara",
+        "intent": "inform_landmark",
+        "entities": [
+          {
+            "start": 10,
+            "end": 23,
+            "value": "shivajinagara",
+            "entity": "landmark"
+          }
+        ]
+      },
+      {
+        "text": "i am reporting quarrel issue",
+        "intent": "inform_incidentType",
+        "entities": [
+          {"start": 15, "end": 22, "value": "quarrel", "entity": "incidentType"}
+        ]
+      },
+      {
+        "text": "i am reporting torture issue",
+        "intent": "inform_incidentType",
+        "entities": [
+          {"start": 15, "end": 22, "value": "torture", "entity": "incidentType"}
+        ]
+      },
+      {
+        "text": "i am reporting kidnap issue",
+        "intent": "inform_incidentType",
+        "entities": [
+          {"start": 15, "end": 21, "value": "kidnap", "entity": "incidentType"}
+        ]
+      },
+      {
+        "text": "i am reporting murder issue",
+        "intent": "inform_incidentType",
+        "entities": [
+          {"start": 15, "end": 21, "value": "murder", "entity": "incidentType"}
+        ]
+      },
+      {
+        "text": "i am reporting crime against women issue",
+        "intent": "inform_incidentType",
+        "entities": [
+          {
+            "start": 15,
+            "end": 34,
+            "value": "crime against women",
+            "entity": "incidentType"
+          }
+        ]
+      }
+    ]
+  }
+}

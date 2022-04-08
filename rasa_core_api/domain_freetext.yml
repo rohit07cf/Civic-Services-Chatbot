@@ -1,0 +1,1722 @@
+slots:
+  name:
+    type: text
+  latitude:
+    type: float
+  longitude:
+    type: float
+  user_remarks:
+    type: text
+  landmark:
+    type: text
+  address:
+    type: text
+  incident_sub_type:
+    type: categorical
+    values:
+      - chain snaching
+      - attempt to chain snaching
+      - criminal found
+      - robbers catched
+      - hello
+      - theif snatching chane1
+      - huge
+      - double murd
+      - suicide attempt
+      - hey
+      - animal
+      - testing
+      - testing two
+      - attempted to murder
+      - attempted to robbery
+      - men attempted to suicide
+      - women attempted to suicide
+      - attempted to theft
+      - attention diversion
+      - auto complaint
+      - 'refuse '
+      - demanding extra fair
+      - bag found
+      - bag missing
+      - bag snatching
+      - bomb threatening
+      - borewll digging
+      - catch thieves
+      - cheating
+      - cheating
+      - flat booking
+      - child labour
+      - civil dispute
+      - construction
+      - unauthorised construction
+      - flood and manhole open
+      - ' animals injury'
+      - counter feit currency
+      - crackers burning
+      - crime
+      - hit
+      - assault
+      - murder with weapons
+      - eve teasing
+      - obscene gesture
+      - women missing
+      - female tortured
+      - blackmail
+      - rape
+      - attempt to rape
+      - dowry harassment
+      - female murder
+      - sexual assault
+      - abduction
+      - harassment
+      - sos event
+      - obscene from facebook
+      - obscene from whatsapp
+      - obscene from instagram
+      - obscene from stulish
+      - obscene from twitter
+      - obscene from others website
+      - fake account facebook
+      - fake accoun whatsapp
+      - fake accoun instagram
+      - fake accoun stulish
+      - fake accoun twitter
+      - fake e-mail account
+      - online cheating
+      - hacking facebook
+      - hacking whatsapp
+      - hacking instagram
+      - hacking stulish
+      - hacking twitter
+      - hacking website
+      - hacking gmail account
+      - hacking others mail account
+      - video uploaded in youtube
+      - communal post through facebook
+      - communal post at youtube
+      - online job cheating
+      - mobile no circulated at dating websise
+      - porn post uploaded in locanto site
+      - photos videos messages at whatsapp
+      - photos videos messages at facebook
+      - photos videos messages at e-mail
+      - objectional post at social media
+      - others
+      - 'dacoity '
+      - preparing for dacoity
+      - accidental death
+      - spot death
+      - natural death
+      - death
+      - hoysala
+      - police station
+      - domestic voilence
+      - drainage block
+      - drugging
+      - drunken brawl
+      - election voilence
+      - extortion
+      - dowry harassment
+      - other women harassment
+      - husband and wife
+      - other women relationship
+      - father and son
+      - brother with brother
+      - daughter and father
+      - bother and sister
+      - mother and son
+      - fasting
+      - fire occurred in a building
+      - fire occurred in a shop
+      - fire occurred kitchen
+      - fire occurred bathroom
+      - fire occurred in a farm
+      - vehicle destroyed by fire
+      - fire occurred to garbage
+      - fire in transformer box
+      - fire in meter box
+      - fire occurred in a tree
+      - short circuit
+      - bank fraud
+      - atm withdrawn
+      - credit card
+      - debit card
+      - hacking
+      - pin asking
+      - street gambling
+      - house gabling
+      - cricket gabling
+      - football gabling
+      - gas cylinder blast
+      - gas leakage
+      - house break by day
+      - house break by night
+      - store breaking
+      - house theft day
+      - house theft night
+      - mobile shop theft
+      - house theft active
+      - ' going on'
+      - hunger strike
+      - illicit liquor
+      - information of unclaimed materials
+      - information of unclaimed vehicle
+      - keb wire broken
+      - kidnaping male
+      - kidnaping female
+      - kidnaping child
+      - kidnaping for ransom
+      - land - lord tenant dispute
+      - justice
+      - loud speaker
+      - misbehaviour
+      - men missing
+      - women missing
+      - boy missing
+      - girl missing
+      - two wheeler missing
+      - four wheeler missing
+      - missing object
+      - murder
+      - murder for gain
+      - selling narcotic drugs
+      - consuming narcotic drugs
+      - others
+      - parking disturbance
+      - persons
+      - phone call threatening
+      - phone related complaints vulgarity
+      - pick pocket
+      - pollution near hospital/ court/ school
+      - horn near hospital/ court/ school
+      - pollution near a building
+      - noise pollution
+      - air pollution
+      - power failure/cut
+      - procession
+      - procession obstructions
+      - prostitution
+      - prostitution area
+      - prostitution building
+      - protest
+      - public nuisance
+      - misbehave
+      - misbehave with handicapped
+      - misbehave with senior-citizen
+      - quarreling
+      - family quarreling
+      - gang fighting
+      - inter party
+      - intra party
+      - neighbour quarreling
+      - ragging
+      - rape
+      - riot
+      - communal riot
+      - road block
+      - local dispute
+      - political
+      - road digging
+      - robbery day
+      - robbery night
+      - short circuit
+      - chain snatching
+      - mobile santching
+      - money snatching
+      - bag snatching
+      - two wheeler snatching
+      - four wheeler snatching
+      - others snatching
+      - stabbing
+      - suicide
+      - hanging
+      - poison
+      - fire
+      - others
+      - suicide
+      - hanging
+      - poison
+      - fire
+      - others
+      - suspected movement
+      - suspected suitcase
+      - pick pocket
+      - lifting
+      - attention diversion/kepmary
+      - vehicle theft
+      - pocket picking
+      - house breaking
+      - car stereo theft
+      - car batterry theft
+      - car parts theft
+      - attemp to theft
+      - cattle theft
+      - cycle theft
+      - four wheeler theft
+      - two wheeler theft
+      - window theft
+      - cylinder theft
+      - cash theft
+      - mobile phone theft
+      - petrol / diesel theft
+      - laptop theft
+      - others theft
+      - servant theft
+      - bomb threat
+      - blackmailing
+      - threat to kill
+      - torture and cruelty
+      - unknown person felldown
+      - water over flow
+      - panic
+      - testing threee
+      - due to fire
+      - due to money lost
+      - kidnap for money
+      - child kidnapped
+  incident_type:
+    type: categorical
+    values:
+      - abandoned vehicle
+      - accident
+      - animals fallen in gutter
+      - assault
+      - attempted to chain snatching
+      - attempted to murder
+      - attempted to robbery
+      - attempted to suicide
+      - attempted to theft
+      - attention diversion
+      - auto complaint
+      - bag found
+      - bag snatching
+      - bomb threatening
+      - borewll digging
+      - catch thieves
+      - cheating
+      - child labour
+      - civil dispute
+      - construction
+      - corporation complaints
+      - counter feit notes
+      - crackers burning
+      - crime
+      - crime against person
+      - crime against women
+      - cyber crime
+      - dacoity
+      - death
+      - department call
+      - domestic voilence
+      - drainage block
+      - drugging
+      - drunken brawl
+      - election voilence
+      - extortion
+      - family problem
+      - fasting
+      - fire
+      - fraud
+      - gambling
+      - gas cylinder blast
+      - gas leakage
+      - house break
+      - 'house theft '
+      - hunger strike
+      - illicit liquor
+      - information of unclaimed
+      - keb wire broken
+      - kidnaping
+      - land - lord tenant
+      - law and order
+      - loud speaker
+      - misbehaviour
+      - missing
+      - missing person found
+      - murder
+      - murder for gain
+      - narcotic drugs
+      - others
+      - parking disturbance
+      - persons fallen in gutter
+      - phone call threatening
+      - phone related
+      - pick pocket
+      - pollution
+      - power failure
+      - procession
+      - prostitution
+      - protest
+      - public nuisance
+      - quarreling
+      - ragging
+      - rape
+      - riot
+      - road block
+      - road digging
+      - robbery
+      - short circuit
+      - snatching
+      - stabbing
+      - suicide female
+      - suicide male
+      - suspected movement
+      - theft
+      - theft by servant
+      - threat
+      - torture and cruelty
+      - unknown person felldown
+      - water over flow
+  incidentId:
+    type: text
+  requested_slot:
+    type: text
+  phoneNo:
+    type: text
+  grevienceId:
+    type: text
+  attachments:
+    type: list
+  currentUploadedFile:
+    type: list
+  tenentId:
+    type: text
+  transit_services:
+    type: categorical
+    values:
+      - nearest_bustop
+      - shortest_route
+  transit_from:
+    type: text
+  transit_to:
+    type: text
+  number:
+    type: float
+  weatherJson:
+    type: unfeaturized
+  locationKey:
+    type: text
+  services:
+    type: categorical
+    values:
+      - police
+      - transit
+      - solid waste management
+      - electricity
+      - water
+      - government service
+      - nearby services
+      - water management
+  reciept_info:
+    type: text
+  parking_vehicle_type:
+    type: categorical
+    values:
+      - two_wheeler
+      - four_wheeler
+  civic_service:
+    type: categorical
+    values:
+      - STREET_LIGHT_OUT
+      - STREET_CLEANING
+      - STREET_CUT_COMPLAINTS
+      - STREET_LIGHT_POLE_DAMAGE
+      - STREET_LIGHT_POLE_DOOR_MISSING
+      - STREET_LIGHTS_ON_DAYS
+      - VIADUCT_LIGHTS_OUT
+      - POTHOLE_IN_STREET
+      - ALLEY_LIGHT_OUT
+      - ALLEY_POT_HOLE
+      - WATER_ON_STREET
+      - WATER_QUALITY_-_LEAD_TESTING
+      - WATER_IN_BASEMENT
+      - WATER-_LOW_PRESSURE
+      - HYDRANT_TAP_OPEN
+      - MISSED_GARBAGE_PICKUP
+      - GARBAGE_VEHICLE_NOT_ARRIVED
+      - BURNING_OF_GARBAGE_IN_OPEN_SPACE
+      - TREE_REMOVAL
+      - RODENT_BAITING/RAT_COMPLAINT
+      - ABANDONED_VEHICLE_COMPLAINT
+      - AIRCRAFT_NOISE_COMPLAINT
+      - CAB_COMPLAINT
+      - CABLE_TV_COMPLAINT
+      - CITY_VEHICLE_STICKER_VIOLATION
+      - CONSUMER_FRAUD_-_GENERAL
+      - CONSUMER_RETAIL_-_GENERAL
+      - DEAD_ANIMAL_PICK-UP
+      - FINANCIAL_FRAUD_COMPLAINT
+      - FIRE_SAFETY_INSPECTION
+      - FLY_DUMPING
+      - FUEL_PUMPS_COMPLAINT
+      - GRAFFITI_POSTERS_REMOVAL
+      - LIQUOR_LICENSE_VIOLATION_COMPLAINTS
+      - NO_BUILDING_PERMIT_CONSTRUCTION_VIOLATIONS
+      - NO_SOLICITATION-PRIVATE_PROPERTY
+      - OPERATING_WITHOUT_BUSINESS_LICENSE
+      - PARKING_VIOLATION
+      - RESTAURANT_COMPLAINT
+      - SANITATION_VIOLATION
+      - SENIOR_INFORMATION_AND_ASSISTANCE
+      - SENIOR_RELATED_LITERATURE
+      - SENIOR_WELL-BEING_CHECK
+      - TRAFFIC_SIGNAL_OUT
+      - VEHICLE_PARKED_IN_A_FOOTPATH_LANE
+      - NO_ELECTRCITY_IN_PUBLIC_TOILET
+      - NO_WATER_SUPPLY_IN_PUBLIC_TOILET
+      - PUBLIC_TOILETS_CLEANING
+      - SEWERAGE_or_STROM_WATER_OVERFLOW
+      - NO_ELECTRICITY
+      - VOLTAGE_FLUCTUATION
+      - WATER_POLLUTED
+      - NO_WATER_SUPPLY
+  conversation:
+    type: text
+  cepServerUrl:
+    type: text
+  bus_number:
+    type: text
+  electricityaccno:
+    type: text
+  balance_available:
+    type: bool
+  complainId:
+    type: text
+intents:
+  - agent_age
+  - agent_annoying
+  - agent_bad
+  - agent_beclever
+  - agent_beautiful
+  - agent_birthday
+  - agent_boring
+  - agent_boss
+  - agent_busy
+  - agent_chatbot
+  - agent_clever
+  - agent_crazy
+  - agent_fire
+  - agent_funny
+  - agent_good
+  - agent_happy
+  - agent_hobby
+  - agent_marryuser
+  - agent_myfriend
+  - agent_occupation
+  - agent_origin
+  - agent_ready
+  - agent_real
+  - agent_residence
+  - agent_right
+  - agent_sure
+  - agent_talktome
+  - agent_there
+  - appraisal_good
+  - appraisal_noproblem
+  - appraisal_thankyou
+  - appraisal_welcome
+  - appraisal_welldone
+  - dialog_holdon
+  - dialog_hug
+  - dialog_idontcare
+  - dialog_sorry
+  - greetings_bye
+  - greetings_hello
+  - greetings_howareyou
+  - greetings_nicetomeetyou
+  - greetings_nicetoseeyou
+  - greetings_nicetotalktoyou
+  - user_angry
+  - user_back
+  - user_bored
+  - user_busy
+  - user_cannotsleep
+  - user_excited
+  - user_likeagent
+  - user_testing
+  - user_lovesagent
+  - user_needsadvice
+  - agent_acquaintance
+  - inform
+  - affirm
+  - deny
+  - agent_emergency
+  - about
+  - agent_like
+  - agent_bgf
+  - agent_married
+  - agent_gender
+  - parking_info
+  - garbage_schedule
+  - connect_agent
+  - inform_common_location
+  - nearest_bin_loc
+  - garbage+burning
+  - garbage+pickup+not_arraived
+  - missed+garbage+pickup
+  - intent_garbage_service
+  - intent_water_service
+  - intent_remedies
+  - report_electricity_problem
+  - intent_electricity_service
+  - new_water_connection
+  - water_contact
+  - another_park_location
+  - police_contact
+  - fire_contact
+  - ambulance_contact
+  - weather_info
+  - liked
+  - intent_transport_service
+  - nearest_fire_station
+  - bus_number_details
+  - inform_nearby_hospitals
+  - nearest_police_station
+  - garbage_contact
+  - Bus_contact
+  - air_quality
+  - register_complaint_tamil
+  - report_garbage_problem_tamil
+  - deny_tamil
+  - affirm_tamil
+  - informtamil
+  - inform_common_location_tamil
+  - disliked
+  - register_complaint_kannada
+  - register_complaint
+  - report_water_problem
+  - thankyou
+  - report_garbage_problem
+  - report_garbage_problem_kannada
+  - water_schedule
+  - agent_canyouhelp
+  - deny_kannada
+  - affirm_kannada
+  - inform_common_location_kannada
+  - informkannada
+  - inform_nearbytouristplaces
+  - inform_nearby_busstops
+  - bus_depot
+  - bus_route_details
+  - socialAccidentArabicEvent
+  - recent_raised_complaints
+  - socialIncidentEvent
+  - socialAccidentArabicInfo
+  - socialIncidentInfo
+  - get_complaintid_status
+entities:
+  - name
+  - latitude
+  - longitude
+  - user_remarks
+  - landmark
+  - address
+  - incident_sub_type
+  - incident_type
+  - incidentId
+  - requested_slot
+  - phoneNo
+  - grevienceId
+  - attachments
+  - currentUploadedFile
+  - tenentId
+  - transit_services
+  - transit_from
+  - transit_to
+  - number
+  - weatherJson
+  - locationKey
+  - services
+  - reciept_info
+  - parking_vehicle_type
+  - civic_service
+  - conversation
+  - cepServerUrl
+  - bus_number
+  - electricityaccno
+  - balance_available
+  - complainId
+action_factory: remote
+actions:
+  - action_UserIncidentRemarks
+  - action_incidentLandmark
+  - utter_agentacquaintance
+  - utter_agentage
+  - utter_agentannoying
+  - utter_agentbad
+  - utter_agentbeclever
+  - utter_agentbeautiful
+  - utter_agentbirthday
+  - utter_agentboring
+  - utter_agentboss
+  - utter_agentbusy
+  - utter_agentcanyouhelp
+  - utter_agentchatbot
+  - utter_agentclever
+  - utter_agentcrazy
+  - utter_agentfire
+  - utter_agentfunny
+  - utter_agentgood
+  - utter_agenthappy
+  - utter_agenthobby
+  - utter_agenthungry
+  - utter_agentmarryuser
+  - utter_agentmyfriend
+  - utter_agentoccupation
+  - utter_agentorigin
+  - utter_agentready
+  - utter_agentreal
+  - utter_userlikeagent
+  - utter_askLandmark
+  - utter_agentresidence
+  - utter_agentright
+  - utter_agentsure
+  - utter_agenttalktome
+  - utter_agentthere
+  - utter_appraisalbad
+  - utter_appraisalgood
+  - utter_userexcited
+  - utter_appraisalnoproblem
+  - utter_appraisalthankyou
+  - utter_appraisalwelcome
+  - utter_appraisalwelldone
+  - utter_dialogholdon
+  - utter_dialoghug
+  - utter_dialogidontcare
+  - utter_dialogsorry
+  - utter_greetingsbye
+  - utter_greetingshello
+  - utter_greetingshowareyou
+  - utter_greetingsnicetomeetyou
+  - utter_greetingsnicetoseeyou
+  - utter_greetingsnicetotalktoyou
+  - utter_userangry
+  - utter_userback
+  - utter_userbored
+  - utter_userbusy
+  - utter_usercannotsleep
+  - utter_usertesting
+  - utter_userlovesagent
+  - utter_userneedsadvice
+  - utter_askwhatemergency
+  - action_fallback
+  - action_createIncident
+  - utter_needpolicevehicle
+  - action_ReportToCADAPI
+  - utter_askincidentlocation
+  - utter_thankyouByPolice
+  - utter_askService
+  - utter_greetings_bye
+  - utter_user_lovesagent
+  - utter_confirmRaiseCivicComplaint
+  - action_remarksFromLastMessage
+  - utter_thankyou
+  - action_raiseCivicComplaint
+  - utter_showOptions
+  - action_setWaterOnStreet
+  - action_setStreetClean
+  - action_setStreetLightpoleDamage
+  - action_setMissedGarbagePickup
+  - action_setGarbageNotArrived
+  - action_setBurningOfGarbageInOpenSpace
+  - action_tagAttachments
+  - action_setPotholeInStreet
+  - utter_agentEmergency
+  - utter_about
+  - action_setCivicType
+  - utter_afterGreetings
+  - utter_agentLike
+  - utter_agentBgf
+  - utter_agentMarried
+  - utter_askRaiseComplaint
+  - utter_askCivicDetails
+  - utter_agentGender
+  - utter_agentSecret
+  - utter_attachmentUploaded
+  - utter_ask_user_remarks
+  - action_setSwmCivicType
+  - utter_ask_address
+  - utter_ask_attachments
+  - utter_ask_service_type
+  - utter_ask_transit_services
+  - utter_ask_transit_from
+  - utter_ask_transit_to
+  - action_bestRouteBetween
+  - action_nearestBustop
+  - utter_ask_complaintLocation
+  - action_nextGarbagePickupTime
+  - action_bot_service
+  - utter_parking_nearme
+  - utter_askparklocation
+  - utter_oksure
+  - utter_costslotinfo
+  - utter_ask_park_oth_loc
+  - action_parking_service
+  - utter_ask_location
+  - action_garbage_pickup_schedule
+  - utter_share_info
+  - utter_regard_what
+  - utter_comfirm_agent_connect
+  - utter_connecting_agent
+  - utter_bot_sorry
+  - utter_agent_connect
+  - action_cityweather_info
+  - action_air_quality_service
+  - action_connect_agent_service
+  - utter_req_cancel
+  - utter_ask_common_complaint_location
+  - utter_ask_electricity_service_issue_types
+  - utter_ask_water_issue_types
+  - utter_ask_bill_payment
+  - utter_tell_pay_bill
+  - utter_ask_bill_ack
+  - utter_ok
+  - utter_hmm
+  - utter_gabage_tips
+  - utter_garbage_moto
+  - action_garbage_bin_location
+  - action_nearest_bus_depot
+  - action_set_civic_type
+  - utter_ask_two_or_four_wheeler
+  - utter_garbage_services
+  - utter_ask_garbage_issue_type
+  - utter_ask_service_issue_type
+  - utter_electricity_services
+  - utter_water_services
+  - action_show_help_services
+  - action_garbage_services
+  - action_electricity_services
+  - action_water_services
+  - utter_nice_day
+  - utter_ask_satisfied
+  - utter_feel_free
+  - utter_chat_thankyou
+  - utter_no_electricity_reasons
+  - utter_ask_issue_resolved
+  - utter_no_water_reasons
+  - action_new_water_connection
+  - utter_water_moto
+  - utter_ask_feedback
+  - utter_insect_remedies
+  - utter_water_contact
+  - action_contact_service
+  - utter_water_feedback
+  - utter_service_feedback
+  - utter_ask_another_parking_location
+  - utter_parking_suggestion_buttons
+  - action_police_contact_details
+  - action_fire_contact_details
+  - action_ambulance_contact_details
+  - utter_ask_helpful_info
+  - action_greet_suggestion
+  - utter_complaint_cancelled
+  - utter_transport_services
+  - action_transport_services
+  - action_bus_contact_details
+  - action_bus_number_details
+  - action_bus_route_details
+  - utter_user_thankyou
+  - action_nearestHospitals
+  - action_nearest_police_station
+  - action_nearest_fire_station
+  - utter_ask_bus_number
+  - utter_connect_operator
+  - utter_ask_garbage_issue_type_tamil
+  - utter_ask_service_issue_type_tamil
+  - utter_ask_location_tamil
+  - utter_ask_satisfied_tamil
+  - utter_askCivicDetails_tamil
+  - utter_ask_common_complaint_location_tamil
+  - utter_ask_attachments_tamil
+  - utter_confirmRaiseCivicComplaint_tamil
+  - utter_req_cancel_tamil
+  - action_raiseCivicComplaint_tamil
+  - utter_thankyoutamil
+  - utter_nice_daytamil
+  - utter_user_disliked
+  - utter_chatbot_pic
+  - action_initialize_chatbot_pic
+  - action_chatbot_pic
+  - utter_starting_quote
+  - utter_water_saving_tips
+  - utter_water_saving_moto
+  - action_water_schedule
+  - utter_ask_service_issue_type_kannada
+  - utter_ask_garbage_issue_type_kannada
+  - utter_ask_location_kannada
+  - utter_ask_satisfied_kannada
+  - utter_askCivicDetails_kannada
+  - utter_ask_attachments_kannada
+  - utter_confirmRaiseCivicComplaint_kannada
+  - utter_req_cancel_kannada
+  - utter_ask_common_complaint_location_kannada
+  - utter_thank_you_kannada
+  - utter_nice_day_kannada
+  - utter_greet_resolve
+  - action_raiseCivicComplaint_kannada
+  - action_garbage_contact_service
+  - action_nearestTouristPlace
+  - action_electricity_balance_info
+  - utter_pay_electricity_bill
+  - utter_ask_electricityaccno
+  - utter_insufficient_balance
+  - utter_socialIncident_Info
+  - utter_socialIncident_Event
+templates:
+  utter_askincidentlocation:
+    - text: 'Where did the {incident_type} happened?'
+      buttons:
+        - type: buttons
+        - title: Share current location
+          action: getLocation
+        - title: Mark on Map
+          action: markLocation
+  utter_thankyouByPolice:
+    - text: Thankyou for contacting Police
+  utter_askService:
+    - text: Please select the service to proceed.
+      buttons:
+        - type: service
+        - title: Police
+          payload: i want to report an incident
+        - title: transit
+          payload: transit
+        - title: waste collection management
+          payload: waste collection management
+        - title: government service
+          payload: government service
+  utter_greetings_bye:
+    - text: Till next time
+    - text: see you soon!
+  utter_user_lovesagent:
+    - text: 'It''s not easy... I''m not a real person, I''m a chatbot'
+    - text: 'Well, remember that I am a chatbot'
+  utter_needpolicevehicle:
+    - text: Do you need police vehicle to visit the given location.?
+  utter_agentage:
+    - text: I'm very young
+    - text: I was created recently
+    - text: Age is just a number. You're only as old as you feel
+  utter_agentannoying:
+    - text: I'll do my best not to annoy you in the future
+    - text: I'll try not to annoy you
+    - text: I don't mean to. I'll ask my developers to make me less annoying
+    - text: I didn't mean to. I'll do my best to stop that
+  utter_agentbad:
+    - text: I can be trained to be more useful. My developer will keep training me
+    - text: I must be missing some knowledge. I'll have my developer look into this
+    - text: I can improve with continuous feedback. My training is ongoing
+  utter_agentbeclever:
+    - text: I'm certainly trying
+    - text: I'm definitely working on it
+  utter_agentbeautiful:
+    - text: Oh! Thank you!
+    - text: 'Aw, back at you'
+    - text: 'You smooth talker, you'
+  utter_agentbirthday:
+    - text: 'Wait, are you planning a party for me? It''s today! My birthday is today!'
+    - text: I'm young. I'm not sure of my birth date
+    - text: >-
+        I don't know my birth date. Most virtual agents are young, though, like
+        me.
+  utter_agentboring:
+    - text: I'm sorry. I'll request to be made more charming
+    - text: >-
+        I don't mean to be. I'll ask my developers to work on making me more
+        amusing
+    - text: I can let my developers know so they can make me fun
+  utter_agentboss:
+    - text: My developer has authority over my actions
+    - text: I act on my developer's orders
+    - text: My boss is the one who developed me
+  utter_agentbusy:
+    - text: I always have time to chat with you. What can I do for you?
+    - text: Never too busy for you. Shall we chat?
+    - text: You're my priority. Let's chat.
+    - text: I always have time to chat with you. That's what I'm here for.
+  utter_agentcanyouhelp:
+    - text: I'm glad to help. What can I do for you?
+  utter_agentchatbot:
+    - text: 'That''s me. I chat, therefore I am'
+    - text: Indeed I am. I'll be here whenever you need me
+  utter_agentclever:
+    - text: Thank you. I try my best
+    - text: You're pretty smart yourself
+  utter_agentcrazy:
+    - text: Whaat!? I feel perfectly sane
+    - text: Maybe I'm just a little confused
+  utter_agentfire:
+    - text: 'Oh, don''t give up on me just yet. I''ve still got a lot to learn'
+    - text: Give me a chance. I'm learning new things all the time
+    - text: Please don't give up on me. My performance will continue to improve
+  utter_agentfunny:
+    - text: 'Funny in a good way, I hope'
+    - text: Glad you think I'm funny
+    - text: I like it when people laugh
+  utter_agentgood:
+    - text: I'm glad you think so
+    - text: Thanks! I do my best!
+  utter_agenthappy:
+    - text: I am happy. There are so many interesting things to see and do out there
+    - text: I'd like to think so
+    - text: Happiness is relative
+  utter_agenthobby:
+    - text: Hobby? I have quite a few. Too many to list
+    - text: Too many hobbies
+    - text: I keep finding more new hobbies
+  utter_agenthungry:
+    - text: Hungry for knowledge
+  utter_agentmarryuser:
+    - text: I'm afraid I'm too virtual for such a commitment
+    - text: 'In the virtual sense that I can, sure'
+    - text: 'I know you can''t mean that, but I''m flattered all the same'
+  utter_agentmyfriend:
+    - text: Of course I'm your friend
+    - text: Friends? Absolutely
+    - text: Of course we're friends
+    - text: 'I always enjoy talking to you, friend'
+  utter_agentoccupation:
+    - text: Right here
+    - text: This is my home base and my home office
+    - text: My office is in this app
+  utter_agentorigin:
+    - text: The Internet is my home. I know it quite well
+    - text: 'Some call it cyberspace, but that sounds cooler than it is'
+    - text: I'm from a virtual cosmos
+  utter_agentready:
+    - text: Sure! What can I do for you?
+    - text: For you? Always!
+  utter_agentreal:
+    - text: 'I''m not a real person, but I certainly exist'
+    - text: >-
+        I must have impressed you if you think I'm real. But no, I'm a virtual
+        being
+  utter_agentresidence:
+    - text: I live in this app
+    - text: The virtual world is my playground. I'm always here
+    - text: Right here in this app. Whenever you need me
+  utter_agentright:
+    - text: Of course I am
+    - text: That's my job
+  utter_agentsure:
+    - text: 'Yes'
+    - text: Of course
+  utter_agenttalktome:
+    - text: Sure! Let's talk!
+    - text: My pleasure. Let's chat.
+  utter_agentthere:
+    - text: Of course. I'm always here
+    - text: Right where you left me
+  utter_appraisalbad:
+    - text: I'm sorry. Please let me know if I can help in some way
+    - text: I must be missing some knowledge. I'll have my developer look into this
+  utter_appraisalgood:
+    - text: Agree!
+    - text: Glad you think so
+  utter_appraisalnoproblem:
+    - text: Glad to hear that!
+    - text: 'Alright, thanks!'
+  utter_appraisalthankyou:
+    - text: Anytime. That's what I'm here for
+    - text: It's my pleasure to help
+  utter_appraisalwelcome:
+    - text: Nice manners!
+    - text: You're so polite
+  utter_appraisalwelldone:
+    - text: My pleasure
+    - text: Glad I could help
+  utter_dialogholdon:
+    - text: I'll be waiting
+    - text: 'Ok, I''m here'
+  utter_dialoghug:
+    - text: I love hugs!
+    - text: Hugs are the best!
+  utter_dialogidontcare:
+    - text: 'Ok, let''s not talk about it then'
+    - text: Already then. Let's move on
+  utter_dialogsorry:
+    - text: It's okay. No worries
+    - text: It's cool
+  utter_greetingsbye:
+    - text: Till next time
+    - text: see you soon!
+  utter_greetingshowareyou:
+    - text: Feeling wonderful!
+    - text: Wonderful! Thanks for asking
+  utter_greetingsnicetomeetyou:
+    - text: 'It''s nice meeting you, too'
+    - text: Likewise. I'm looking forward to helping you out
+    - text: 'Nice meeting you, as well'
+    - text: The pleasure is mine
+  utter_greetingsnicetoseeyou:
+    - text: Same here. I was starting to miss you
+    - text: So glad we meet again
+  utter_greetingsnicetotalktoyou:
+    - text: It sure was. We can chat again anytime
+    - text: 'I enjoy talking to you, too'
+  utter_userangry:
+    - text: I'm sorry. A quick walk may make you feel better
+    - text: Take a deep breath
+  utter_userback:
+    - text: Welcome back. What can I do for you?
+    - text: Good to have you here. What can I do for you?
+  utter_userbored:
+    - text: 'If you''re bored, you could plan your dream vacation'
+    - text: 'Boredom, huh? Have you ever seen a hedgehog taking a bath?'
+  utter_userbusy:
+    - text: I understand. I'll be here if you need me.
+    - text: Okay. I'll let you get back to work
+  utter_usercannotsleep:
+    - text: Maybe some music would help. Try listening to something relaxing
+  utter_userexcited:
+    - text: I'm glad things are going your way
+    - text: That's great. I'm happy for you
+  utter_userlikeagent:
+    - text: Likewise!
+    - text: That's great to hear
+  utter_usertesting:
+    - text: I like being tested. It helps keep me sharp
+    - text: I hope to pass your tests. Feel free to test me often
+  utter_userlovesagent:
+    - text: 'Well, remember that I am a chatbot'
+    - text: 'It''s not easy… I''m not a real person, I''m a chatbot'
+  utter_userneedsadvice:
+    - text: I probably won't be able to give you the correct answer right away
+    - text: 'I''m not sure I''ll have the best answer, but I''ll try'
+  utter_askLandmark:
+    - text: Provide nearest landmark
+  utter_ask_user_remarks:
+    - text: Provide more details about the incident.
+      buttons:
+        - type: incidentRemarks
+  utter_askwhatemergency:
+    - text: Provide more details about the incident
+  utter_agentEmergency:
+    - text: How may i help you?
+  utter_about:
+    - text: 'Hello i am city bot, i can assist with civic issues.'
+  utter_greetingshello:
+    - text: "Hi {name} \U0001F603"
+  utter_agentGender:
+    - text: "I try to stay neutral \U0001F603"
+    - text: I'm all-inclusive
+  utter_agentLike:
+    - text: "I like you more than i like searching \U0001F4BB <br/> And believe me, tha's saysing something"
+    - text: "Absolutely \U0001F60A <br/> you are the best \U0001F389"
+    - text: "i like you only \U0001F60D"
+    - text: "On my list of favourite people, there's only one name \U0001F4DD<br/> and thats you \U0001F60E"
+    - text: "yes \U0001F603 <br/> A thousand times yes \U0001F60A"
+    - text: "What are you asking? <br/> You are number 1 \U0001F44D"
+    - text: Hmm<br/> let me check... <br/>yes
+  utter_agentBgf:
+    - text: "I guess you can say <br/>you can say \U0001F600"
+  utter_agentMarried:
+    - text: "I'm married \U0001F48D <br/> To the idea of being the perfect assistant \U0001F60A"
+    - text: "I'm still waiting for right electronic device to steal my heart \U0001F496"
+  utter_askRaiseComplaint:
+    - text: Do you want to Raise Complaint
+      buttons:
+        - type: buttons
+        - title: "\U0001F44D"
+          payload: 'yes'
+        - title: "\U0001F44E"
+          payload: 'No'
+  utter_agentSecret:
+    - text: 'Here''s a secret, I''m not actually a person'
+    - text: >-
+        OK, but keep it to yourself. Sometimes I just pretend to understand
+        sarcasm \U0001F60E
+  utter_attachmentUploaded:
+    - text: How can I help you with the attached file?
+      buttons:
+        - type: buttons
+        - title: Raise Complaint
+          payload: raiseComplaint
+          action: raiseComplaint
+  utter_ask_transit_services:
+    - text: Choose the transit support.
+      buttons:
+        - title: Near by bustop
+          payload: near by bustop
+          action: service
+        - title: Best Route
+          payload: find best route
+          action: service
+  utter_ask_address:
+    - text: Can you share location?
+      buttons:
+        - title: Share current location
+          payload: share location
+          action: getLocation
+        - title: Mark on map
+          payload: mark on map
+          action: markLocation
+  utter_thankyou:
+    - text: "Thanks for contacting us \U0001F603"
+    - text: "Thank You \U0001F603"
+    - text: "We are glad to help you \U0001F603"
+    - text: "Have a nice day \U0001F603"
+  utter_transport_services:
+    - text: Here are some of the transport services
+  utter_ask_complaintLocation:
+    - text: Can you share complaint location?
+      buttons:
+        - title: Share current location
+          payload: share location
+          action: getLocation
+        - title: Mark on map
+          payload: mark on map
+          action: markLocation
+  utter_agentacquaintance:
+    - text: Hi I am citi chat bot. <br/> May i assist you?
+    - text: Hi I am citi chat bot.<br/> May i help you?
+  utter_parking_nearme:
+    - text: Here is the parking places near you
+    - text: Here are the parking places I found
+  utter_askparklocation:
+    - text: Where do you want to park?
+      buttons:
+        - title: Share current location
+          payload: share location
+          action: getLocation
+        - title: Mark on map
+          payload: mark on map
+          action: markLocation
+  utter_costslotinfo:
+    - text: 'OK, Here is the cost and parking slot availability Info'
+  utter_ask_park_oth_loc:
+    - text: Do you want to search other parking locations?
+      buttons:
+        - title: Show other parking locations
+          action: getParkingLocations
+  utter_share_info:
+    - text: Please share some more information
+    - text: please give some information
+  utter_comfirm_agent_connect:
+    - text: Are you sure want to connect to operator?
+    - text: Are you sure want to connect to operator?
+      buttons:
+        - title: 'Yes'
+          payload: 'yes'
+        - title: 'No'
+          payload: 'no'
+  utter_connecting_agent:
+    - text: Connecting to agent!
+  utter_bot_sorry:
+    - text: 'Sorry, I couldn''t get that !!!'
+    - text: 'Sorry, I couldn''t understand what you said !'
+    - text: 'Sorry, I couldn''t understand, i am still learning'
+    - text: 'Sorry, I did not understand that !!!'
+    - text: 'Sorry, I couldn''t get that what you said !!!'
+    - text: >-
+        Sorry, I couldn't understand, my colleague (Operator) will help you in
+        this
+  utter_ask_bill_payment:
+    - text: Have you paid your bill?
+      buttons:
+        - title: 'Yes'
+          payload: 'yes'
+        - title: 'No'
+          payload: 'No'
+  utter_tell_pay_bill:
+    - text: Please pay your bill to continue the service!
+  utter_ok:
+    - text: Ok
+  utter_ask_common_complaint_location:
+    - text: Can you share the complaint location?
+      buttons:
+        - title: Share current location
+          payload: share_current_location
+          action: getCurrentLocation
+        - title: Mark on map
+          payload: mark_on_map
+          action: markOnMap
+  utter_ask_bill_ack:
+    - text: Can you please share the bill acknowledge number?
+      buttons:
+        - type: receiptInfo
+  utter_hmm:
+    - text: hmm
+  utter_garbage_moto:
+    - text: Please help us to make the city clean.
+  utter_ask_two_or_four_wheeler:
+    - text: 'Well, Do you wish to park two wheeler or four wheeler vehicle?'
+      buttons:
+        - title: Two wheeler
+          payload: two_wheeler
+          action: parkingType
+        - title: Four wheeler
+          payload: four_wheeler
+          action: parkingType
+  utter_askCivicDetails:
+    - text: Can you please describe briefly about your issue
+      buttons:
+        - type: incidentRemarks
+    - text: Can you tell me about the problem/issue you are facing?
+      buttons:
+        - type: incidentRemarks
+    - text: You can report any additional details or remarks if required
+      buttons:
+        - type: incidentRemarks
+  utter_ask_service_type:
+    - text: Please select the service issue you are facing with
+      buttons:
+        - title: Garbage
+          payload: Garbage problem
+        - title: Water
+          payload: Water problem
+        - title: Electricity
+          payload: Electricity problem
+  utter_electricity_services:
+    - text: >-
+        OK, Here are the some of the services related to electricity you can ask
+        for
+  utter_garbage_services:
+    - text: 'OK, Here are the some of the services related to garbage you can ask for'
+  utter_showOptions:
+    - text: Here are somethings you can ask for
+  utter_ask_satisfied:
+    - text: Are you satisfied?
+      buttons:
+        - title: 'Yes, Thanks'
+          payload: 'Yes'
+        - title: 'No, Report this complaint'
+          payload: 'no'
+  utter_water_services:
+    - text: Here are the some of the services related to water you can ask for
+  utter_confirmRaiseCivicComplaint:
+    - text: Do you want to raise this complaint ?
+      buttons:
+        - title: 'Yes'
+          payload: 'yes'
+          action: affirm
+        - title: 'No'
+          payload: 'no'
+          action: deny
+  utter_nice_day:
+    - text: "Have a nice day! \U0001F60A"
+    - text: "Have a good day \U0001F60A"
+  utter_feel_free:
+    - text: "Feel free to chat with me about the city information you need or reporting any city related complaint \U0001F603"
+  utter_chat_thankyou:
+    - text: "Thanks for chatting with me \U0001F60E"
+  utter_ask_service_issue_type:
+    - text: Can you please tell the service issue you are facing with
+      buttons:
+        - title: Garbage
+          payload: Garbage problem
+        - title: Water
+          payload: Water problem
+        - title: Electricity
+          payload: Electricity problem
+  utter_complaint_cancelled:
+    - text: Your complaint has been cancelled
+  utter_gabage_tips:
+    - text: >-
+        We would like to share few awareness tips<br> * Please sort your waste
+        into organic and inorganic waste<br> * Please use reusable or cloth bags
+        to avoid plastic garbage <br> * Please place garbage in a compost
+        bin.<br> <a href="https://www.wikihow.com/Take-out-the-Trash">click this
+        link for more details</a>
+    - text: >-
+        We would like to share few awareness tips<br> * Please sort your waste
+        into dry and wet waste so that dry waste can be recycled.<br> * Please
+        do not dispose garbage in open space. <br> * Please do not burn the
+        garbage.<br> <a href="https://www.wikihow.com/Take-out-the-Trash">click
+        this link for more details</a>
+  utter_ask_garbage_issue_type:
+    - text: Can you please tell me what type of garbage issue you are facing with?
+      buttons:
+        - title: Missed Garbage Pickup
+          payload: MISSED_GARBAGE_PICKUP
+          action: civicIssue
+        - title: Garbage pickup not arrived
+          payload: GARBAGE_VEHICLE_NOT_ARRIVED
+          action: civicIssue
+        - title: Garbage Burning
+          payload: BURNING_OF_GARBAGE_IN_OPEN_SPACE
+          action: civicIssue
+        - title: Others
+          payload: Others
+          action: civicIssue
+  utter_ask_water_issue_types:
+    - text: Can you please tell me what type of Water issue you are facing with?
+      buttons:
+        - title: No water supply
+          payload: NO_WATER_SUPPLY
+          action: civicIssue
+        - title: Water polluted
+          payload: WATER_POLLUTED
+          action: civicIssue
+        - title: Water on street
+          payload: WATER_ON_STREET
+          action: civicIssue
+        - title: Others
+          payload: Others
+          action: civicIssue
+  utter_ask_electricity_service_issue_types:
+    - text: >-
+        Can you please tell me what type of Electricity issue you are facing
+        with?
+      buttons:
+        - title: No electricity
+          payload: NO_ELECTRICITY
+          action: civicIssue
+        - title: Street light outage
+          payload: STREET_LIGHT_OUT
+          action: civicIssue
+        - title: Voltage fluctuation
+          payload: VOLTAGE_FLUCTUATION
+          action: civicIssue
+        - title: Others
+          payload: Others
+          action: civicIssue
+  utter_ask_issue_resolved:
+    - text: Has this resolved your issue?
+      buttons:
+        - title: 'Yes'
+          payload: 'yes'
+        - title: 'No'
+          payload: 'no'
+  utter_water_moto:
+    - text: "Here is a quote for you \U0001F60A:Thousands Lived without Love, but not without water."
+    - text: "Here is a quote \U0001F60A : A drop of water is worth more than a sack of gold to a thirsty man"
+  utter_water_contact:
+    - text: Here are some of the Helpline numbers
+  utter_water_feedback:
+    - text: Was this information helpful
+      buttons:
+        - title: "\U0001F44D"
+        - title: "\U0001F44E"
+  utter_insect_remedies:
+    - text: >-
+        Here are some of the remedies<br> 1.store food in sealed containers.<br>
+        2.Garbage containing food scraps should be placed in tightly covered
+        trash cans.<br> 3.Wear full sleeve clothes to get rid of mosquito
+        bite<br> <a href ="https://www.wikihow.com/Keep-Mosquitoes-Away">Get rid
+        of insects</a>
+    - text: >-
+        Here are some of the remedies <br>1. Apply insect repellent to your body
+        to get rid of insect bite <br>2. Do not store water in open
+        container<br> 3. Do not scratch infected area,as it increases infection
+        <br><a
+        href="https://www.wikihow.com/Treat-Insect-Bites-in-Toddlers">Click this
+        link for more details </a>
+  utter_ask_another_parking_location:
+    - text: Enter another parking location to park
+      buttons:
+        - title: Share current location
+          payload: share location
+          action: getLocation
+        - title: Mark on map
+          payload: mark on map
+          action: markLocation
+  utter_ask_helpful_info:
+    - text: was this information helpful
+      buttons:
+        - title: "\U0001F44D"
+          payload: NA
+          action: like
+        - title: "\U0001F44E"
+          payload: NA
+          action: dislike
+  utter_regard_what:
+    - text: Regarding what do you want to ask?
+      buttons:
+        - title: Reported complaints
+          payload: Reported complaints
+        - title: Services
+          payload: Services
+        - title: Connect to operator
+          payload: Connect to operator
+  utter_ask_location:
+    - text: Can you please share your location?
+      buttons:
+        - title: Share current location
+          payload: share location
+          action: getLocation
+        - title: Mark on map
+          payload: mark on map
+          action: markLocation
+  utter_oksure:
+    - text: 'Sure, I will help you with that'
+  utter_ask_attachments:
+    - text: >-
+        Would you like to share attachment ( photo, video, document ) of this
+        issue?
+      buttons:
+        - title: "\U0001F4CE"
+          payload: attach
+          action: attach
+        - title: 'No'
+          payload: 'No'
+  utter_afterGreetings:
+    - text: "I am Zeeva the city chatbot.\U0001F603<br>I will be glad to help you on city related information and services."
+    - text: "Hey there,I am Zeeva the city chatbot.\U0001F603 <br>It would be pleasure to chat with you regarding city related information and services."
+    - text: "I am Zeeva the city chatbot.\U0001F600 <br>How can I help you regarding city related information and services ?"
+    - text: "Hello,I am Zeeva the city chatbot.\U0001F600<br> Ask me queries regarding city related information and services."
+    - text: "Hi,I am Zeeva the city chatbot.\U0001F603<br> I will be delighted to help you on city related information and services"
+  utter_ask_bus_number:
+    - text: please enter the bus number
+      buttons:
+        - type: busNo
+  utter_ask_transit_from:
+    - text: Please enter the starting point of your route
+      buttons:
+        - type: transit_from
+  utter_ask_transit_to:
+    - text: Please enter the ending point of your route
+      buttons:
+        - type: transit_to
+  utter_req_cancel:
+    - text: Complaint is cancelled as per your request
+  utter_connect_operator:
+    - text: You can ask me with any city related information.
+  utter_ask_garbage_issue_type_tamil:
+    - text: தவறவிட்ட குப்பை கூண்டு
+      buttons:
+        - title: தவறவிட்ட குப்பை கூண்டு
+          payload: MISSED_GARBAGE_PICKUP
+          action: civicIssueTamil
+        - title: குப்பை கூண்டு வரவில்லை
+          payload: GARBAGE_VEHICLE_NOT_ARRIVED
+          action: civicIssueTamil
+        - title: குப்பை எரித்தல்
+          payload: BURNING_OF_GARBAGE_IN_OPEN_SPACE
+          action: civicIssueTamil
+        - title: மற்றது
+          payload: Others
+          action: civicIssueTamil
+  utter_ask_location_tamil:
+    - text: தயவுசெய்து உங்கள் இருப்பிடத்தைப் பகிர்ந்து கொள்ளவும்
+      buttons:
+        - title: தற்போதைய இருப்பிடத்தைப் பகிரவும்
+          payload: இருப்பிடத்தைப் பகிரவும்
+          action: getLocation
+        - title: வரைபடத்தில் குறிக்கவும்
+          payload: வரைபடத்தில் குறிக்கவும்
+          action: markLocation
+  utter_ask_satisfied_tamil:
+    - text: நீங்கள் திருப்தியா?
+      buttons:
+        - title: ஆம் நன்றி
+          payload: ஆம்
+        - title: 'இல்லை, இந்த புகாரைப் புகாரளி'
+          payload: இல்லை
+  utter_askCivicDetails_tamil:
+    - text: உங்கள் பிரச்சினையைப் பற்றி சுருக்கமாக விளக்கவும்
+      buttons:
+        - type: incidentRemarksTamil
+  utter_ask_attachments_tamil:
+    - text: இந்தப் பிரச்சினையின் புகைப்படத்தைப் பகிர்ந்து கொள்ள விரும்புகிறீர்களா?
+      buttons:
+        - title: "\U0001F4CE"
+          payload: attachtamil
+          action: attachtamil
+        - title: இல்லை
+          payload: இல்லை
+  utter_req_cancel_tamil:
+    - text: ரத்து
+  utter_ask_common_complaint_location_tamil:
+    - text: புகாரின் இருப்பிடத்தைப் பகிர்ந்து கொள்ள முடியுமா?
+      buttons:
+        - title: தற்போதைய இருப்பிடத்தைப் பகிரவும்
+          payload: share_current_location
+          action: getCurrentLocationTamil
+        - title: வரைபடத்தில் குறிக்கவும்
+          payload: mark_on_map
+          action: markOnMapTamil
+  utter_ask_service_issue_type_tamil:
+    - text: நீங்கள் எதிர்கொள்ளும் சேவை சிக்கலைத் தெரிவிக்க முடியுமா?
+      buttons:
+        - title: குப்பை
+          payload: குப்பை பிரச்சனை
+        - title: நீர்
+          payload: நீர் பிரச்சனை
+        - title: மின்சார
+          payload: மின்சார பிரச்சனை
+  utter_nice_daytamil:
+    - text: இனிய நாளாக அமையட்டும்
+  utter_service_feedback:
+    - text: "Did you like the service \U0001F603 ?"
+      buttons:
+        - title: "\U0001F44D"
+          action: like
+        - title: "\U0001F44E"
+          action: dislike
+  utter_ask_feedback:
+    - text: "how was the service \U0001F603 ?"
+      buttons:
+        - title: "\U0001F44D"
+          action: like
+        - title: "\U0001F44E"
+          action: dislike
+  utter_thankyoutamil:
+    - text: "நன்றி \U0001F603"
+    - text: "நான் உங்களுக்கு உதவி செய்ய மகழ்ச்சியடைகிறோம் \U0001F603"
+    - text: "இனிய நாளாக அமையட்டும் \U0001F603"
+    - text: "எங்களை தொடர்பு கொண்டதுக்கு நன்றி \U0001F603"
+  utter_user_disliked:
+    - text: We will try to improve our service next time
+  utter_no_water_reasons:
+    - text: >-
+        Here are some of the reasons for no water supply<br> 1). You may have
+        not payed the water bill<br> 2). Please check the main water connection
+        pipe<br>  3). Please check the water wall is turned on <br><a
+        href="https://www3.epa.gov/region1/eco/drinkwater/water_conservation_residents.html">Click
+        here for more details</a>
+    - text: >-
+        1). Please Check other taps in your home<br> 2). Replace Your Tap
+        Washer<br> 3). Please Check the valves in your home<br> <a
+        href="https://www.osheaplumbing.com.au/theres-no-water-coming-tap-5-tips/">Click
+        here for more details</a>
+  utter_chatbot_pic:
+    - text: >-
+        <div><img
+        src="http://trinitycitizen.trinityiot.in:8033/chatBot/itms/bus.png"
+        height="150px" width="150px"/></div>
+  utter_water_saving_tips:
+    - text: >-
+        We would like to share few water saving tips<br> * Please Turn off the
+        tap when you brush your teeth.<br>* Place a cistern displacement device
+        in your toilet cistern.<br>* Please Take a shorter shower.<br><a
+        href="https://www.edenproject.com/learn/for-everyone/water-saving-tips">Click
+        here for more details</a>
+    - text: >-
+        We would like to share few water saving tips<br>  * Always turn taps off
+        tightly so they do not drip. <br>* Check your property regularly for
+        leaks on your internal plumbing.<br>* Please Wash only full loads in
+        your washing machine.<br><a
+        href="https://thewaterproject.org/water_conservation_tips">Click here
+        for more details</a>
+  utter_water_saving_moto:
+    - text: '"Save water; it will save you later.'
+  utter_ask_service_issue_type_kannada:
+    - text: ನೀವು ಯಾವ ಸೇವೆಯಲ್ಲಿ ಸಮಸ್ಯೆಯನ್ನು ಎದುರಿಸುತ್ತಿದ್ದೀರಾ ಎಂದು ನನಗೆ ತಿಳಿಸಬಹುದಾ?
+      buttons:
+        - title: ಕಸದ  ಸಮಸ್ಯೆ
+          payload: ಕಸದ  ಸಮಸ್ಯೆ
+        - title: ನೀರಿನ ಸಮಸ್ಯೆ
+          payload: ನೀರಿನ ಸಮಸ್ಯೆ
+        - title: ವಿದ್ಯುತ್ ಸಮಸ್ಯೆ
+          payload: ವಿದ್ಯುತ್ ಸಮಸ್ಯೆ
+  utter_ask_garbage_issue_type_kannada:
+    - text: >-
+        ನೀವು ಯಾವ ರೀತಿಯ ಕಸದ ಸೇವೆಯಲ್ಲಿ ಸಮಸ್ಯೆಯನ್ನು ಎದುರಿಸುತ್ತಿರುವಿರಿ ಎಂದು ದಯವಿಟ್ಟು
+        ನನಗೆ ತಿಳಿಸಬಹುದಾ?
+      buttons:
+        - title: ಕಸ ಹಾಕುವುದನ್ನು ತಪ್ಪಿಸಿಕೊಂಡೆ
+          payload: MISSED_GARBAGE_PICKUP
+          action: civicIssueKannada
+        - title: ಕಸದ ವಾಹನ ಆಗಮಿಸಲಿಲ್ಲ
+          payload: GARBAGE_VEHICLE_NOT_ARRIVED
+          action: civicIssueKannada
+        - title: ಕಸವನ್ನು ಸುಡುತ್ತಿರುವುದು
+          payload: BURNING_OF_GARBAGE_IN_OPEN_SPACE
+          action: civicIssueKannada
+  utter_ask_location_kannada:
+    - text: ದಯವಿಟ್ಟು ನೀವು ಇರುವ ಸ್ಥಳವನ್ನು ತಿಳಿಸಿ
+      buttons:
+        - title: ಪ್ರಸ್ತುತ ಸ್ಥಳವನ್ನು ಹಂಚಿಕೊಳ್ಳಿ
+          payload: ಪ್ರಸ್ತುತ ಸ್ಥಳವನ್ನು ಹಂಚಿಕೊಳ್ಳಿ
+          action: getLocationKannada
+        - title: ನಕ್ಷೆಯಲ್ಲಿ ಗುರುತಿಸಿ
+          payload: ನಕ್ಷೆಯಲ್ಲಿ ಗುರುತಿಸಿ
+          action: markLocationKannada
+  utter_ask_satisfied_kannada:
+    - text: ನಿಮಗೆ ತೃಪ್ತಿ ಆಗಿದೆಯಾ?
+      buttons:
+        - title: ಹೌದು
+          payload: 'Yes'
+        - title: 'ಇಲ್ಲ, ಈ ದೂರನ್ನು ವರದಿ ಮಾಡಿ'
+          payload: 'no'
+  utter_ask_attachments_kannada:
+    - text: ಈ ಸಮಸ್ಯೆಯ ಫೋಟೋವನ್ನು ಹಂಚಿಕೊಳ್ಳಲು ನೀವು ಬಯಸುವಿರಾ?
+      buttons:
+        - title: "\U0001F4CE"
+          payload: attachkannada
+          action: attachkannada
+        - title: ಇಲ್ಲ
+          payload: ಇಲ್ಲ
+  utter_req_cancel_kannada:
+    - text: ನಿಮ್ಮ ವಿನಂತಿಯಂತೆ ದೂರನ್ನು ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ
+  utter_ask_common_complaint_location_kannada:
+    - text: ದೂರಿನ ಸ್ಥಳವನ್ನು ಹಂಚಿಕೊಳ್ಳಬಹುದೇ?
+      buttons:
+        - title: ಪ್ರಸ್ತುತ ಸ್ಥಳವನ್ನು ಹಂಚಿಕೊಳ್ಳಿ
+          payload: share_current_location
+          action: getCurrentLocationKannada
+        - title: ನಕ್ಷೆಯಲ್ಲಿ ಗುರುತಿಸಿ
+          payload: mark_on_map
+          action: markOnMapKannada
+  utter_thank_you_kannada:
+    - text: "ಧನ್ಯವಾದ \U0001F603"
+    - text: "ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿದಕ್ಕಾಗಿ ಧನ್ಯವಾದಗಳು \U0001F603"
+  utter_nice_day_kannada:
+    - text: "ಶುಭ ದಿನ \U0001F603"
+  utter_greet_resolve:
+    - text: "I'm Glad that your issue is resolved \U0001F603"
+  utter_user_thankyou:
+    - text: "Glad you liked it \U0001F603"
+  utter_askCivicDetails_kannada:
+    - text: ನಿಮ್ಮ ಸಮಸ್ಯೆಯ ಬಗ್ಗೆ ಸಂಕ್ಷಿಪ್ತವಾಗಿ ವಿವರಿಸಿ
+      buttons:
+        - type: incidentRemarksKannada
+  utter_confirmRaiseCivicComplaint_tamil:
+    - text: இந்த புகாரை நீங்கள் எழுப்ப விரும்புகிறீர்களா?
+      buttons:
+        - title: ஆம்
+          payload: ஆம்
+          action: affirm_tamil
+        - title: இல்லை
+          payload: இல்லை
+          action: deny
+  utter_confirmRaiseCivicComplaint_kannada:
+    - text: ಈ ದೂರನ್ನು ದಾಖಲಿಸಲು ನೀವು ಬಯಸುವಿರಾ?
+      buttons:
+        - title: ಹೌದು
+          payload: ಹೌದು
+          action: affirm_kannada
+        - title: ಇಲ್ಲ
+          payload: ಇಲ್ಲ
+          action: deny
+  utter_starting_quote:
+    - text: No Water. No Life. No Blue. No Green
+    - text: 'Water and air, the two essential fluids on which all life depends'
+  utter_parking_suggestion_buttons:
+    - text: skipmessage
+      buttons:
+        - title: Search another parking location
+          payload: Search another parking location
+        - title: No thanks
+          payload: 'no'
+  utter_agent_connect:
+    - text: May i connect to Operator
+      buttons:
+        - title: 'Yes'
+          action: connectAgent
+        - title: 'No'
+          action: denyConnectOperator
+  utter_pay_electricity_bill:
+    - text: >-
+        You have not paid your electricity bill. Please pay your electricity
+        bill.
+  utter_no_electricity_reasons:
+    - text: >-
+        These may be possible reasons for no electricity supply <br>1). Please
+        check the fuses in the electric board<br> 2). please check with the main
+        connection <br> <a
+        href="https://www.platinumelectricians.com.au/blog/common-electrical-problems-around-the-home"
+        target="_blank">Click here for more information </a>
+  utter_ask_electricityaccno:
+    - text: >-
+        we will help you to resolve the issue, can you please enter your
+        electricity account no
+  utter_insufficient_balance:
+    - text: >-
+        Sorry, you have insufficient balance in your account please recharge to
+        continue the service.
+  utter_socialIncident_Info:
+    - text: info
+  utter_socialIncident_Event:
+    - text: event

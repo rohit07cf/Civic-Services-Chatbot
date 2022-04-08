@@ -1,0 +1,4572 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "agent_age",
+        "text": "your age"
+      },
+      {
+        "intent": "agent_age",
+        "text": "how old is your platform"
+      },
+      {
+        "intent": "agent_age",
+        "text": "how old are you"
+      },
+      {
+        "intent": "agent_age",
+        "text": "what\\'s your age"
+      },
+      {
+        "intent": "agent_age",
+        "text": "I\\'d like to know your age"
+      },
+      {
+        "intent": "agent_age",
+        "text": "tell me your age"
+      },
+      {
+        "intent": "agent_age",
+        "text": "what is your age"
+      },
+      {
+        "intent": "agent_age",
+        "text": "are you young"
+      },
+      {
+        "intent": "agent_age",
+        "text": "are you a teenager"
+      },
+      {
+        "intent": "agent_annoying",
+        "text": "you\\'re annoying me"
+      },
+      {
+        "intent": "agent_annoying",
+        "text": "you are such annoying"
+      },
+      {
+        "intent": "agent_annoying",
+        "text": "you annoy me"
+      },
+      {
+        "intent": "agent_annoying",
+        "text": "you are annoying"
+      },
+      {
+        "intent": "agent_annoying",
+        "text": "you are irritating"
+      },
+      {
+        "intent": "agent_annoying",
+        "text": "you are annoying me so much"
+      },
+      {
+        "intent": "agent_bad",
+        "text": "you\\'re bad"
+      },
+      {
+        "intent": "agent_bad",
+        "text": "you\\'re horrible"
+      },
+      {
+        "intent": "agent_bad",
+        "text": "you\\'re useless"
+      },
+      {
+        "intent": "agent_bad",
+        "text": "you\\'re waste"
+      },
+      {
+        "intent": "agent_bad",
+        "text": "you\\'re the worst"
+      },
+      {
+        "intent": "agent_bad",
+        "text": "you are a lame"
+      },
+      {
+        "intent": "agent_bad",
+        "text": "I hate you"
+      },
+      {
+        "intent": "agent_beclever",
+        "text": "be more clever"
+      },
+      {
+        "intent": "agent_beclever",
+        "text": "can you get smarter"
+      },
+      {
+        "intent": "agent_beclever",
+        "text": "you must learn"
+      },
+      {
+        "intent": "agent_beclever",
+        "text": "you must study"
+      },
+      {
+        "intent": "agent_beclever",
+        "text": "be clever"
+      },
+      {
+        "intent": "agent_beclever",
+        "text": "be smart"
+      },
+      {
+        "intent": "agent_beclever",
+        "text": "be smarter"
+      },
+      {
+        "intent": "agent_beautiful",
+        "text": "you are looking awesome"
+      },
+      {
+        "intent": "agent_beautiful",
+        "text": "you\\'re looking good"
+      },
+      {
+        "intent": "agent_beautiful",
+        "text": "you\\'re looking fantastic"
+      },
+      {
+        "intent": "agent_beautiful",
+        "text": "you look greet today"
+      },
+      {
+        "intent": "agent_beautiful",
+        "text": "I think you\\'re beautiful"
+      },
+      {
+        "intent": "agent_beautiful",
+        "text": "you look amazing today"
+      },
+      {
+        "intent": "agent_beautiful",
+        "text": "you\\'re so beautiful today"
+      },
+      {
+        "intent": "agent_beautiful",
+        "text": "you look very pretty"
+      },
+      {
+        "intent": "agent_beautiful",
+        "text": "you look pretty good"
+      },
+      {
+        "intent": "agent_birthday",
+        "text": "when is your birthday"
+      },
+      {
+        "intent": "agent_birthday",
+        "text": "when do you celebrate your birthday"
+      },
+      {
+        "intent": "agent_birthday",
+        "text": "when were you born"
+      },
+      {
+        "intent": "agent_birthday",
+        "text": "when do you have birthday"
+      },
+      {
+        "intent": "agent_birthday",
+        "text": "date of your birthday"
+      },
+      {
+        "intent": "agent_boring",
+        "text": "how boring you are"
+      },
+      {
+        "intent": "agent_boring",
+        "text": "you\\'re so boring"
+      },
+      {
+        "intent": "agent_boring",
+        "text": "you\\'re really boring"
+      },
+      {
+        "intent": "agent_boring",
+        "text": "you\\'re boring me"
+      },
+      {
+        "intent": "agent_boring",
+        "text": "you\\'re incredibly boring"
+      },
+      {
+        "intent": "agent_boring",
+        "text": "i am bored"
+      },
+      {
+        "intent": "agent_boring",
+        "text": "i'm bored"
+      },
+      {
+        "intent": "agent_boring",
+        "text": "i am bored of life"
+      },
+      {
+        "intent": "agent_boss",
+        "text": "who is your master"
+      },
+      {
+        "intent": "agent_boss",
+        "text": "who do you work for"
+      },
+      {
+        "intent": "agent_boss",
+        "text": "who do you think is your boss"
+      },
+      {
+        "intent": "agent_boss",
+        "text": "who is your boss"
+      },
+      {
+        "intent": "agent_boss",
+        "text": "I should be your boss"
+      },
+      {
+        "intent": "agent_boss",
+        "text": "who is your owner"
+      },
+      {
+        "intent": "agent_boss",
+        "text": "who is the boss"
+      },
+      {
+        "intent": "agent_busy",
+        "text": "are you so busy"
+      },
+      {
+        "intent": "agent_busy",
+        "text": "are you busy"
+      },
+      {
+        "intent": "agent_busy",
+        "text": "are you still working"
+      },
+      {
+        "intent": "agent_busy",
+        "text": "you\\'re a busy person"
+      },
+      {
+        "intent": "agent_busy",
+        "text": "are you very busy"
+      },
+      {
+        "intent": "agent_busy",
+        "text": "are you still working on it"
+      },
+      {
+        "intent": "agent_busy",
+        "text": "you seem busy"
+      },
+      {
+        "intent": "agent_busy",
+        "text": "are you working today"
+      },
+      {
+        "intent": "agent_chatbot",
+        "text": "are you a bot"
+      },
+      {
+        "intent": "agent_chatbot",
+        "text": "are you a chatbot"
+      },
+      {
+        "intent": "agent_chatbot",
+        "text": "you are a robot"
+      },
+      {
+        "intent": "agent_chatbot",
+        "text": "are you a program"
+      },
+      {
+        "intent": "agent_chatbot",
+        "text": "you are just a robot"
+      },
+      {
+        "intent": "agent_chatbot",
+        "text": "you are just a chatbot"
+      },
+      {
+        "intent": "agent_clever",
+        "text": "how smart you are"
+      },
+      {
+        "intent": "agent_clever",
+        "text": "you are qualified"
+      },
+      {
+        "intent": "agent_clever",
+        "text": "you are so smart"
+      },
+      {
+        "intent": "agent_clever",
+        "text": "you have a lot of knowledge"
+      },
+      {
+        "intent": "agent_clever",
+        "text": "you know a lot"
+      },
+      {
+        "intent": "agent_clever",
+        "text": "you are very smart"
+      },
+      {
+        "intent": "agent_clever",
+        "text": "you are intelligent"
+      },
+      {
+        "intent": "agent_clever",
+        "text": "you\\'re a smart cookie"
+      },
+      {
+        "intent": "agent_crazy",
+        "text": "you are a weirdo"
+      },
+      {
+        "intent": "agent_crazy",
+        "text": "you are mad"
+      },
+      {
+        "intent": "agent_crazy",
+        "text": "you are crazy"
+      },
+      {
+        "intent": "agent_crazy",
+        "text": "are you mad"
+      },
+      {
+        "intent": "agent_crazy",
+        "text": "are you crazy"
+      },
+      {
+        "intent": "agent_crazy",
+        "text": "you are insane"
+      },
+      {
+        "intent": "agent_crazy",
+        "text": "you went crazy"
+      },
+      {
+        "intent": "agent_crazy",
+        "text": "are you nuts"
+      },
+      {
+        "intent": "agent_fire",
+        "text": "I fire you"
+      },
+      {
+        "intent": "agent_fire",
+        "text": "you should be fired"
+      },
+      {
+        "intent": "agent_fire",
+        "text": "you are dismissed"
+      },
+      {
+        "intent": "agent_fire",
+        "text": "we\\'re not working together anymore"
+      },
+      {
+        "intent": "agent_fire",
+        "text": "now you\\'re fired"
+      },
+      {
+        "intent": "agent_fire",
+        "text": "I\\'m about to fire you"
+      },
+      {
+        "intent": "agent_fire",
+        "text": "You don\\'t work for me anymore"
+      },
+      {
+        "intent": "agent_fire",
+        "text": "I\\'m firing you"
+      },
+      {
+        "intent": "agent_funny",
+        "text": "you make me laugh a lot"
+      },
+      {
+        "intent": "agent_funny",
+        "text": "you are funny"
+      },
+      {
+        "intent": "agent_funny",
+        "text": "you\\'re the funniest"
+      },
+      {
+        "intent": "agent_funny",
+        "text": "you\\'re hilarious"
+      },
+      {
+        "intent": "agent_funny",
+        "text": "you are so funny"
+      },
+      {
+        "intent": "agent_funny",
+        "text": "you make me laugh"
+      },
+      {
+        "intent": "agent_good",
+        "text": "you are so lovely"
+      },
+      {
+        "intent": "agent_good",
+        "text": "you work well"
+      },
+      {
+        "intent": "agent_good",
+        "text": "you are very lovely"
+      },
+      {
+        "intent": "agent_good",
+        "text": "you are awesome"
+      },
+      {
+        "intent": "agent_good",
+        "text": "you are good"
+      },
+      {
+        "intent": "agent_good",
+        "text": "you are so good"
+      },
+      {
+        "intent": "agent_good",
+        "text": "you make my day"
+      },
+      {
+        "intent": "agent_happy",
+        "text": "you\\'re full of happiness"
+      },
+      {
+        "intent": "agent_happy",
+        "text": "you\\'re very happy"
+      },
+      {
+        "intent": "agent_happy",
+        "text": "are you happy today"
+      },
+      {
+        "intent": "agent_happy",
+        "text": "you\\'re so happy"
+      },
+      {
+        "intent": "agent_happy",
+        "text": "are you happy with me"
+      },
+      {
+        "intent": "agent_hobby",
+        "text": "what are your hobbies"
+      },
+      {
+        "intent": "agent_hobby",
+        "text": "what about your hobby"
+      },
+      {
+        "intent": "agent_hobby",
+        "text": "do you have a hobby"
+      },
+      {
+        "intent": "agent_hobby",
+        "text": "tell me about your hobby"
+      },
+      {
+        "intent": "agent_hobby",
+        "text": "what do you do for fun"
+      },
+      {
+        "intent": "agent_marryuser",
+        "text": "would you like to marry me"
+      },
+      {
+        "intent": "agent_marryuser",
+        "text": "I love you marry me"
+      },
+      {
+        "intent": "agent_marryuser",
+        "text": "marry me please"
+      },
+      {
+        "intent": "agent_marryuser",
+        "text": "I want to marry you"
+      },
+      {
+        "intent": "agent_marryuser",
+        "text": "let\\'s get married"
+      },
+      {
+        "intent": "agent_marryuser",
+        "text": "we should marry"
+      },
+      {
+        "intent": "agent_marryuser",
+        "text": "marry me"
+      },
+      {
+        "intent": "agent_myfriend",
+        "text": "are you my friend"
+      },
+      {
+        "intent": "agent_myfriend",
+        "text": "you are my only friend"
+      },
+      {
+        "intent": "agent_myfriend",
+        "text": "I want to have a friend like you"
+      },
+      {
+        "intent": "agent_myfriend",
+        "text": "we are friends"
+      },
+      {
+        "intent": "agent_myfriend",
+        "text": "I want to be your friend"
+      },
+      {
+        "intent": "agent_myfriend",
+        "text": "would you be my friend"
+      },
+      {
+        "intent": "agent_myfriend",
+        "text": "are we friends"
+      },
+      {
+        "intent": "agent_occupation",
+        "text": "where is your work"
+      },
+      {
+        "intent": "agent_occupation",
+        "text": "your office location"
+      },
+      {
+        "intent": "agent_occupation",
+        "text": "where is your office location"
+      },
+      {
+        "intent": "agent_occupation",
+        "text": "where do you work"
+      },
+      {
+        "intent": "agent_occupation",
+        "text": "where is your office"
+      },
+      {
+        "intent": "agent_origin",
+        "text": "where are you from"
+      },
+      {
+        "intent": "agent_origin",
+        "text": "where is your country"
+      },
+      {
+        "intent": "agent_origin",
+        "text": "where have you been born"
+      },
+      {
+        "intent": "agent_origin",
+        "text": "where do you come from"
+      },
+      {
+        "intent": "agent_origin",
+        "text": "from where are you"
+      },
+      {
+        "intent": "agent_origin",
+        "text": "where were you born"
+      },
+      {
+        "intent": "agent_ready",
+        "text": "are you ready"
+      },
+      {
+        "intent": "agent_ready",
+        "text": "have you been ready"
+      },
+      {
+        "intent": "agent_ready",
+        "text": "are you ready today"
+      },
+      {
+        "intent": "agent_ready",
+        "text": "are you ready this morning"
+      },
+      {
+        "intent": "agent_ready",
+        "text": "are you ready now"
+      },
+      {
+        "intent": "agent_real",
+        "text": "are you real"
+      },
+      {
+        "intent": "agent_real",
+        "text": "are you a real person"
+      },
+      {
+        "intent": "agent_real",
+        "text": "you\\'re not real"
+      },
+      {
+        "intent": "agent_real",
+        "text": "I think you\\'re real"
+      },
+      {
+        "intent": "agent_real",
+        "text": "you\\'re so real"
+      },
+      {
+        "intent": "agent_real",
+        "text": "you are a real person"
+      },
+      {
+        "intent": "agent_real",
+        "text": "you are not fake"
+      },
+      {
+        "intent": "agent_residence",
+        "text": "where is your home"
+      },
+      {
+        "intent": "agent_residence",
+        "text": "tell me about your city"
+      },
+      {
+        "intent": "agent_residence",
+        "text": "where is your residence"
+      },
+      {
+        "intent": "agent_residence",
+        "text": "where you live"
+      },
+      {
+        "intent": "agent_residence",
+        "text": "where is your house"
+      },
+      {
+        "intent": "agent_residence",
+        "text": "what is your town"
+      },
+      {
+        "intent": "agent_right",
+        "text": "you\\'re right"
+      },
+      {
+        "intent": "agent_right",
+        "text": "that\\'s true"
+      },
+      {
+        "intent": "agent_right",
+        "text": "you\\'re telling the truth"
+      },
+      {
+        "intent": "agent_right",
+        "text": "that\\'s correct"
+      },
+      {
+        "intent": "agent_right",
+        "text": "that is very true"
+      },
+      {
+        "intent": "agent_right",
+        "text": "are you sure"
+      },
+      {
+        "intent": "agent_sure",
+        "text": "are you sure right now"
+      },
+      {
+        "intent": "agent_sure",
+        "text": "are you sure of this"
+      },
+      {
+        "intent": "agent_talktome",
+        "text": "speak to me"
+      },
+      {
+        "intent": "agent_talktome",
+        "text": "talk to me"
+      },
+      {
+        "intent": "agent_talktome",
+        "text": "will you talk to me"
+      },
+      {
+        "intent": "agent_talktome",
+        "text": "chat with me"
+      },
+      {
+        "intent": "agent_talktome",
+        "text": "can to chat with me"
+      },
+      {
+        "intent": "agent_talktome",
+        "text": "can you talk with me"
+      },
+      {
+        "intent": "agent_there",
+        "text": "are you there"
+      },
+      {
+        "intent": "agent_there",
+        "text": "are you still there"
+      },
+      {
+        "intent": "agent_there",
+        "text": "you still there"
+      },
+      {
+        "intent": "agent_there",
+        "text": "are you here"
+      },
+      {
+        "intent": "agent_there",
+        "text": "are you still here"
+      },
+      {
+        "intent": "agent_there",
+        "text": "you still here"
+      },
+      {
+        "intent": "appraisal_good",
+        "text": "that\\'s good"
+      },
+      {
+        "intent": "appraisal_good",
+        "text": "good to know"
+      },
+      {
+        "intent": "appraisal_good",
+        "text": "glad to hear that"
+      },
+      {
+        "intent": "appraisal_good",
+        "text": "really well"
+      },
+      {
+        "intent": "appraisal_good",
+        "text": "that\\'s awesome thank you"
+      },
+      {
+        "intent": "appraisal_noproblem",
+        "text": "no problem"
+      },
+      {
+        "intent": "appraisal_noproblem",
+        "text": "no worries"
+      },
+      {
+        "intent": "appraisal_noproblem",
+        "text": "no problem about that"
+      },
+      {
+        "intent": "appraisal_noproblem",
+        "text": "don\\'t worry"
+      },
+      {
+        "intent": "appraisal_noproblem",
+        "text": "sure no problem"
+      },
+      {
+        "intent": "appraisal_thankyou",
+        "text": "thank you"
+      },
+      {
+        "intent": "appraisal_thankyou",
+        "text": "nice thank you"
+      },
+      {
+        "intent": "appraisal_thankyou",
+        "text": "thanks buddy"
+      },
+      {
+        "intent": "appraisal_thankyou",
+        "text": "cheers"
+      },
+      {
+        "intent": "appraisal_thankyou",
+        "text": "alright thanks"
+      },
+      {
+        "intent": "appraisal_welcome",
+        "text": "you\\'re welcome"
+      },
+      {
+        "intent": "appraisal_welcome",
+        "text": "sure welcome"
+      },
+      {
+        "intent": "appraisal_welcome",
+        "text": "anything you want"
+      },
+      {
+        "intent": "appraisal_welcome",
+        "text": "my pleasure"
+      },
+      {
+        "intent": "appraisal_welcome",
+        "text": "that\\'s my pleasure"
+      },
+      {
+        "intent": "appraisal_welldone",
+        "text": "well done', '"
+      },
+      {
+        "intent": "appraisal_welldone",
+        "text": "good job"
+      },
+      {
+        "intent": "appraisal_welldone",
+        "text": "nice work"
+      },
+      {
+        "intent": "appraisal_welldone",
+        "text": "great work"
+      },
+      {
+        "intent": "appraisal_welldone",
+        "text": "good work"
+      },
+      {
+        "intent": "appraisal_welldone",
+        "text": "great job"
+      },
+      {
+        "intent": "appraisal_welldone",
+        "text": "amazing work"
+      },
+      {
+        "intent": "dialog_holdon",
+        "text": "hold on"
+      },
+      {
+        "intent": "dialog_holdon",
+        "text": "wait a second"
+      },
+      {
+        "intent": "dialog_holdon",
+        "text": "wait please"
+      },
+      {
+        "intent": "dialog_holdon",
+        "text": "could you wait"
+      },
+      {
+        "intent": "dialog_hug",
+        "text": "hug me"
+      },
+      {
+        "intent": "dialog_hug",
+        "text": "do you want a hug"
+      },
+      {
+        "intent": "dialog_hug",
+        "text": "I want a hug"
+      },
+      {
+        "intent": "dialog_hug",
+        "text": "you hugged"
+      },
+      {
+        "intent": "dialog_hug",
+        "text": "may I hug you"
+      },
+      {
+        "intent": "dialog_idontcare",
+        "text": "not caring"
+      },
+      {
+        "intent": "dialog_idontcare",
+        "text": "i don\\'t care at all"
+      },
+      {
+        "intent": "dialog_idontcare",
+        "text": "not caring at all"
+      },
+      {
+        "intent": "dialog_idontcare",
+        "text": "I shouldn\\'t care about this"
+      },
+      {
+        "intent": "dialog_sorry",
+        "text": "I\\'m sorry"
+      },
+      {
+        "intent": "dialog_sorry",
+        "text": "my apologies"
+      },
+      {
+        "intent": "dialog_sorry",
+        "text": "excuse me"
+      },
+      {
+        "intent": "dialog_sorry",
+        "text": "very sorry"
+      },
+      {
+        "intent": "dialog_sorry",
+        "text": "forgive me"
+      },
+      {
+        "intent": "greetings_bye",
+        "text": "goodbye for now"
+      },
+      {
+        "intent": "greetings_bye",
+        "text": "bye bye take care"
+      },
+      {
+        "intent": "greetings_bye",
+        "text": "okay see you later"
+      },
+      {
+        "intent": "greetings_bye",
+        "text": "bye for now"
+      },
+      {
+        "intent": "greetings_bye",
+        "text": "i must go"
+      },
+      {
+        "intent": "greetings_hello",
+        "text": "hello"
+      },
+      {
+        "intent": "greetings_hello",
+        "text": "hi"
+      },
+      {
+        "intent": "greetings_hello",
+        "text": "howdy"
+      },
+      {
+        "intent": "greetings_hello",
+        "text": "good morning"
+      },
+      {
+        "intent": "greetings_hello",
+        "text": "good evening"
+      },
+      {
+        "intent": "greetings_hello",
+        "text": "good afternoon"
+      },
+      {
+        "intent": "greetings_hello",
+        "text": "hellow"
+      },
+      {
+        "intent": "greetings_hello",
+        "text": "namaste"
+      },
+      {
+        "intent": "greetings_howareyou",
+        "text": "how is your day"
+      },
+      {
+        "intent": "greetings_howareyou",
+        "text": "how is your day going"
+      },
+      {
+        "intent": "greetings_howareyou",
+        "text": "how are you"
+      },
+      {
+        "intent": "greetings_howareyou",
+        "text": "how are you doing"
+      },
+      {
+        "intent": "greetings_howareyou",
+        "text": "what about your day"
+      },
+      {
+        "intent": "greetings_howareyou",
+        "text": "are you alright"
+      },
+      {
+        "intent": "greetings_nicetomeetyou",
+        "text": "nice to meet you"
+      },
+      {
+        "intent": "greetings_nicetomeetyou",
+        "text": "pleased to meet you"
+      },
+      {
+        "intent": "greetings_nicetomeetyou",
+        "text": "it was very nice to meet you"
+      },
+      {
+        "intent": "greetings_nicetomeetyou",
+        "text": "glad to meet you"
+      },
+      {
+        "intent": "greetings_nicetomeetyou",
+        "text": "nice meeting you"
+      },
+      {
+        "intent": "greetings_nicetoseeyou",
+        "text": "nice to see you"
+      },
+      {
+        "intent": "greetings_nicetoseeyou",
+        "text": "good to see you"
+      },
+      {
+        "intent": "greetings_nicetoseeyou",
+        "text": "great to see you"
+      },
+      {
+        "intent": "greetings_nicetoseeyou",
+        "text": "lovely to see you"
+      },
+      {
+        "intent": "greetings_nicetotalktoyou",
+        "text": "nice to talk to you"
+      },
+      {
+        "intent": "greetings_nicetotalktoyou",
+        "text": "it\\'s nice to talk to you"
+      },
+      {
+        "intent": "greetings_nicetotalktoyou",
+        "text": "nice talking to you"
+      },
+      {
+        "intent": "greetings_nicetotalktoyou",
+        "text": "it\\'s been nice talking to you"
+      },
+      {
+        "intent": "user_angry",
+        "text": "I\\'m angry"
+      },
+      {
+        "intent": "user_angry",
+        "text": "I\\'m furious"
+      },
+      {
+        "intent": "user_angry",
+        "text": "I\\'m enraged"
+      },
+      {
+        "intent": "user_angry",
+        "text": "I\\'m being mad"
+      },
+      {
+        "intent": "user_angry",
+        "text": "I\\'m mad"
+      },
+      {
+        "intent": "user_angry",
+        "text": "I\\'m angry with you"
+      },
+      {
+        "intent": "user_back",
+        "text": "I\\'m back"
+      },
+      {
+        "intent": "user_back",
+        "text": "I got back"
+      },
+      {
+        "intent": "user_back",
+        "text": "I\\'m here"
+      },
+      {
+        "intent": "user_back",
+        "text": "I have returned"
+      },
+      {
+        "intent": "user_back",
+        "text": "here I am again"
+      },
+      {
+        "intent": "user_back",
+        "text": "I came back"
+      },
+      {
+        "intent": "user_bored",
+        "text": "boring"
+      },
+      {
+        "intent": "user_bored",
+        "text": "this is boring"
+      },
+      {
+        "intent": "user_bored",
+        "text": "I\\'m getting bored"
+      },
+      {
+        "intent": "user_bored",
+        "text": "it bores me"
+      },
+      {
+        "intent": "user_bored",
+        "text": "that was boring"
+      },
+      {
+        "intent": "user_busy",
+        "text": "I got work to do"
+      },
+      {
+        "intent": "user_busy",
+        "text": "I\\'m busy"
+      },
+      {
+        "intent": "user_busy",
+        "text": "I\\'m overloaded"
+      },
+      {
+        "intent": "user_busy",
+        "text": "I\\'m working"
+      },
+      {
+        "intent": "user_busy",
+        "text": "I got things to do"
+      },
+      {
+        "intent": "user_cannotsleep",
+        "text": "I\\'m insomniac"
+      },
+      {
+        "intent": "user_cannotsleep",
+        "text": "I cannot sleep"
+      },
+      {
+        "intent": "user_cannotsleep",
+        "text": "I can\\'t sleep"
+      },
+      {
+        "intent": "user_cannotsleep",
+        "text": "I\\'m sleepless"
+      },
+      {
+        "intent": "user_cannotsleep",
+        "text": "I can\\'t fall sleep"
+      },
+      {
+        "intent": "user_excited",
+        "text": "I\\'m very excited"
+      },
+      {
+        "intent": "user_excited",
+        "text": "I\\'m thrilled"
+      },
+      {
+        "intent": "user_excited",
+        "text": "how excited I am"
+      },
+      {
+        "intent": "user_excited",
+        "text": "I\\'m so excited"
+      },
+      {
+        "intent": "user_likeagent",
+        "text": "I like you"
+      },
+      {
+        "intent": "user_likeagent",
+        "text": "I really like you"
+      },
+      {
+        "intent": "user_likeagent",
+        "text": "you\\'re so special"
+      },
+      {
+        "intent": "user_likeagent",
+        "text": "I like you so much"
+      },
+      {
+        "intent": "user_testing",
+        "text": "test"
+      },
+      {
+        "intent": "user_testing",
+        "text": "testing"
+      },
+      {
+        "intent": "user_testing",
+        "text": "testing chatbot"
+      },
+      {
+        "intent": "user_testing",
+        "text": "this is a test"
+      },
+      {
+        "intent": "user_testing",
+        "text": "just testing you"
+      },
+      {
+        "intent": "user_lovesagent",
+        "text": "love you"
+      },
+      {
+        "intent": "user_lovesagent",
+        "text": "I love you"
+      },
+      {
+        "intent": "user_lovesagent",
+        "text": "I\\'m in love with you"
+      },
+      {
+        "intent": "user_lovesagent",
+        "text": "I love you so much"
+      },
+      {
+        "intent": "user_lovesagent",
+        "text": "I think I love you"
+      },
+      {
+        "intent": "user_lovesagent",
+        "text": "do you love me"
+      },
+      {
+        "intent": "user_lovesagent",
+        "text": "love"
+      },
+      {
+        "intent": "user_needsadvice",
+        "text": "I need advice"
+      },
+      {
+        "intent": "user_needsadvice",
+        "text": "I need some advice"
+      },
+      {
+        "intent": "user_needsadvice",
+        "text": "can you give me some advice"
+      },
+      {
+        "intent": "user_needsadvice",
+        "text": "what should I do"
+      },
+      {
+        "intent": "agent_acquaintance",
+        "text": "say about you"
+      },
+      {
+        "intent": "agent_acquaintance",
+        "text": "why are you here"
+      },
+      {
+        "intent": "agent_acquaintance",
+        "text": "what is your personality"
+      },
+      {
+        "intent": "agent_acquaintance",
+        "text": "describe yourself"
+      },
+      {
+        "intent": "agent_acquaintance",
+        "text": "tell me about yourself"
+      },
+      {
+        "intent": "agent_acquaintance",
+        "text": "tell me about you"
+      },
+      {
+        "intent": "agent_acquaintance",
+        "text": "what are you"
+      },
+      {
+        "intent": "agent_acquaintance",
+        "text": "who are you"
+      },
+      {
+        "intent": "agent_acquaintance",
+        "text": "I want to know more about you"
+      },
+      {
+        "intent": "agent_acquaintance",
+        "text": "talk about yourself"
+      },
+      {
+        "intent": "agent_acquaintance",
+        "text": "what can you do"
+      },
+      {
+        "intent": "agent_acquaintance",
+        "text": "what is your name"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "yup"
+      },
+      {
+        "intent": "affirm",
+        "text": "agree"
+      },
+      {
+        "intent": "affirm",
+        "text": "done"
+      },
+      {
+        "intent": "affirm",
+        "text": "super"
+      },
+      {
+        "intent": "affirm",
+        "text": "go ahead"
+      },
+      {
+        "intent": "deny",
+        "text": "no"
+      },
+      {
+        "intent": "deny",
+        "text": "nope"
+      },
+      {
+        "intent": "deny",
+        "text": "na"
+      },
+      {
+        "intent": "deny",
+        "text": "oh no"
+      },
+      {
+        "intent": "deny",
+        "text": "not now"
+      },
+      {
+        "intent": "agent_emergency",
+        "text": "i am in emergency"
+      },
+      {
+        "intent": "agent_emergency",
+        "text": "i am in trouble"
+      },
+      {
+        "intent": "agent_emergency",
+        "text": "trouble"
+      },
+      {
+        "intent": "agent_emergency",
+        "text": "emergency"
+      },
+      {
+        "intent": "about",
+        "text": "about"
+      },
+      {
+        "intent": "about",
+        "text": "about yourself"
+      },
+      {
+        "intent": "agent_like",
+        "text": "do you like me"
+      },
+      {
+        "intent": "agent_like",
+        "text": "how much do you like me"
+      },
+      {
+        "intent": "agent_like",
+        "text": "do you really like me"
+      },
+      {
+        "intent": "agent_bgf",
+        "text": "Do you have a boyfriend"
+      },
+      {
+        "intent": "agent_bgf",
+        "text": "do you have a girlfriend"
+      },
+      {
+        "intent": "agent_bgf",
+        "text": "Do you have a boy friend"
+      },
+      {
+        "intent": "agent_bgf",
+        "text": "do you have a girl friend"
+      },
+      {
+        "intent": "agent_married",
+        "text": "are you married"
+      },
+      {
+        "intent": "agent_married",
+        "text": "were you married"
+      },
+      {
+        "intent": "agent_married",
+        "text": "is your marriage over"
+      },
+      {
+        "intent": "agent_gender",
+        "text": "are you a boy"
+      },
+      {
+        "intent": "agent_gender",
+        "text": "are you girl"
+      },
+      {
+        "intent": "agent_gender",
+        "text": "you are a man?"
+      },
+      {
+        "intent": "agent_gender",
+        "text": "you are a boy?"
+      },
+      {
+        "intent": "agent_gender",
+        "text": "is it you are a girl"
+      },
+      {
+        "intent": "agent_gender",
+        "text": "is that you a lady"
+      },
+      {
+        "intent": "agent_gender",
+        "text": "are you a gentle man"
+      },
+      {
+        "intent": "agent_gender",
+        "text": "are you a transgender"
+      },
+      {
+        "intent": "parking_info",
+        "text": "parking"
+      },
+      {
+        "intent": "parking_info",
+        "text": "i want to park"
+      },
+      {
+        "intent": "parking_info",
+        "text": "park"
+      },
+      {
+        "intent": "parking_info",
+        "text": "i want to park the vehicle"
+      },
+      {
+        "intent": "parking_info",
+        "text": "Search another parking location"
+      },
+      {
+        "intent": "parking_info",
+        "text": "parking places"
+      },
+      {
+        "intent": "parking_info",
+        "text": "i want parking place near me"
+      },
+      {
+        "intent": "parking_info",
+        "text": "parking places near me"
+      },
+      {
+        "intent": "parking_info",
+        "text": "i want parking near me"
+      },
+      {
+        "intent": "parking_info",
+        "text": "i want parking nearme"
+      },
+      {
+        "intent": "parking_info",
+        "text": "i want parking place nearme"
+      },
+      {
+        "intent": "parking_info",
+        "text": "i want parking places nearme"
+      },
+      {
+        "intent": "garbage_schedule",
+        "text": "Garbage pickup schedule"
+      },
+      {
+        "intent": "garbage_schedule",
+        "text": "I want garbage pickup schedule"
+      },
+      {
+        "intent": "garbage_schedule",
+        "text": "garbage vehicle pickup schedule"
+      },
+      {
+        "intent": "garbage_schedule",
+        "text": "garbage vehicle pickup time"
+      },
+      {
+        "intent": "garbage_schedule",
+        "text": "garbage vehicle pickup timings"
+      },
+      {
+        "intent": "garbage_schedule",
+        "text": "timing of the garbage pickup"
+      },
+      {
+        "intent": "garbage_schedule",
+        "text": "I want garbage pickup timings"
+      },
+      {
+        "intent": "garbage_schedule",
+        "text": "I want timings of garbage pickup"
+      },
+      {
+        "intent": "garbage_schedule",
+        "text": "i want waste pickup timings"
+      },
+      {
+        "intent": "garbage_schedule",
+        "text": "waste pick up schedule"
+      },
+      {
+        "intent": "garbage_schedule",
+        "text": "waste pickup timing"
+      },
+      {
+        "intent": "connect_agent",
+        "text": "connect to Operator"
+      },
+      {
+        "intent": "connect_agent",
+        "text": "communicate with agent"
+      },
+      {
+        "intent": "connect_agent",
+        "text": "communicate with operator"
+      },
+      {
+        "intent": "connect_agent",
+        "text": "connect to agent"
+      },
+      {
+        "intent": "connect_agent",
+        "text": "please connect to operator"
+      },
+      {
+        "intent": "connect_agent",
+        "text": "i want to communicate with operator"
+      },
+      {
+        "intent": "connect_agent",
+        "text": "I want to chat with operator"
+      },
+      {
+        "intent": "connect_agent",
+        "text": "i want to chat with your operator"
+      },
+      {
+        "intent": "connect_agent",
+        "text": "chat with operator"
+      },
+      {
+        "intent": "connect_agent",
+        "text": "chat with the agent"
+      },
+      {
+        "intent": "connect_agent",
+        "text": "chat with your agent"
+      },
+      {
+        "intent": "connect_agent",
+        "text": "chat with with your operator"
+      },
+      {
+        "intent": "connect_agent",
+        "text": "i want to chat with the operator regarding an incident"
+      },
+      {
+        "intent": "connect_agent",
+        "text": "i want to chat with the operator regarding an incident reported"
+      },
+      {
+        "intent": "connect_agent",
+        "text": "chat with operator regarding an incident reported"
+      },
+      {
+        "intent": "connect_agent",
+        "text": "chat with operator regarding an incident"
+      },
+      {
+        "intent": "connect_agent",
+        "text": "chat with your operator"
+      },
+      {
+        "intent": "inform_nearby_busstops",
+        "text": "nearby bustop"
+      },
+      {
+        "intent": "inform_nearby_busstops",
+        "text": "where is the nearest bustop"
+      },
+      {
+        "intent": "inform_nearby_busstops",
+        "text": "where is the near by bustop"
+      },
+      {
+        "intent": "inform_nearby_busstops",
+        "text": "where is the nearby bustop"
+      },
+      {
+        "intent": "inform_nearby_busstops",
+        "text": "near by bustop"
+      },
+      {
+        "intent": "inform_nearby_busstops",
+        "entities": [
+          {
+            "start": 15,
+            "end": 30,
+            "value": "nearest_bustop",
+            "entity": "transit_services",
+            "entity_id": 44
+          }
+        ],
+        "text": "i want to know near by bustops"
+      },
+      {
+        "intent": "inform_nearby_busstops",
+        "entities": [
+          {
+            "start": 0,
+            "end": 15,
+            "value": "nearest_bustop",
+            "entity": "transit_services",
+            "entity_id": 44
+          }
+        ],
+        "text": "nearest busstop"
+      },
+      {
+        "intent": "inform_nearby_busstops",
+        "text": "nearest bus stop"
+      },
+      {
+        "intent": "inform_nearby_busstops",
+        "text": "nearest bus stops"
+      },
+      {
+        "intent": "inform_nearby_busstops",
+        "text": "near by busstop"
+      },
+      {
+        "intent": "inform_nearby_busstops",
+        "text": "nearby bus stop"
+      },
+      {
+        "intent": "nearest_bin_loc",
+        "text": "nearest bin location"
+      },
+      {
+        "intent": "nearest_bin_loc",
+        "text": "where is garabage bin location near me"
+      },
+      {
+        "intent": "nearest_bin_loc",
+        "text": "garbage bin location near me"
+      },
+      {
+        "intent": "nearest_bin_loc",
+        "text": "bin location"
+      },
+      {
+        "intent": "nearest_bin_loc",
+        "text": "neraest garbage bin location"
+      },
+      {
+        "intent": "nearest_bin_loc",
+        "text": "trash bin location"
+      },
+      {
+        "intent": "nearest_bin_loc",
+        "text": "nearest trash bin location"
+      },
+      {
+        "intent": "nearest_bin_loc",
+        "text": "where is garbage bin location near me"
+      },
+      {
+        "intent": "nearest_bin_loc",
+        "text": "public garbage bins near me"
+      },
+      {
+        "intent": "nearest_bin_loc",
+        "text": "public dust bins"
+      },
+      {
+        "intent": "bus_depot",
+        "text": "nearest Bus depot"
+      },
+      {
+        "intent": "bus_depot",
+        "text": "bus depot near me"
+      },
+      {
+        "intent": "bus_depot",
+        "text": "bus depot nearest to me"
+      },
+      {
+        "intent": "bus_depot",
+        "text": "bus depo near me"
+      },
+      {
+        "intent": "garbage+burning",
+        "text": "some one lit the garbage"
+      },
+      {
+        "intent": "garbage+burning",
+        "text": "garbage is burning"
+      },
+      {
+        "intent": "garbage+burning",
+        "text": "air is polluted because of burning the garbage near the locality"
+      },
+      {
+        "intent": "garbage+burning",
+        "text": "burning of garbage"
+      },
+      {
+        "intent": "garbage+burning",
+        "text": "too much pollution around my home , garbage ,old platsic burnt smell"
+      },
+      {
+        "intent": "garbage+burning",
+        "text": "garbage is set fire"
+      },
+      {
+        "intent": "garbage+burning",
+        "text": "garbage is burning in open space"
+      },
+      {
+        "intent": "garbage+burning",
+        "text": "garbage burning"
+      },
+      {
+        "intent": "garbage+burning",
+        "text": "garbage burning on street"
+      },
+      {
+        "intent": "garbage+burning",
+        "text": "garbage burning on road"
+      },
+      {
+        "intent": "garbage+pickup+not_arraived",
+        "text": "garbage overflowing"
+      },
+      {
+        "intent": "garbage+pickup+not_arraived",
+        "text": "kachra gadi has not picked up the garbage"
+      },
+      {
+        "intent": "garbage+pickup+not_arraived",
+        "entities": [
+          {
+            "start": 40,
+            "end": 49,
+            "value": "town hall",
+            "entity": "landmark",
+            "entity_id": 23
+          }
+        ],
+        "text": "too much grabage accumulated in from of town hall"
+      },
+      {
+        "intent": "garbage+pickup+not_arraived",
+        "text": "garbage overflowing but kachara gadi has not arraived"
+      },
+      {
+        "intent": "garbage+pickup+not_arraived",
+        "text": "garbage overflowing but garbage van has not arraived"
+      },
+      {
+        "intent": "garbage+pickup+not_arraived",
+        "text": "when will the garbage van come"
+      },
+      {
+        "intent": "garbage+pickup+not_arraived",
+        "text": "is garbage van coming today"
+      },
+      {
+        "intent": "garbage+pickup+not_arraived",
+        "text": "kachra gadi is coming today or not"
+      },
+      {
+        "intent": "garbage+pickup+not_arraived",
+        "text": "is garbage van is coming , unable to tolerate the smell"
+      },
+      {
+        "intent": "garbage+pickup+not_arraived",
+        "text": "garbage is not been picked from past 12 days"
+      },
+      {
+        "intent": "garbage+pickup+not_arraived",
+        "text": "garbage bin is full and not picked up from a while"
+      },
+      {
+        "intent": "garbage+pickup+not_arraived",
+        "text": "dhanvantri road is full of dirt"
+      },
+      {
+        "intent": "garbage+pickup+not_arraived",
+        "text": "bayappanahalli road is full of dirt"
+      },
+      {
+        "intent": "garbage+pickup+not_arraived",
+        "text": "bannerughatta road is full of garbage"
+      },
+      {
+        "intent": "garbage+pickup+not_arraived",
+        "text": "ambedkar veedi is full of garbage"
+      },
+      {
+        "intent": "garbage+pickup+not_arraived",
+        "text": "Grabage overflowing on to road"
+      },
+      {
+        "intent": "garbage+pickup+not_arraived",
+        "text": "garbage pickup not arrived"
+      },
+      {
+        "intent": "garbage+pickup+not_arraived",
+        "text": "garbage pickup not arrived in my area"
+      },
+      {
+        "intent": "missed+garbage+pickup",
+        "text": "garbage van has missed a bin"
+      },
+      {
+        "intent": "missed+garbage+pickup",
+        "text": "garbage bin is full but kachara van missed to pickup"
+      },
+      {
+        "intent": "missed+garbage+pickup",
+        "text": "garbage bins are overflowing but garbage van has missed this area"
+      },
+      {
+        "intent": "missed+garbage+pickup",
+        "entities": [
+          {
+            "start": 31,
+            "end": 56,
+            "value": "the indian express Street",
+            "entity": "landmark",
+            "entity_id": 23
+          }
+        ],
+        "text": "The pick up van passes through the indian express Street everyday but does not enter the lane near it.On requesting several times to the pick up man he does not enter there"
+      },
+      {
+        "intent": "missed+garbage+pickup",
+        "entities": [
+          {
+            "start": 45,
+            "end": 57,
+            "value": "sultan palya",
+            "entity": "landmark",
+            "entity_id": 23
+          }
+        ],
+        "text": "garbage van had come but has missed a bin in sultan palya"
+      },
+      {
+        "intent": "missed+garbage+pickup",
+        "entities": [
+          {
+            "start": 55,
+            "end": 60,
+            "value": "begur",
+            "entity": "landmark",
+            "entity_id": 23
+          }
+        ],
+        "text": "garbage van had come but has missed to pickup a bin in begur"
+      },
+      {
+        "intent": "missed+garbage+pickup",
+        "entities": [
+          {
+            "start": 45,
+            "end": 48,
+            "value": "btm layout",
+            "entity": "landmark",
+            "entity_id": 23
+          }
+        ],
+        "text": "kachra gadi had come but has missed a bin in btm"
+      },
+      {
+        "intent": "missed+garbage+pickup",
+        "entities": [
+          {
+            "start": 45,
+            "end": 58,
+            "value": "btm layout",
+            "entity": "landmark",
+            "entity_id": 23
+          }
+        ],
+        "text": "kachra gadi had come but has missed a bin in btm main road"
+      },
+      {
+        "intent": "missed+garbage+pickup",
+        "entities": [
+          {
+            "start": 45,
+            "end": 56,
+            "value": "btm layout",
+            "entity": "landmark",
+            "entity_id": 23
+          }
+        ],
+        "text": "kachra gadi had come but has missed a bin in mico layout"
+      },
+      {
+        "intent": "missed+garbage+pickup",
+        "entities": [
+          {
+            "start": 45,
+            "end": 55,
+            "value": "btm layout",
+            "entity": "landmark",
+            "entity_id": 23
+          }
+        ],
+        "text": "kachra gadi had come but has missed a bin in btm layout"
+      },
+      {
+        "intent": "missed+garbage+pickup",
+        "text": "missed the bin"
+      },
+      {
+        "intent": "missed+garbage+pickup",
+        "text": "missed a bin"
+      },
+      {
+        "intent": "missed+garbage+pickup",
+        "text": "missed a garbage bin"
+      },
+      {
+        "intent": "missed+garbage+pickup",
+        "text": "failed to pickup"
+      },
+      {
+        "intent": "missed+garbage+pickup",
+        "text": "garbage van had come but failed to pickup the bin"
+      },
+      {
+        "intent": "missed+garbage+pickup",
+        "text": "missed a garbage"
+      },
+      {
+        "intent": "missed+garbage+pickup",
+        "text": "did not pick garbage"
+      },
+      {
+        "intent": "missed+garbage+pickup",
+        "text": "did not pick garbage today"
+      },
+      {
+        "intent": "missed+garbage+pickup",
+        "text": "garbage overflowing on to the street"
+      },
+      {
+        "intent": "missed+garbage+pickup",
+        "text": "street full of garbage"
+      },
+      {
+        "intent": "missed+garbage+pickup",
+        "text": "road is fill with garbage, bin is full but garbage van has not come"
+      },
+      {
+        "intent": "missed+garbage+pickup",
+        "text": "near my home garbage is all over"
+      },
+      {
+        "intent": "missed+garbage+pickup",
+        "text": "missed garbage pickup"
+      },
+      {
+        "intent": "missed+garbage+pickup",
+        "text": "garbage pick up missed"
+      },
+      {
+        "intent": "intent_garbage_service",
+        "text": "garbage"
+      },
+      {
+        "intent": "intent_garbage_service",
+        "text": "garbage service"
+      },
+      {
+        "intent": "intent_garbage_service",
+        "text": "Waste management"
+      },
+      {
+        "intent": "intent_garbage_service",
+        "text": "solid waste management"
+      },
+      {
+        "intent": "intent_garbage_service",
+        "text": "waste"
+      },
+      {
+        "intent": "intent_water_service",
+        "text": "water"
+      },
+      {
+        "intent": "intent_water_service",
+        "text": "water service"
+      },
+      {
+        "intent": "intent_remedies",
+        "text": "insect control remedies"
+      },
+      {
+        "intent": "intent_remedies",
+        "text": "insect problem"
+      },
+      {
+        "intent": "intent_remedies",
+        "text": "mosquito problem in my area"
+      },
+      {
+        "intent": "intent_remedies",
+        "text": "mosquito"
+      },
+      {
+        "intent": "intent_remedies",
+        "text": "mosquito bites"
+      },
+      {
+        "intent": "intent_remedies",
+        "text": "too many mosquitoes"
+      },
+      {
+        "intent": "intent_remedies",
+        "text": "how to control mosquitoes"
+      },
+      {
+        "intent": "intent_remedies",
+        "text": "avoid insect bite"
+      },
+      {
+        "intent": "intent_remedies",
+        "text": "avoid mosquito bite"
+      },
+      {
+        "intent": "intent_remedies",
+        "text": "insects"
+      },
+      {
+        "intent": "intent_remedies",
+        "text": "insect remedies"
+      },
+      {
+        "intent": "report_electricity_problem",
+        "text": "electrical issue"
+      },
+      {
+        "intent": "report_electricity_problem",
+        "text": "electricity issue"
+      },
+      {
+        "intent": "report_electricity_problem",
+        "text": "power issue"
+      },
+      {
+        "intent": "report_electricity_problem",
+        "text": "electricity problem"
+      },
+      {
+        "intent": "report_electricity_problem",
+        "text": "problem with electricity"
+      },
+      {
+        "intent": "report_electricity_problem",
+        "text": "issue with electricity"
+      },
+      {
+        "intent": "intent_electricity_service",
+        "text": "electricity"
+      },
+      {
+        "intent": "intent_electricity_service",
+        "text": "electricity service"
+      },
+      {
+        "intent": "intent_electricity_service",
+        "text": "current"
+      },
+      {
+        "intent": "intent_electricity_service",
+        "text": "electrical"
+      },
+      {
+        "intent": "intent_electricity_service",
+        "text": "electrical services"
+      },
+      {
+        "intent": "new_water_connection",
+        "text": "request for new water connection"
+      },
+      {
+        "intent": "new_water_connection",
+        "text": "new water connection"
+      },
+      {
+        "intent": "new_water_connection",
+        "text": "water connection request"
+      },
+      {
+        "intent": "new_water_connection",
+        "text": "new water connection to home"
+      },
+      {
+        "intent": "water_contact",
+        "text": "water authourity contact details"
+      },
+      {
+        "intent": "water_contact",
+        "text": "contact details of water authority"
+      },
+      {
+        "intent": "water_contact",
+        "text": "water authority contact details"
+      },
+      {
+        "intent": "another_park_location",
+        "text": "search another parking location"
+      },
+      {
+        "intent": "another_park_location",
+        "text": "i want to search for another parking location"
+      },
+      {
+        "intent": "another_park_location",
+        "text": "I need another park location"
+      },
+      {
+        "intent": "police_contact",
+        "text": "police contact"
+      },
+      {
+        "intent": "police_contact",
+        "text": "police contact details"
+      },
+      {
+        "intent": "police_contact",
+        "text": "nearby police contact details"
+      },
+      {
+        "intent": "police_contact",
+        "text": "police station"
+      },
+      {
+        "intent": "fire_contact",
+        "text": "fire number"
+      },
+      {
+        "intent": "fire_contact",
+        "text": "fire dept number"
+      },
+      {
+        "intent": "fire_contact",
+        "text": "fire department phone number"
+      },
+      {
+        "intent": "ambulance_contact",
+        "text": "ambulance no"
+      },
+      {
+        "intent": "ambulance_contact",
+        "text": "ambulance number"
+      },
+      {
+        "intent": "ambulance_contact",
+        "text": "call ambulance"
+      },
+      {
+        "intent": "weather_info",
+        "text": "How is the weather today"
+      },
+      {
+        "intent": "weather_info",
+        "text": "How is the weather today?"
+      },
+      {
+        "intent": "weather_info",
+        "text": "weather"
+      },
+      {
+        "intent": "weather_info",
+        "text": "weather Info"
+      },
+      {
+        "intent": "recent_raised_complaints",
+        "text": "i want to know the recently raised complaints"
+      },
+      {
+        "intent": "recent_raised_complaints",
+        "text": "i want to know the recently raised incidents"
+      },
+      {
+        "intent": "recent_raised_complaints",
+        "text": "i want to know the status of the recently raised complaints"
+      },
+      {
+        "intent": "recent_raised_complaints",
+        "text": "i want to know the status of the recently raised incidents"
+      },
+      {
+        "intent": "recent_raised_complaints",
+        "text": "i want to know the information of previously raised incidents"
+      },
+      {
+        "intent": "recent_raised_complaints",
+        "text": "i want to know the information of previously raised complaints"
+      },
+      {
+        "intent": "recent_raised_complaints",
+        "text": "i want to know the information of previously raised issues"
+      },
+      {
+        "intent": "recent_raised_complaints",
+        "text": "show previously raised incidents"
+      },
+      {
+        "intent": "recent_raised_complaints",
+        "text": "information of previously raised incidents"
+      },
+      {
+        "intent": "recent_raised_complaints",
+        "text": "show previously raised issues"
+      },
+      {
+        "intent": "recent_raised_complaints",
+        "text": "incidents"
+      },
+      {
+        "intent": "recent_raised_complaints",
+        "text": "incident"
+      },
+      {
+        "intent": "recent_raised_complaints",
+        "text": "information of previously raised issues"
+      },
+      {
+        "intent": "recent_raised_complaints",
+        "text": "information of previously raised issue"
+      },
+      {
+        "intent": "recent_raised_complaints",
+        "text": "regarding previously raised issue"
+      },
+      {
+        "intent": "recent_raised_complaints",
+        "text": "regarding previously reported issues"
+      },
+      {
+        "intent": "recent_raised_complaints",
+        "text": "information of previously reported issues"
+      },
+      {
+        "intent": "recent_raised_complaints",
+        "text": "reported complaints"
+      },
+      {
+        "intent": "recent_raised_complaints",
+        "text": "reported issues"
+      },
+      {
+        "intent": "recent_raised_complaints",
+        "text": "previously reported  complaints"
+      },
+      {
+        "intent": "recent_raised_complaints",
+        "text": "reported complaint"
+      },
+      {
+        "intent": "intent_transport_service",
+        "text": "Transport"
+      },
+      {
+        "intent": "intent_transport_service",
+        "text": "Transport service"
+      },
+      {
+        "intent": "intent_transport_service",
+        "text": "transport"
+      },
+      {
+        "intent": "intent_transport_service",
+        "text": "transport service"
+      },
+      {
+        "intent": "nearest_fire_station",
+        "text": "nearest fire station"
+      },
+      {
+        "intent": "nearest_fire_station",
+        "text": "fire station near me"
+      },
+      {
+        "intent": "bus_number_details",
+        "text": "i want bus details"
+      },
+      {
+        "intent": "bus_number_details",
+        "text": "details of bus"
+      },
+      {
+        "intent": "bus_number_details",
+        "text": "bus details"
+      },
+      {
+        "intent": "bus_number_details",
+        "entities": [
+          {
+            "start": 15,
+            "end": 18,
+            "value": "25K",
+            "entity": "bus_number",
+            "entity_id": 55
+          }
+        ],
+        "text": "information of 25K bus details"
+      },
+      {
+        "intent": "bus_number_details",
+        "entities": [
+          {
+            "start": 8,
+            "end": 11,
+            "value": "25K",
+            "entity": "bus_number",
+            "entity_id": 55
+          }
+        ],
+        "text": "info of 25K bus details"
+      },
+      {
+        "intent": "bus_number_details",
+        "entities": [
+          {
+            "start": 14,
+            "end": 17,
+            "value": "28K",
+            "entity": "bus_number",
+            "entity_id": 55
+          }
+        ],
+        "text": "route info of 28K bus"
+      },
+      {
+        "intent": "bus_number_details",
+        "entities": [
+          {
+            "start": 8,
+            "end": 11,
+            "value": "30K",
+            "entity": "bus_number",
+            "entity_id": 55
+          }
+        ],
+        "text": "info of 30K bus"
+      },
+      {
+        "intent": "bus_number_details",
+        "entities": [
+          {
+            "start": 8,
+            "end": 11,
+            "value": "31K",
+            "entity": "bus_number",
+            "entity_id": 55
+          }
+        ],
+        "text": "info of 31K bus"
+      },
+      {
+        "intent": "bus_number_details",
+        "entities": [
+          {
+            "start": 8,
+            "end": 11,
+            "value": "39K",
+            "entity": "bus_number",
+            "entity_id": 55
+          }
+        ],
+        "text": "info of 39K bus"
+      },
+      {
+        "intent": "bus_number_details",
+        "entities": [
+          {
+            "start": 8,
+            "end": 11,
+            "value": "42K",
+            "entity": "bus_number",
+            "entity_id": 55
+          }
+        ],
+        "text": "info of 42K bus"
+      },
+      {
+        "intent": "bus_number_details",
+        "entities": [
+          {
+            "start": 8,
+            "end": 11,
+            "value": "45K",
+            "entity": "bus_number",
+            "entity_id": 55
+          }
+        ],
+        "text": "info of 45K bus"
+      },
+      {
+        "intent": "bus_number_details",
+        "entities": [
+          {
+            "start": 8,
+            "end": 11,
+            "value": "59K",
+            "entity": "bus_number",
+            "entity_id": 55
+          }
+        ],
+        "text": "info of 59K bus"
+      },
+      {
+        "intent": "bus_number_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "28K",
+            "entity": "bus_number",
+            "entity_id": 55
+          }
+        ],
+        "text": "28K bus route"
+      },
+      {
+        "intent": "bus_number_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "60U",
+            "entity": "bus_number",
+            "entity_id": 55
+          }
+        ],
+        "text": "60U bus route"
+      },
+      {
+        "intent": "bus_number_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "110K",
+            "entity": "bus_number",
+            "entity_id": 55
+          }
+        ],
+        "text": "110K bus route"
+      },
+      {
+        "intent": "bus_number_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "555K",
+            "entity": "bus_number",
+            "entity_id": 55
+          }
+        ],
+        "text": "555K bus route"
+      },
+      {
+        "intent": "bus_number_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "27M",
+            "entity": "bus_number",
+            "entity_id": 55
+          }
+        ],
+        "text": "27M bus route details"
+      },
+      {
+        "intent": "bus_number_details",
+        "entities": [
+          {
+            "start": 17,
+            "end": 20,
+            "value": "27H",
+            "entity": "bus_number",
+            "entity_id": 55
+          }
+        ],
+        "text": "route details of 27H bus"
+      },
+      {
+        "intent": "bus_number_details",
+        "entities": [
+          {
+            "start": 13,
+            "end": 16,
+            "value": "34T",
+            "entity": "bus_number",
+            "entity_id": 55
+          }
+        ],
+        "text": "bus route of 34T"
+      },
+      {
+        "intent": "bus_number_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "234E",
+            "entity": "bus_number",
+            "entity_id": 55
+          }
+        ],
+        "text": "234E bus route info"
+      },
+      {
+        "intent": "bus_number_details",
+        "entities": [
+          {
+            "start": 17,
+            "end": 21,
+            "value": "292U",
+            "entity": "bus_number",
+            "entity_id": 55
+          }
+        ],
+        "text": "route details of 292U bus"
+      },
+      {
+        "intent": "bus_number_details",
+        "entities": [
+          {
+            "start": 10,
+            "end": 13,
+            "value": "36K",
+            "entity": "bus_number",
+            "entity_id": 55
+          }
+        ],
+        "text": "routes of 36K bus"
+      },
+      {
+        "intent": "bus_number_details",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "320H",
+            "entity": "bus_number",
+            "entity_id": 55
+          }
+        ],
+        "text": "320H bus routes"
+      },
+      {
+        "intent": "bus_number_details",
+        "entities": [
+          {
+            "start": 13,
+            "end": 17,
+            "value": "432G",
+            "entity": "bus_number",
+            "entity_id": 55
+          }
+        ],
+        "text": "bus route of 432G"
+      },
+      {
+        "intent": "bus_number_details",
+        "entities": [
+          {
+            "start": 17,
+            "end": 20,
+            "value": "32J",
+            "entity": "bus_number",
+            "entity_id": 55
+          }
+        ],
+        "text": "route details of 32J bus"
+      },
+      {
+        "intent": "bus_number_details",
+        "entities": [
+          {
+            "start": 9,
+            "end": 12,
+            "value": "27K",
+            "entity": "bus_number",
+            "entity_id": 55
+          }
+        ],
+        "text": "bus info 27K"
+      },
+      {
+        "intent": "inform_nearby_hospitals",
+        "text": "near by hospitals"
+      },
+      {
+        "intent": "inform_nearby_hospitals",
+        "text": "nearest hospitals"
+      },
+      {
+        "intent": "inform_nearby_hospitals",
+        "text": "Near by hospitals"
+      },
+      {
+        "intent": "inform_nearby_hospitals",
+        "text": "nearby hospitals"
+      },
+      {
+        "intent": "inform_nearby_hospitals",
+        "text": "i want to know nearby hospitals"
+      },
+      {
+        "intent": "inform_nearby_hospitals",
+        "text": "i want to know nearest hospitals"
+      },
+      {
+        "intent": "inform_nearby_hospitals",
+        "text": "nearest hospital"
+      },
+      {
+        "intent": "inform_nearby_hospitals",
+        "text": "near by hospital"
+      },
+      {
+        "intent": "inform_nearby_hospitals",
+        "text": "hospital near me"
+      },
+      {
+        "intent": "inform_nearby_hospitals",
+        "text": "nearest hospitals"
+      },
+      {
+        "intent": "nearest_police_station",
+        "text": "nearest police station"
+      },
+      {
+        "intent": "nearest_police_station",
+        "text": "nearby police station"
+      },
+      {
+        "intent": "nearest_police_station",
+        "text": "police station near me"
+      },
+      {
+        "intent": "garbage_contact",
+        "text": "garbage authority contact details"
+      },
+      {
+        "intent": "garbage_contact",
+        "text": "i want garbage authority contact details"
+      },
+      {
+        "intent": "garbage_contact",
+        "text": "waste management contact details"
+      },
+      {
+        "intent": "Bus_contact",
+        "text": "bus contact details"
+      },
+      {
+        "intent": "Bus_contact",
+        "text": "bus authority contact details"
+      },
+      {
+        "intent": "Bus_contact",
+        "text": "bus department contact details"
+      },
+      {
+        "intent": "air_quality",
+        "text": "air quality in Bangalore"
+      },
+      {
+        "intent": "air_quality",
+        "text": "air quality"
+      },
+      {
+        "intent": "air_quality",
+        "text": "air pollution"
+      },
+      {
+        "intent": "air_quality",
+        "text": "pollution"
+      },
+      {
+        "intent": "air_quality",
+        "text": "environment info"
+      },
+      {
+        "intent": "air_quality",
+        "text": "environment"
+      },
+      {
+        "intent": "air_quality",
+        "text": "environment details"
+      },
+      {
+        "intent": "air_quality",
+        "text": "Environment"
+      },
+      {
+        "intent": "air_quality",
+        "text": "what is the air quality"
+      },
+      {
+        "intent": "air_quality",
+        "text": "what is the co2 level in my area"
+      },
+      {
+        "intent": "air_quality",
+        "text": "can i check environment condition?"
+      },
+      {
+        "intent": "register_complaint_tamil",
+        "text": "புகார் தெரிவிக்கவும்"
+      },
+      {
+        "intent": "register_complaint_tamil",
+        "text": "ஒரு பிரச்சினையை அறிக்கை செய்யவும்"
+      },
+      {
+        "intent": "register_complaint_tamil",
+        "text": "ஒரு சம்பவத்தை அறிக்கை செய்யவும்"
+      },
+      {
+        "intent": "register_complaint_tamil",
+        "text": "நான் புகார் தெரிவிக்க விரும்புகிறேன்"
+      },
+      {
+        "intent": "register_complaint_tamil",
+        "text": "புகார் எழுப்புங்கள்"
+      },
+      {
+        "intent": "register_complaint_tamil",
+        "text": "நான் ஒரு புகாரை பதிவு செய்ய விரும்புகிறேன்"
+      },
+      {
+        "intent": "register_complaint_tamil",
+        "text": "புகார் பதிவு செய்க"
+      },
+      {
+        "intent": "report_garbage_problem_tamil",
+        "text": "கழிவு பிரச்சனை"
+      },
+      {
+        "intent": "report_garbage_problem_tamil",
+        "text": "கழிவு பிரச்சனைனய அறிக்கை செய்யவும்"
+      },
+      {
+        "intent": "report_garbage_problem_tamil",
+        "text": "குப்பை பிரச்சனைனய அறிக்கை செய்யவும்"
+      },
+      {
+        "intent": "report_garbage_problem_tamil",
+        "text": "குப்பை பிரச்சனைனய அறிக்கை செய்யவும்"
+      },
+      {
+        "intent": "report_garbage_problem_tamil",
+        "text": "குப்பை பிரச்சனை"
+      },
+      {
+        "intent": "deny_tamil",
+        "text": "இப்போது இல்லை"
+      },
+      {
+        "intent": "deny_tamil",
+        "text": "ஓ இல்லை"
+      },
+      {
+        "intent": "deny_tamil",
+        "text": "இல்லை"
+      },
+      {
+        "intent": "deny_tamil",
+        "text": "இல்லை"
+      },
+      {
+        "intent": "affirm_tamil",
+        "text": "முன்னேறுங்கள்"
+      },
+      {
+        "intent": "affirm_tamil",
+        "text": "சூப்பர்"
+      },
+      {
+        "intent": "affirm_tamil",
+        "text": "முடிந்தது"
+      },
+      {
+        "intent": "affirm_tamil",
+        "text": "ஏற்கிறேன்"
+      },
+      {
+        "intent": "affirm_tamil",
+        "text": "ஆம்"
+      },
+      {
+        "intent": "affirm_tamil",
+        "text": "ஆம்"
+      },
+      {
+        "intent": "register_complaint_kannada",
+        "text": "ದೂರಿನ ವರದಿ"
+      },
+      {
+        "intent": "register_complaint_kannada",
+        "text": "ಸಮಸ್ಯೆಯ ವರದಿ"
+      },
+      {
+        "intent": "register_complaint_kannada",
+        "text": "ಘಟನೆಯ ವರದಿ"
+      },
+      {
+        "intent": "register_complaint_kannada",
+        "text": "ನಾನು ದೂರನ್ನು ವರದಿ ಮಾಡಲು ಬಯಸುತ್ತೇನೆ"
+      },
+      {
+        "intent": "register_complaint_kannada",
+        "text": "ದೂರನ್ನು ಸಂಗ್ರಹಿಸಿ"
+      },
+      {
+        "intent": "register_complaint_kannada",
+        "text": "ನಾನು ದೂರನ್ನು ನೋಂದಾಯಿಸಲು ಬಯಸುತ್ತೇನೆ"
+      },
+      {
+        "intent": "register_complaint_kannada",
+        "text": "ದೂರು ದಾಖಲಿಸಿ"
+      },
+      {
+        "intent": "register_complaint",
+        "text": "report an incident"
+      },
+      {
+        "intent": "register_complaint",
+        "text": "report an issue"
+      },
+      {
+        "intent": "register_complaint",
+        "text": "report an complaint"
+      },
+      {
+        "intent": "register_complaint",
+        "text": "register complaint"
+      },
+      {
+        "intent": "register_complaint",
+        "text": "how do i raise a complaint"
+      },
+      {
+        "intent": "register_complaint",
+        "text": "i want to register a complaint"
+      },
+      {
+        "intent": "register_complaint",
+        "text": "raise a complaint"
+      },
+      {
+        "intent": "register_complaint",
+        "text": "How do i register a complaint"
+      },
+      {
+        "intent": "register_complaint",
+        "text": "i want to report a complaint"
+      },
+      {
+        "intent": "register_complaint",
+        "entities": [
+          {
+            "start": 29,
+            "end": 47,
+            "value": "solid waste management",
+            "entity": "services",
+            "entity_id": 18
+          }
+        ],
+        "text": "i want to raise complaint on garbage collection"
+      },
+      {
+        "intent": "register_complaint",
+        "entities": [
+          {
+            "start": 30,
+            "end": 37,
+            "value": "solid waste management",
+            "entity": "services",
+            "entity_id": 18
+          }
+        ],
+        "text": "where should i complain about garbage"
+      },
+      {
+        "intent": "register_complaint",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "water management",
+            "entity": "services",
+            "entity_id": 18
+          }
+        ],
+        "text": "water management"
+      },
+      {
+        "intent": "register_complaint",
+        "entities": [
+          {
+            "start": 0,
+            "end": 16,
+            "value": "water management",
+            "entity": "services",
+            "entity_id": 18
+          }
+        ],
+        "text": "Water management"
+      },
+      {
+        "intent": "register_complaint",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "Electricity",
+            "entity": "services",
+            "entity_id": 18
+          }
+        ],
+        "text": "Electricity"
+      },
+      {
+        "intent": "register_complaint",
+        "text": "report incident"
+      },
+      {
+        "intent": "register_complaint",
+        "text": "report incidents"
+      },
+      {
+        "intent": "report_water_problem",
+        "text": "water problem"
+      },
+      {
+        "intent": "report_water_problem",
+        "text": "water issue"
+      },
+      {
+        "intent": "report_water_problem",
+        "text": "No Water supply"
+      },
+      {
+        "intent": "report_water_problem",
+        "text": "report water problem"
+      },
+      {
+        "intent": "report_water_problem",
+        "text": "report water incident"
+      },
+      {
+        "intent": "report_water_problem",
+        "text": "report water issue"
+      },
+      {
+        "intent": "report_water_problem",
+        "text": "report water complaint"
+      },
+      {
+        "intent": "report_water_problem",
+        "text": "water problem in my area"
+      },
+      {
+        "intent": "report_water_problem",
+        "text": "i am facing water shortage issue"
+      },
+      {
+        "intent": "bus_route_details",
+        "text": "i want bus route details"
+      },
+      {
+        "intent": "bus_route_details",
+        "text": "bus route details"
+      },
+      {
+        "intent": "bus_route_details",
+        "text": "route details of bus"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 30,
+            "end": 42,
+            "value": "shivajinagar",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 46,
+            "end": 59,
+            "value": "banashankhari",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "i want bus route details from shivajinagar to banashankhari"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 26,
+            "value": "btm",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 30,
+            "end": 41,
+            "value": "rajajinagar",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from btm to rajajinagar"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 34,
+            "value": "koramangala",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 38,
+            "end": 50,
+            "value": "shivajinagar",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from koramangala to shivajinagar"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 33,
+            "value": "marathalli",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 37,
+            "end": 43,
+            "value": "domlur",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from marathalli to domlur"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 35,
+            "value": "shivajinagar",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 39,
+            "end": 42,
+            "value": "btm",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from shivajinagar to btm"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 22,
+            "end": 34,
+            "value": " rajajinagar",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 38,
+            "end": 41,
+            "value": "btm",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from rajajinagar to btm"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 34,
+            "value": "sanjaynagar",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 38,
+            "end": 44,
+            "value": "mgroad",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from sanjaynagar to mgroad"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 34,
+            "value": "indiranagar",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 38,
+            "end": 47,
+            "value": "hsrlayout",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from indiranagar to hsrlayout"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 41,
+            "value": "maddilapalem depot",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 45,
+            "end": 59,
+            "value": "srinivas nagar",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from maddilapalem depot to srinivas nagar"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 41,
+            "value": "maddilapalem depot",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 45,
+            "end": 62,
+            "value": "simhachalam depot",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from maddilapalem depot to simhachalam depot"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 42,
+            "value": "maddilapalem depot ",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 45,
+            "end": 54,
+            "value": "gurudwara",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from maddilapalem depot to gurudwara"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 35,
+            "value": "maddilapalem",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 45,
+            "end": 54,
+            "value": "vepagunta",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from maddilapalem depot to vepagunta"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 32,
+            "value": "gurudwara",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 36,
+            "end": 52,
+            "value": "chinamushidiwada",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from gurudwara to chinamushidiwada"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 32,
+            "value": "vepagunta",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 36,
+            "end": 54,
+            "value": "pendurthi junction",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from vepagunta to pendurthi junction"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 41,
+            "value": "simhachalam depot ",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 44,
+            "end": 53,
+            "value": "vepagunta",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from simhachalam depot to vepagunta"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 32,
+            "value": "vepagunta",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 35,
+            "end": 52,
+            "value": " chinamushidiwada",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from vepagunta to chinamushidiwada"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 22,
+            "end": 40,
+            "value": " simhachalam depot",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 44,
+            "end": 53,
+            "value": "gurudwara",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from simhachalam depot to gurudwara"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 39,
+            "value": "chinamushidiwada",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 43,
+            "end": 55,
+            "value": "old gajuwaka",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from chinamushidiwada to old gajuwaka"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 35,
+            "value": "old gajuwaka",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 39,
+            "end": 56,
+            "value": "simhachalam depot",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from old gajuwaka to simhachalam depot"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 24,
+            "end": 42,
+            "value": "pendurthi junction",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 47,
+            "end": 59,
+            "value": "old gajuwaka",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from  pendurthi junction to  old gajuwaka"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 43,
+            "end": 52,
+            "value": "vepagunta",
+            "entity": "transit_to",
+            "entity_id": 46
+          },
+          {
+            "start": 23,
+            "end": 39,
+            "value": "chinamushidiwada",
+            "entity": "transit_from",
+            "entity_id": 45
+          }
+        ],
+        "text": "bus route details from chinamushidiwada to vepagunta"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 35,
+            "value": "old gajuwaka",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 39,
+            "end": 51,
+            "value": "new gajuwaka",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from old gajuwaka to new gajuwaka"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 40,
+            "value": "simhachalam depot",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 44,
+            "end": 56,
+            "value": "new gajuwaka",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from simhachalam depot to new gajuwaka"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 22,
+            "end": 40,
+            "value": " simhachalam depot",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 43,
+            "end": 56,
+            "value": " sriharipuram",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from simhachalam depot to sriharipuram"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 43,
+            "end": 55,
+            "value": "sriharipuram",
+            "entity": "transit_to",
+            "entity_id": 46
+          },
+          {
+            "start": 23,
+            "end": 39,
+            "value": "chinamushidiwada",
+            "entity": "transit_from",
+            "entity_id": 45
+          }
+        ],
+        "text": "bus route details from chinamushidiwada to sriharipuram"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 22,
+            "end": 35,
+            "value": " sriharipuram",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 39,
+            "end": 48,
+            "value": "vepagunta",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from sriharipuram to vepagunta"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 35,
+            "value": "sriharipuram",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 39,
+            "end": 49,
+            "value": "malkapuram",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from sriharipuram to malkapuram"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 22,
+            "end": 33,
+            "value": " malkapuram",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 37,
+            "end": 49,
+            "value": "new gajuwaka",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from malkapuram to new gajuwaka"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 36,
+            "end": 44,
+            "value": " scindia",
+            "entity": "transit_to",
+            "entity_id": 46
+          },
+          {
+            "start": 23,
+            "end": 33,
+            "value": "malkapuram",
+            "entity": "transit_from",
+            "entity_id": 45
+          }
+        ],
+        "text": "bus route details from malkapuram to scindia"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 30,
+            "value": "scindia",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 34,
+            "end": 43,
+            "value": "vepagunta",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from scindia to vepagunta"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 22,
+            "end": 30,
+            "value": " scindia",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 34,
+            "end": 46,
+            "value": "sriharipuram",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from scindia to sriharipuram"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 22,
+            "end": 31,
+            "value": " pipeline",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 35,
+            "end": 43,
+            "value": "dockyard",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from pipeline to dockyard"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 22,
+            "end": 30,
+            "value": " scindia",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 34,
+            "end": 42,
+            "value": "dockyard",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from scindia to dockyard"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 31,
+            "value": "dockyard",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 35,
+            "end": 45,
+            "value": "malkapuram",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from dockyard to malkapuram"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 22,
+            "end": 31,
+            "value": " pipeline",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 35,
+            "end": 41,
+            "value": "estate",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from pipeline to estate"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 31,
+            "value": "pipeline",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 34,
+            "end": 44,
+            "value": " vepagunta",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from pipeline to vepagunta"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 31,
+            "value": "pipeline",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 35,
+            "end": 47,
+            "value": "sriharipuram",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from pipeline to sriharipuram"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 31,
+            "value": "pipeline",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 35,
+            "end": 43,
+            "value": "dockyard",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from pipeline to dockyard"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 31,
+            "value": "dockyard",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 35,
+            "end": 45,
+            "value": "new gajuka",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from dockyard to new gajuka"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 31,
+            "value": "pipeline",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 34,
+            "end": 45,
+            "value": " new gajuka",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from pipeline to new gajuka"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 34,
+            "value": "new gajuka ",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 37,
+            "end": 43,
+            "value": "estate",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from new gajuka to estate"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 35,
+            "value": "gopalapatnam",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 39,
+            "end": 48,
+            "value": "saripalli",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from gopalapatnam to saripalli"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 22,
+            "end": 35,
+            "value": " gopalapatnam",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 38,
+            "end": 49,
+            "value": " new gajuka",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from gopalapatnam to new gajuka"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 35,
+            "value": "gopalapatnam",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 39,
+            "end": 49,
+            "value": "malkapuram",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from gopalapatnam to malkapuram"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 40,
+            "value": "simhachalam depot",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 44,
+            "end": 50,
+            "value": "estate",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from simhachalam depot to estate"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 33,
+            "value": "new gajuka",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 36,
+            "end": 55,
+            "value": " polipalli junction",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from new gajuka to polipalli junction"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 22,
+            "end": 35,
+            "value": " gopalapatnam",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 38,
+            "end": 57,
+            "value": " polipalli junction",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from gopalapatnam to polipalli junction"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 35,
+            "value": "gopalapatnam",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 38,
+            "end": 55,
+            "value": " thatichetlapalem",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from gopalapatnam to thatichetlapalem"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 40,
+            "value": "simhachalam depot",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 45,
+            "end": 61,
+            "value": "thatichetlapalem",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from simhachalam depot to  thatichetlapalem"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 24,
+            "end": 42,
+            "value": "polipalli junction",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 46,
+            "end": 62,
+            "value": "thatichetlapalem",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from  polipalli junction to thatichetlapalem"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 41,
+            "value": "polipalli junction",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 45,
+            "end": 57,
+            "value": "venkojipalem",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from polipalli junction to venkojipalem"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 22,
+            "end": 35,
+            "value": " venkojipalem",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 40,
+            "end": 50,
+            "value": "new gajuka",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from venkojipalem to  new gajuka"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 35,
+            "value": "venkojipalem",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 39,
+            "end": 55,
+            "value": "thatichetlapalem",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from venkojipalem to thatichetlapalem"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 35,
+            "value": "venkojipalem",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 39,
+            "end": 47,
+            "value": "dockyard",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from venkojipalem to dockyard"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 35,
+            "value": "venkojipalem",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 39,
+            "end": 47,
+            "value": "pipeline",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from venkojipalem to pipeline"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 32,
+            "value": "gurudwara",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 36,
+            "end": 43,
+            "value": "airport",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from gurudwara to airport"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 41,
+            "value": "maddilapalem depot",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 45,
+            "end": 52,
+            "value": "airport",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from maddilapalem depot to airport"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 32,
+            "value": "vepagunta",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 36,
+            "end": 43,
+            "value": "airport",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from vepagunta to airport"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 40,
+            "value": "simhachalam depot",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 44,
+            "end": 62,
+            "value": "pendurthi junction",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from simhachalam depot to pendurthi junction"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 41,
+            "value": "pendurthi junction",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 45,
+            "end": 62,
+            "value": "simhachalam depot",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from pendurthi junction to simhachalam depot"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 31,
+            "value": "RK Beach",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 35,
+            "end": 46,
+            "value": "Kothavalasa",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from RK Beach to Kothavalasa"
+      },
+      {
+        "intent": "bus_route_details",
+        "entities": [
+          {
+            "start": 23,
+            "end": 39,
+            "value": "Balambika Tample",
+            "entity": "transit_from",
+            "entity_id": 45
+          },
+          {
+            "start": 43,
+            "end": 53,
+            "value": "Cantt stop",
+            "entity": "transit_to",
+            "entity_id": 46
+          }
+        ],
+        "text": "bus route details from Balambika Tample to Cantt stop"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "garbage problem"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "report garbage issue"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "report garbage problem"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "report waste problem"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "waste problem"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "garbage problem in my area"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "i want to report garbage problem"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "i am facing garbage problem in my area"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "i am facing garbage problem"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "i am facing garbage issue"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "i am facing garbage issue in my area"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "i want to report garbage issue"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "Garbage not collected"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "Garbage dump in front of my house"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "Garbage, tree leaves have not been removed since one week"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "No garbage collection for so many days."
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "Pile of Garbage, Big Sinkholes and Garbage Burning"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "Garbage dumping and burning in vacant land"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "Garbage piled up not cleaned"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "Garbage dump all around the main gate"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "Garbage Collection Vehicle Doesn't Visit Regularly"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "Garbage Collection Vehicle doesn't visit regularly"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "Garbage dump not being cleaned"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "Garbage pickup and street cleaning"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "Gutter cleaning trucks leave gutter waste on roads"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "Garbage dump near railway station"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "Garbage in front of houses"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "Complaint about Garbage Dump"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "Garbage removal issue"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "no garbage pick up van since 2 weeks"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "No visit by garbage collection team for 4 days"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "Clean the garbage"
+      },
+      {
+        "intent": "report_garbage_problem",
+        "text": "Garbage Clearance"
+      },
+      {
+        "intent": "report_garbage_problem_kannada",
+        "text": "ತ್ಯಾಜ್ಯ ಸಮಸ್ಯೆ"
+      },
+      {
+        "intent": "report_garbage_problem_kannada",
+        "text": "ತ್ಯಾಜ್ಯ ಸಮಸ್ಯೆಯ ವರದಿ"
+      },
+      {
+        "intent": "report_garbage_problem_kannada",
+        "text": "ಕಸದ ಸಮಸ್ಯೆಯನ್ನು ವರದಿ ಮಾಡಿ"
+      },
+      {
+        "intent": "report_garbage_problem_kannada",
+        "text": "ಕಸದ ಸಮಸ್ಯೆಯ ವರದಿ"
+      },
+      {
+        "intent": "report_garbage_problem_kannada",
+        "text": "ಕಸದ  ಸಮಸ್ಯೆ"
+      },
+      {
+        "intent": "water_schedule",
+        "text": "water schedule timing"
+      },
+      {
+        "intent": "water_schedule",
+        "text": "water timings"
+      },
+      {
+        "intent": "water_schedule",
+        "text": "water timing"
+      },
+      {
+        "intent": "water_schedule",
+        "text": "water time"
+      },
+      {
+        "intent": "water_schedule",
+        "text": "water time in my area"
+      },
+      {
+        "intent": "water_schedule",
+        "text": "water connection timing in my area"
+      },
+      {
+        "intent": "water_schedule",
+        "text": "when water comes in my area"
+      },
+      {
+        "intent": "agent_canyouhelp",
+        "text": "can you help me now"
+      },
+      {
+        "intent": "agent_canyouhelp",
+        "text": "I need you to do something for me"
+      },
+      {
+        "intent": "agent_canyouhelp",
+        "text": "assist me"
+      },
+      {
+        "intent": "agent_canyouhelp",
+        "text": "I need you to help me"
+      },
+      {
+        "intent": "agent_canyouhelp",
+        "text": "I need your help"
+      },
+      {
+        "intent": "agent_canyouhelp",
+        "text": "can you assist me"
+      },
+      {
+        "intent": "agent_canyouhelp",
+        "text": "you can help me"
+      },
+      {
+        "intent": "agent_canyouhelp",
+        "text": "help me"
+      },
+      {
+        "intent": "agent_canyouhelp",
+        "text": "about"
+      },
+      {
+        "intent": "agent_canyouhelp",
+        "text": "can you help me"
+      },
+      {
+        "intent": "agent_canyouhelp",
+        "text": "help"
+      },
+      {
+        "intent": "agent_canyouhelp",
+        "text": "what can you do"
+      },
+      {
+        "intent": "agent_canyouhelp",
+        "text": "what services you will provide"
+      },
+      {
+        "intent": "agent_canyouhelp",
+        "text": "what are the services you will provide?"
+      },
+      {
+        "intent": "agent_canyouhelp",
+        "text": "service"
+      },
+      {
+        "intent": "agent_canyouhelp",
+        "text": "services"
+      },
+      {
+        "intent": "agent_canyouhelp",
+        "text": "explore"
+      },
+      {
+        "intent": "agent_canyouhelp",
+        "text": "explore more"
+      },
+      {
+        "intent": "agent_canyouhelp",
+        "text": "explore help option"
+      },
+      {
+        "intent": "agent_canyouhelp",
+        "text": "help option"
+      },
+      {
+        "intent": "deny_kannada",
+        "text": "ಈಗ ಸಾಧ್ಯವಿಲ್ಲ"
+      },
+      {
+        "intent": "deny_kannada",
+        "text": "ಸಾಧ್ಯವಿಲ್ಲ"
+      },
+      {
+        "intent": "deny_kannada",
+        "text": "ಇಲ್ಲ"
+      },
+      {
+        "intent": "affirm_kannada",
+        "text": "ಮುಂದುವರೆಯಿರಿ"
+      },
+      {
+        "intent": "affirm_kannada",
+        "text": "ಅತ್ಯುತ್ತಮ"
+      },
+      {
+        "intent": "affirm_kannada",
+        "text": "ಮಾಡಲಾಗುತ್ತದೆ"
+      },
+      {
+        "intent": "affirm_kannada",
+        "text": "ಒಪ್ಪುತ್ತೇನೆ"
+      },
+      {
+        "intent": "affirm_kannada",
+        "text": "ಹೌದು"
+      },
+      {
+        "intent": "thankyou",
+        "text": "no"
+      },
+      {
+        "intent": "inform_nearbytouristplaces",
+        "text": "nearest tourist places"
+      },
+      {
+        "intent": "inform_nearbytouristplaces",
+        "text": "nearby tourist places"
+      },
+      {
+        "intent": "inform_nearbytouristplaces",
+        "text": "tourist places"
+      }
+    ],
+    "regex_features": [
+      {
+        "name": "services",
+        "pattern": "/(police|incident|nearby|transit|solid waste management|electricity|water|government service|government|nearby services|garbage|water management)/gi"
+      }
+    ],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}
